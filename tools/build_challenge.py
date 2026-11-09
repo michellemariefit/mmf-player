@@ -332,9 +332,13 @@ def split_composite(im):
         while top < by1 and rows[top] < 0.6 * (bx1 - bx0):   # rows that are only arrow
             top += 1
         bw, bh = bx1 - bx0, by1 - top
-        px = int(bw * 0.075)
-        crop = im.crop((x0 + bx0 + px, top + int(bh * 0.15), x0 + bx1 - px, by1 - int(bh * 0.08)))
-        crops.append(crop)
+        px = int(bw * 0.09)
+        cx0, cy0, cx1, cy1 = x0 + bx0 + px, top + int(bh * 0.12), x0 + bx1 - px, by1 - int(bh * 0.08)
+        # the arrow head or tail sits on the top edge of each photo: drop rows that still have blue in them
+        while cy0 < cy1 - 10 and blue[cy0, cx0:cx1].mean() > 0.01:
+            cy0 += 1
+        cy0 += int((cy1 - cy0) * 0.02)
+        crops.append(im.crop((cx0, cy0, cx1, cy1)))
     return crops
 
 

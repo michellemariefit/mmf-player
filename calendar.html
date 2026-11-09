@@ -1,0 +1,126 @@
+<!doctype html>
+<meta charset="utf-8">
+<base target="_top">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>My 21 Days · 21 Day Fit Pregnancy Challenge</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#dd2289">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="21 Day">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Lato:wght@400;700&display=swap">
+<link rel="stylesheet" href="app.css">
+<style>
+/* The Day 1 to Day 21 calendar. Replaces the weekly planner from the YAE player: here the order is
+   fixed, so the job is to show where she is, what today holds, and let her tick days off.
+   Start date is the first day the app was opened; "I'm on day N" moves it. Ticks save on this phone. */
+header{padding-top:14px;display:flex;flex-direction:column;gap:6px}
+.today{background:var(--accent);color:var(--accent-ink);border-radius:20px;padding:16px 18px;display:flex;flex-direction:column;gap:6px}
+.today b{font:700 12px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;opacity:.9}
+.today h2{font-size:30px;color:inherit}
+.today p{margin:0;opacity:.92;font-size:15px}
+.today .btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+.today .btns a{text-decoration:none;color:var(--accent);background:#fff;border-radius:12px;padding:10px 14px;font:700 16px/1 var(--display);text-transform:uppercase;letter-spacing:.04em}
+.today .btns a.ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.7)}
+.prog{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.prog div{border:1px solid var(--line);border-radius:12px;padding:8px 6px;text-align:center;background:var(--card)}
+.prog b{display:block;font:700 26px/1 var(--display);color:var(--accent)}
+.prog small{font:700 11px/1.2 var(--body);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.wk{display:flex;flex-direction:column;gap:8px}
+.wk h2{margin:8px 0 0;font-size:16px;letter-spacing:.1em;color:var(--muted)}
+.day{display:grid;grid-template-columns:52px 1fr auto;gap:12px;align-items:center;border:1px solid var(--line);border-radius:16px;padding:10px 12px;background:var(--card);text-decoration:none;color:inherit}
+.day.now{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-soft)}
+.day.done{background:var(--done-soft)}
+.day.rest{opacity:.85}
+.day .n{text-align:center}
+.day .n b{display:block;font:700 24px/1 var(--display)}
+.day .n small{display:block;font:700 10px/1.2 var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:3px}
+.day .what b{display:block;font:700 18px/1.1 var(--display);text-transform:uppercase;letter-spacing:.01em}
+.day .what small{display:block;color:var(--muted);font-size:13px;margin-top:2px}
+.day .what small a{color:var(--accent);font-weight:700;text-decoration:none}
+.kind{display:inline-block;font:700 10px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;border-radius:5px;padding:3px 5px;margin-right:4px;vertical-align:1px}
+.kind.strength{background:var(--accent-soft);color:var(--accent)}.kind.cardio{background:var(--blue-soft);color:var(--blue)}.kind.rest{background:var(--brand-soft);color:var(--brand)}.kind.lesson{background:var(--bg);color:var(--muted);border:1px solid var(--line)}
+.tick{width:40px;height:40px;border-radius:50%;border:2px solid var(--line);background:var(--bg);font:700 20px/1 var(--display);color:transparent}
+.tick[aria-pressed="true"]{background:var(--done);border-color:var(--done);color:var(--accent-ink)}
+.bonus{display:flex;gap:8px;flex-wrap:wrap}
+.bonus a{text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:10px 14px;font:700 15px/1 var(--display);text-transform:uppercase}
+.setday{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:14px;color:var(--muted)}
+.setday select,.setday button{font:inherit;padding:8px 10px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+@media print{
+  @page{size:letter portrait;margin:.5in}
+  body{background:#fff;color:#000;padding:0;font-size:12px}
+  .wrap{max-width:none;gap:6px}.today,.toolrow,.setday,.bonus,.noprint,.lead{display:none}
+  .day{padding:5px 8px;border-color:#999;border-radius:6px;background:#fff}.tick{width:18px;height:18px;border-color:#000}
+  .prog{display:none}
+}
+</style>
+<div class="wrap">
+  <header>
+    <a class="back" href="start.html">← Home</a>
+    <span class="eyebrow">21 Day Fit Pregnancy Challenge</span>
+    <h1>My 21 days</h1>
+    <p class="lead">Habits in week 1, workouts every week. Tick a day when it's done. Three strength and two cardio a week, 15 to 20 minutes each.</p>
+  </header>
+  <section id="today"></section>
+  <section class="prog" id="prog"></section>
+  <div id="weeks"></div>
+  <section class="card noprint">
+    <h2>Bonus: 3 Day Butt & Thighs</h2>
+    <p class="note">Mini band workouts for the hips, butt and thighs. Add them on a rest day, or do all three after the 21 days.</p>
+    <div class="bonus" id="bonus"></div>
+  </section>
+  <section class="card noprint">
+    <h2>Not on the right day?</h2>
+    <div class="setday"><span>Today is</span><select id="dayPick"></select><button id="setDay">Set it</button></div>
+    <div class="toolrow"><button class="link" id="printBtn">🖨 Print my 21 days</button><button class="link" id="resetBtn">Start over</button></div>
+  </section>
+</div>
+
+<script src="app.js"></script>
+<script>
+const {store,esc}=C21;
+const $=s=>document.querySelector(s);
+const fmt=d=>d.toLocaleDateString(undefined,{weekday:'short',month:'short',day:'numeric'});
+function dayHTML(day,n,done){
+  const w=day.workout?C21.workoutOf(day.workout):null;
+  const kind=w?w.kind:(day.day===21?'lesson':'rest');
+  const title=w?w.name:(day.title||'Rest day');
+  const sub=[w?(w.kind==='cardio'?'Cardio · 15 to 20 min':'Strength · 15 to 20 min'):(day.extra||(day.day===21?'Post your results in the group':'Walk, stretch, drink water')),
+    day.lesson?`<a href="lessons.html#${esc(day.lesson)}">Lesson</a>`:''].filter(Boolean).join(' · ');
+  const href=w?`play.html#${esc(w.id)}`:(day.lesson?`lessons.html#${esc(day.lesson)}`:'#');
+  return `<div class="day ${day.day===n?'now':''} ${done?'done':''} ${kind==='rest'?'rest':''}">
+    <a class="n" href="${href}" style="text-decoration:none;color:inherit"><b>${day.day}</b><small>${fmt(C21.dateOf(day.day)).split(',')[0]}</small></a>
+    <a class="what" href="${href}" style="text-decoration:none;color:inherit"><b><span class="kind ${kind}">${kind==='lesson'?'finish':kind}</span>${esc(title)}</b><small>${sub}</small></a>
+    <button class="tick" data-day="${day.day}" aria-pressed="${!!done}" aria-label="Day ${day.day} done">✓</button></div>`;
+}
+async function render(){
+  const d=await C21.load();
+  const n=C21.dayNumber(), done=C21.doneDays();
+  const count=Object.keys(done).filter(k=>+k>=1&&+k<=21).length;
+  const today=d.days.find(x=>x.day===n);
+  const w=today&&today.workout?C21.workoutOf(today.workout):null;
+  $('#today').innerHTML=n<1?`<div class="today"><b>Starts ${fmt(C21.startDate())}</b><h2>Day 1 is coming</h2><p>Your start date is in the future. Set today below if that is wrong.</p></div>`
+    :n>21?`<div class="today"><b>Day 21 was ${fmt(C21.dateOf(21))}</b><h2>You did it</h2><p>${count} of 21 days ticked. Keep any workout you liked, or start the 21 days again.</p><div class="btns"><a href="index.html#all">All workouts</a><a class="ghost" href="#" id="again">Start again</a></div></div>`
+    :`<div class="today"><b>Today · Day ${n} of 21 · ${fmt(C21.dateOf(n))}</b><h2>${esc(w?w.name:(today.title||'Rest day'))}</h2>
+      <p>${esc(w?w.how:(today.extra||'Rest is part of the program. Walk, stretch, drink your water.'))}</p>
+      <div class="btns">${w?`<a href="play.html#${esc(w.id)}">▶ Play</a><a class="ghost" href="index.html#${esc(w.id)}">List</a>`:''}${today.lesson?`<a class="ghost" href="lessons.html#${esc(today.lesson)}">Today's lesson</a>`:''}${done[n]?'':`<a class="ghost" href="#" data-done="${n}">Mark done</a>`}</div></div>`;
+  const streak=(()=>{let s=0;for(let i=Math.min(n,21);i>=1;i--){if(done[i])s++;else if(i<n)break}return s})();
+  const workoutsDone=d.days.filter(x=>x.workout&&done[x.day]).length;
+  $('#prog').innerHTML=`<div><b>${count}</b><small>of 21 days</small></div><div><b>${workoutsDone}</b><small>of 15 workouts</small></div><div><b>${streak}</b><small>day streak</small></div>`;
+  const weeks=[[1,'Week 1 · Healthy habits + workouts',d.days.slice(0,7)],[2,'Week 2 · The fat blasting continues',d.days.slice(7,14)],[3,'Week 3 · Final week, all strength',d.days.slice(14,21)]];
+  $('#weeks').innerHTML=weeks.map(([i,t,days])=>`<section class="wk"><h2>${esc(t)}</h2>${days.map(x=>dayHTML(x,n,done[x.day])).join('')}</section>`).join('');
+  $('#bonus').innerHTML=C21.weekWorkouts(0).map((x,i)=>`<a href="play.html#${esc(x.id)}">▶ Day ${i+1}</a>`).join('');
+  $('#dayPick').innerHTML=Array.from({length:21},(_,i)=>`<option value="${i+1}" ${i+1===n?'selected':''}>Day ${i+1}</option>`).join('');
+}
+document.addEventListener('click',e=>{
+  const t=e.target.closest('button,a');if(!t)return;
+  if(t.dataset.day){const n=+t.dataset.day;C21.markDay(n,t.getAttribute('aria-pressed')!=='true');render();return}
+  if(t.dataset.done){e.preventDefault();C21.markDay(+t.dataset.done);render();return}
+  if(t.id==='setDay'){C21.setToday(+$('#dayPick').value);render();return}
+  if(t.id==='printBtn'){window.print();return}
+  if(t.id==='again'||t.id==='resetBtn'){e.preventDefault();if(confirm('Start the 21 days over from today? Your ticks are cleared.')){store.del('c21:days');C21.setStart(C21.today());render()}return}
+});
+render();
+</script>

@@ -20,15 +20,15 @@ const srv = http.createServer((req, res) => {
 
 (async () => {
   fs.mkdirSync(PDF, { recursive: true });
-  const data = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'yae.json')));
-  const ids = data.groups.flatMap(g => g.workouts.map(w => w.id));
+  const data = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'challenge.json')));
+  const ids = data.workouts.map(w => w.id);
   const b = await chromium.launch();
   const page = await b.newPage({ viewport: { width: 1100, height: 850 } });
   for (const id of [...ids, '']) {
     await page.goto(`http://127.0.0.1:${PORT}/print.html#${id}`);
     await page.waitForSelector('.page img');
     await page.evaluate(() => Promise.all([...document.images].map(i => i.complete ? 1 : new Promise(r => { i.onload = i.onerror = r; }))));
-    const out = path.join(PDF, (id || 'yae-all-workouts') + '.pdf');
+    const out = path.join(PDF, (id || 'all-workouts') + '.pdf');
     await page.pdf({ path: out, format: 'Letter', landscape: true, printBackground: true, preferCSSPageSize: true });
     console.log('wrote', path.relative(ROOT, out));
   }

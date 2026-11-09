@@ -1,0 +1,77 @@
+<!doctype html>
+<meta charset="utf-8">
+<base target="_top">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Meal Plan · 21 Day Fit Pregnancy Challenge</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#dd2289">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="21 Day">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Lato:wght@400;700&display=swap">
+<link rel="stylesheet" href="app.css">
+<style>
+/* The meal plan and the other PDFs, shown as page images so they open on every phone (iOS Safari
+   only shows the first page of an embedded PDF). Each one also has a download link. Reads DOCS below. */
+header{padding-top:14px;display:flex;flex-direction:column;gap:6px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tabs button{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:8px 12px;font:700 14px/1 var(--display);letter-spacing:.04em;text-transform:uppercase}
+.tabs button[aria-pressed="true"]{background:var(--brand);color:#fff;border-color:var(--brand)}
+.doc{display:flex;flex-direction:column;gap:10px}
+.doc .about{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;flex-wrap:wrap}
+.doc .about p{margin:0;color:var(--muted);font-size:15px;flex:1 1 240px}
+.doc .about a{font:700 14px/1 var(--display);letter-spacing:.05em;text-transform:uppercase;color:var(--accent);text-decoration:none;border:1px solid var(--accent);border-radius:999px;padding:9px 13px;white-space:nowrap}
+.pages{display:flex;flex-direction:column;gap:10px}
+.pages img{width:100%;height:auto;border-radius:12px;border:1px solid var(--line);background:#fff;display:block}
+.pages.wide{gap:8px}
+.pgnum{font:700 11px/1 var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:right}
+.quick{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.quick a{text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px}
+.quick b{display:block;font:700 17px/1.1 var(--display);text-transform:uppercase}
+.quick small{color:var(--muted);font-size:13px}
+</style>
+<div class="wrap">
+  <header>
+    <a class="back" href="start.html">← Home</a>
+    <span class="eyebrow">21 Day Fit Pregnancy Challenge</span>
+    <h1>Meal plan</h1>
+    <p class="lead">14 days of meals and snacks, the recipes, the shopping list. Eat every 2 to 4 hours: lean protein, a healthy carb, a vegetable, and a healthy fat in a couple of meals a day.</p>
+    <div class="tabs" id="tabs"></div>
+  </header>
+  <section class="card" style="gap:8px">
+    <h2>The rules of the road</h2>
+    <p class="note">This challenge, skip sugar, dairy as a snack, wheat and gluten, and fried or pre-packaged food. Every meal has a lean protein, a healthy carb and a vegetable. A healthy fat goes in at least two meals a day. Eat before you get hungry: a small meal or snack every 2 to 4 hours keeps blood sugar steady, which is what keeps nausea, fatigue and cravings down.</p>
+  </section>
+  <section class="doc" id="doc"></section>
+</div>
+<script src="app.js"></script>
+<script>
+const {store,esc}=C21;
+// Each document: page images in images/meals/, the PDF in pdf/.
+const DOCS=[
+ {id:'calendar',tab:'14 day plan',title:'Pregnancy Without The Pounds · 14 day meal calendar',pdf:'pdf/meal-plan-guide.pdf',pages:['meal-plan-guide-02','meal-plan-guide-03'],wide:true,
+  about:'Week 1 and week 2 on one page each. Starred meals have a recipe in the recipe tab. Pick one snack from the snack options for each snack slot. Saturday dinner is a cheat meal.'},
+ {id:'recipes',tab:'Recipes',title:'The recipe book',pdf:'pdf/meal-plan-guide.pdf',pages:Array.from({length:17},(_,i)=>'meal-plan-guide-'+String(i+4).padStart(2,'0')),
+  about:'Every starred meal from the calendar: oatmeal pancake, protein muffins, curried chicken salad, maple glazed salmon, turkey burgers, chicken apple chili, the brownie bites and more.'},
+ {id:'shopping',tab:'Shopping list',title:'Shopping list',pdf:'pdf/shopping-list.pdf',pages:['shopping-list-1'],
+  about:'Everything the 14 days need, by aisle. Screenshot it or print it before the store.'},
+ {id:'foods',tab:'Foods list',title:'Foods list',pdf:'pdf/food-list.pdf',pages:['food-list-1'],
+  about:'Proteins, carbs, veggies and fats you can swap in anywhere. Build any meal from one of each column.'},
+ {id:'smoothies',tab:'Smoothies',title:'5 energy boosting protein smoothies',pdf:'pdf/smoothies.pdf',pages:['smoothies-3','smoothies-4','smoothies-5'],
+  about:'Fast protein after a workout, or a snack when nothing else sounds good. Use a pregnancy-safe protein powder.'},
+ {id:'workout',tab:'Before & after workouts',title:'The before and after workout meal cheat sheet',pdf:'pdf/workout-meal-cheat-sheet.pdf',pages:['workout-meal-cheat-sheet-1','workout-meal-cheat-sheet-2','energy-boosting-system-1'],
+  about:'Protein and a healthy carb 60 to 90 minutes before. Fast protein and fruit right after. Plus the three-part energy boosting system.'},
+];
+let tab=decodeURIComponent(location.hash.replace(/^#/,''))||store.get('c21:meals:tab','calendar');
+if(!DOCS.some(d=>d.id===tab)) tab='calendar';
+function render(){
+  document.getElementById('tabs').innerHTML=DOCS.map(d=>`<button data-tab="${d.id}" aria-pressed="${tab===d.id}">${esc(d.tab)}</button>`).join('');
+  const d=DOCS.find(x=>x.id===tab);
+  document.getElementById('doc').innerHTML=`<div class="about"><p><b style="color:var(--ink)">${esc(d.title)}.</b> ${esc(d.about)}</p><a href="${d.pdf}" download>Download PDF</a></div>
+    <div class="pages ${d.wide?'wide':''}">${d.pages.map((p,i)=>`<img src="images/meals/${p}.webp" alt="${esc(d.title)} page ${i+1}" loading="${i<2?'eager':'lazy'}">`).join('')}</div>
+    <p class="note">${d.pages.length} page${d.pages.length===1?'':'s'}. Pinch to zoom. The PDF has the same pages if you would rather save it.</p>`;
+}
+document.addEventListener('click',e=>{const b=e.target.closest('button[data-tab]');if(!b)return;tab=b.dataset.tab;store.set('c21:meals:tab',tab);history.replaceState(null,'','#'+tab);render();window.scrollTo({top:0})});
+render();
+</script>

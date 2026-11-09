@@ -1,0 +1,60 @@
+{
+ "_note": "One-page notes for the lesson videos in the FG members area. Shown on lessons.html (and printable). 'day' ties a lesson to the calendar. 'watch' is the video length in minutes where known. 'do' items are tickable.",
+ "modules": [
+  {"name": "Before you start", "lessons": [
+   {"id": "safety", "title": "Pregnancy safety workout guidelines", "day": null, "watch": null,
+    "points": ["Get your doctor's OK before you start, and stop if anything hurts, you feel dizzy, or you bleed.", "Breathe out on the effort. Never hold your breath.", "Weights you can do 20 clean reps with. The last few should be hard, not impossible.", "After the first trimester, limit time flat on your back; the stability ball moves keep your upper back raised for that reason.", "Skip planks, pushups and the core moves if you have diastasis recti (a gap down the middle of your belly).", "Drink water before, during and after. Stop if you overheat."],
+    "do": ["Clear it with your doctor.", "Set up dumbbells, a stability ball and a chair or couch."]},
+   {"id": "fuel", "title": "What to eat before and after a workout", "day": null, "watch": null,
+    "points": ["60 to 90 minutes before: lean protein plus a healthy carb or a healthy fat. Egg white omelet and avocado, or leftovers.", "Right after: a fast protein and a little fruit. Egg whites and pineapple, or a protein smoothie.", "Not every protein powder is pregnancy safe. Check for artificial sweeteners.", "Low blood sugar is what makes you tired and sick. Never train hungry."],
+    "do": ["Pick your go-to pre-workout snack.", "Keep something for after the workout within reach."]},
+   {"id": "home", "title": "What to use for home workouts", "day": null, "watch": null,
+    "points": ["Dumbbells and a stability ball cover the whole challenge. A couch or low table replaces a bench for dips.", "No dumbbells? Water bottles, cans or a loaded bag work for most moves.", "A mini band is only needed for the 3 Day Butt & Thighs bonus."],
+    "do": []}
+  ]},
+  {"name": "Week 1 · Healthy habits", "lessons": [
+   {"id": "day1", "title": "Day 1 · Support, accountability and your mindset", "day": 1, "watch": null,
+    "points": ["Pregnancy is hard. The mamas who finish this challenge use the two support tools: the private Facebook group and the text reminders.", "Read the Manifesto and the Tribe page, then write your own Power Statement and put it where you see it every day.", "Without the right mindset even the best workouts and meals don't stick."],
+    "do": ["Join the private Facebook group (access code FIERCE).", "Sign up for the text reminders.", "Write your Power Statement and snap a picture of it."]},
+   {"id": "day2", "title": "Day 2 · Goal setting", "day": 2, "watch": null,
+    "points": ["What this challenge gives you when you finish it: less excess weight gain, more energy, fewer aches, better sleep and mood, and a body that is ready for labor.", "Write the one result you want most. That is the goal you come back to on a tired day.", "As you move through the lessons you unlock coupon codes for the supplements and gear."],
+    "do": ["Write your number one goal for the 21 days.", "Tell someone about it."]},
+   {"id": "day3", "title": "Day 3 · Daily affirmations", "day": 3, "watch": null,
+    "points": ["Stress raises the hormones that make you hold on to fat and feel awful. Calming your mind every day is part of the program, not fluff.", "Pick two or three affirmations and say them morning and night. The full list is in the PDF.", "Examples: I trust my body knows exactly what it is doing. I am a strong and healthy woman. I can do hard things."],
+    "do": ["Pick your three affirmations.", "Say them this morning and tonight."]},
+   {"id": "day4", "title": "Day 4 · Getting ready for your workouts", "day": 4, "watch": null,
+    "points": ["Block the workouts into your week before the week starts. Same time most days is what makes them happen.", "Fifteen to twenty minutes. If you can only do two rounds, do two rounds.", "Equipment: dumbbells (8 lb to start, 5, 10 and 15 is ideal) and a stability ball."],
+    "do": ["Open the calendar and pick the time of day you train.", "Put your dumbbells and ball where you will see them."]},
+   {"id": "day5", "title": "Day 5 · Supplements that give you energy", "day": 5, "watch": null,
+    "points": ["Get medical clearance before taking anything.", "Vitamin B12 for energy, mood and nausea. Fish oil for inflammation and baby's development. Folate (not folic acid). Vitamin D for calcium absorption. A good prenatal.", "Collagen for skin, joints and stretch marks. Probiotics for digestion, gestational diabetes risk and postpartum mood."],
+    "do": ["Check what your doctor already has you on.", "Add what is missing with their OK."]},
+   {"id": "day6", "title": "Day 6 · The pregnancy safe meal plan", "day": 6, "watch": null,
+    "points": ["Eat every 2 to 4 hours: lean protein, a healthy carb, a vegetable, and a healthy fat in a couple of meals.", "For the challenge, cut sugar, dairy as a snack, wheat and gluten, and fried or pre-packaged food.", "The 14 day calendar, the recipes and the shopping list are on the Meal plan page. Prep is everything: shop before the week starts."],
+    "do": ["Read the week 1 calendar.", "Shop the list.", "Make the protein muffins or oatmeal pancakes for snacks."]},
+   {"id": "day7", "title": "Day 7 · Tracking your progress", "day": 7, "watch": null,
+    "points": ["Track four things a day: water, nutrition (how much of the day you ate to plan), affirmations morning and night, and the workout.", "Post in the group once a day and encourage another mama. The ones who do finish.", "Week 1 done. Week 2 gets a little harder, and you are ready."],
+    "do": ["Print the checklist or screenshot it.", "Post your week 1 win in the group."]}
+  ]},
+  {"name": "Finish", "lessons": [
+   {"id": "celebrate", "title": "Day 21 · Celebrate and share your results", "day": 21, "watch": null,
+    "points": ["Three weeks of eating clean and 15 workouts while pregnant. That is not a small thing.", "Post a picture and tell the group how the three weeks went: energy, bloat, sleep, mood.", "Three weeks is a jumpstart. A few more weeks or months and the tone shows up in the hips, thighs, butt and arms, and your body is strong for labor.", "Next step: the Fit Mom To Be program, month by month until your due date."],
+    "do": ["Post your results in the group.", "Decide what you do tomorrow."]}
+  ]}
+ ],
+ "faq": {"items": [
+  {"q": "How long do the workouts take?", "a": "15 to 20 minutes. Five a week: three strength, two cardio in weeks 1 and 2, five strength in week 3.", "source": "sales page FAQ"},
+  {"q": "What equipment do I need?", "a": "Dumbbells and a stability ball. A couch, low table or chair replaces a bench. The 3 Day Butt & Thighs bonus uses a mini band.", "source": "sales page FAQ"},
+  {"q": "I have no energy. Will this make it worse?", "a": "The opposite, for almost everyone. The workouts are short, and women who start exercising in pregnancy report more energy within about three days. Eat something small an hour before.", "source": "sales page FAQ"},
+  {"q": "I have never worked out. Is this for me?", "a": "Yes. Most women in the challenge have never trained consistently. Pictures, demos and the step by step player get you through every move. Start with light weights.", "source": "sales page FAQ"},
+  {"q": "I train hard already. Can I push?", "a": "Yes. Michelle did these exact workouts in both pregnancies. Go heavier on the dumbbells and add the optional rounds.", "source": "sales page FAQ"},
+  {"q": "I'm in my third trimester. Is it too late?", "a": "No. Women have started at 30 and 34 weeks and still felt and seen a difference. Something is always better than nothing.", "source": "sales page FAQ"},
+  {"q": "When will I notice something?", "a": "More energy after about 3 days. Less bloat after 7. The scale levels off around 14. Strength and fewer aches after week 2. Visible tone after 21.", "source": "sales page FAQ"},
+  {"q": "Can I do this with gestational diabetes?", "a": "Yes. The meal plan is low glycemic and helps stabilise blood sugar. Keep your doctor in the loop.", "source": "sales page FAQ"},
+  {"q": "Twins? Previous miscarriages? High risk?", "a": "Twins: yes, with your OB's OK. Previous miscarriages: yes, with medical clearance. High risk: medical clearance first. Bed rest: no exercise.", "source": "sales page FAQ"},
+  {"q": "What if I have diastasis recti?", "a": "Skip planks, pushups and the plank butt kicks. Everything else is fine. Michelle has a set of diastasis recti healing videos that are not in the challenge yet.", "source": "FG lesson notes"},
+  {"q": "I have back or hip pain.", "a": "Even more reason to do the strength work: it balances the muscles that are weak and causing the pain. The Preggers Pain-Free stretches are in the bonus course.", "source": "sales page FAQ"},
+  {"q": "I'm vegetarian or a picky eater.", "a": "The meal plan is flexible. Swap any protein from the Foods list. Vegetarians have followed it with their own swaps.", "source": "sales page FAQ"},
+  {"q": "Do I lose access after 21 days?", "a": "No. The challenge is yours for good.", "source": "sales page FAQ"},
+  {"q": "What do I do after the 21 days?", "a": "The Fit Mom To Be program: monthly workouts for the rest of your pregnancy, then the postpartum program after baby.", "source": "FG Celebrate lesson"}
+ ]}
+}

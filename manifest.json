@@ -1,11 +1,11 @@
 {
- "name": "Youth Athlete Edge",
- "short_name": "YAE",
+ "name": "21 Day Fit Pregnancy Challenge",
+ "short_name": "21 Day",
  "start_url": "./start.html",
  "scope": "./",
  "display": "standalone",
- "background_color": "#1b2e4c",
- "theme_color": "#1b2e4c",
+ "background_color": "#fbf7f9",
+ "theme_color": "#dd2289",
  "icons": [
   {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png"},
   {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
