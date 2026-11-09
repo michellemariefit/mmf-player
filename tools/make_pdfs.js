@@ -26,7 +26,7 @@ const srv = http.createServer((req, res) => {
   const page = await b.newPage({ viewport: { width: 1100, height: 850 } });
   for (const id of [...ids, '']) {
     await page.goto(`http://127.0.0.1:${PORT}/print.html#${id}`);
-    await page.waitForSelector('.page img');
+    await page.waitForSelector('.page');
     await page.evaluate(() => Promise.all([...document.images].map(i => i.complete ? 1 : new Promise(r => { i.onload = i.onerror = r; }))));
     const out = path.join(PDF, (id || 'all-workouts') + '.pdf');
     await page.pdf({ path: out, format: 'Letter', landscape: true, printBackground: true, preferCSSPageSize: true });

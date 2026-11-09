@@ -39,7 +39,7 @@ def shrink(path, max_px=720, quality=70):
 
 
 def main():
-    for path in sorted(glob.glob(os.path.join(ROOT, "pdf", "*.pdf"))):
+    for path in sorted(glob.glob(os.path.join(ROOT, "pdf", "w*.pdf")) + glob.glob(os.path.join(ROOT, "pdf", "bonus-*.pdf")) + glob.glob(os.path.join(ROOT, "pdf", "all-workouts.pdf"))):
         before = os.path.getsize(path)
         shrink(path)
         print(f"{os.path.relpath(path, ROOT)}: {before // 1024} KB -> {os.path.getsize(path) // 1024} KB")
