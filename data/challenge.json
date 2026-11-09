@@ -1,0 +1,1510 @@
+{
+ "program": "21 Day Fit Pregnancy Challenge",
+ "short": "21 Day Challenge",
+ "weeks": [
+  {
+   "id": 1,
+   "name": "Week 1",
+   "intro": "Healthy habits plus your first five workouts. 15 to 20 minutes each. Three strength, two cardio."
+  },
+  {
+   "id": 2,
+   "name": "Week 2",
+   "intro": "Same rhythm, a little more. Three strength, two cardio."
+  },
+  {
+   "id": 3,
+   "name": "Week 3",
+   "intro": "Five short weight workouts, no cardio. Strength is what preps you for labor and burns the most."
+  },
+  {
+   "id": 0,
+   "name": "Bonus: 3 Day Butt & Thighs",
+   "intro": "Three mini band workouts for the hips, butt and thighs. Do them any time, all through pregnancy."
+  }
+ ],
+ "workouts": [
+  {
+   "id": "w1-full-body",
+   "week": 1,
+   "name": "Full Body Fat Blast",
+   "kind": "strength",
+   "pdf": "Full Body Fat Blast Workout.pdf",
+   "lessonVideo": "2MrlTKhl24k",
+   "sets": 2,
+   "setsLabel": "2 rounds, 3 if you have it in you",
+   "reps": "20",
+   "restSeconds": 75,
+   "restLabel": "60 to 90 s",
+   "circuit": true,
+   "how": "Five exercises, one after the other, with as little rest as you can handle. Rest at the end of the circuit, then go again.",
+   "gear": "dumbbells, stability ball, a chair or couch",
+   "blocks": [
+    {
+     "label": "Circuit",
+     "exercises": [
+      {
+       "name": "Dumbbell Rows",
+       "video": "p1XtX2cVNZc",
+       "reps": "20",
+       "note": "",
+       "code": "1",
+       "cue": "Bend from the hips with a flat, arched back, almost parallel to the floor. Dumbbells hanging at your sides. Pull the elbows up and squeeze the shoulder blades together, then lower slowly.",
+       "photo": "images/p1XtX2cVNZc-pdf.webp",
+       "startPhoto": "images/p1XtX2cVNZc-start.webp",
+       "endPhoto": "images/p1XtX2cVNZc-end.webp"
+      },
+      {
+       "name": "Plie Squats",
+       "video": "Mywk7zS_We4",
+       "reps": "20",
+       "note": "",
+       "code": "2",
+       "cue": "Feet wide, toes pointed out. Hold one or both dumbbells between the thighs. Chest up, hips tucked. Lower slowly as far as you can, then come up and squeeze inner thighs and butt.",
+       "photo": "images/Mywk7zS_We4-pdf.webp",
+       "startPhoto": "images/Mywk7zS_We4-start.webp",
+       "endPhoto": "images/Mywk7zS_We4-end.webp"
+      },
+      {
+       "name": "Dips",
+       "video": "RdnPNgzKTSU",
+       "reps": "20",
+       "note": "",
+       "code": "3",
+       "cue": "Hands on a couch, table or chair, butt close to it. Feet far from your hands (closer makes it easier). Chest up, shoulders down. Bend the elbows to 90 degrees, press back up and squeeze the back of the arms.",
+       "photo": "images/RdnPNgzKTSU-pdf.webp",
+       "startPhoto": "images/RdnPNgzKTSU-start.webp",
+       "endPhoto": "images/RdnPNgzKTSU-end.webp"
+      },
+      {
+       "name": "Stability Ball Leg Curls",
+       "video": "XAYfZo9RJPY",
+       "reps": "20",
+       "note": "",
+       "code": "4",
+       "cue": "Lie on your back, heels on the ball, hips lifted. Pull the ball in with your heels, then roll it back out under control. Keep the hips up the whole set.",
+       "photo": "images/XAYfZo9RJPY-pdf.webp",
+       "startPhoto": "images/XAYfZo9RJPY-start.webp",
+       "endPhoto": "images/XAYfZo9RJPY-end.webp"
+      },
+      {
+       "name": "Dumbbell Shoulder Presses",
+       "video": "nj0FUHY7rko",
+       "reps": "20",
+       "note": "",
+       "code": "5",
+       "cue": "Dumbbells at shoulder height, palms facing in. Chest up, shoulder blades down. Press overhead until the arms are straight, then lower slowly.",
+       "photo": "images/nj0FUHY7rko-pdf.webp",
+       "startPhoto": "images/nj0FUHY7rko-start.webp",
+       "endPhoto": "images/nj0FUHY7rko-end.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w1-cardio-1",
+   "week": 1,
+   "name": "Cardio Fat Burning I",
+   "kind": "cardio",
+   "lessonVideo": "tMVQexQyfu4",
+   "sets": 3,
+   "setsLabel": "3 rounds, 2 is fine",
+   "work": 60,
+   "restSeconds": 0,
+   "restLabel": "catch your breath",
+   "circuit": true,
+   "how": "60 seconds of each move, in order. Lateral shuffles come back between every exercise. Rest only as long as you need to catch your breath, then the next move. About 15 to 20 minutes.",
+   "gear": "nothing",
+   "blocks": [
+    {
+     "label": "Circuit",
+     "exercises": [
+      {
+       "name": "Plie Squats",
+       "video": "",
+       "reps": "60 s",
+       "note": "",
+       "code": "1",
+       "cue": "Feet wide, toes pointed out. Hold one or both dumbbells between the thighs. Chest up, hips tucked. Lower slowly as far as you can, then come up and squeeze inner thighs and butt."
+      },
+      {
+       "name": "Lateral Shuffles",
+       "video": "",
+       "reps": "60 s",
+       "note": "",
+       "code": "2"
+      },
+      {
+       "name": "Squat with Back Kick",
+       "video": "",
+       "reps": "60 s",
+       "note": "",
+       "code": "3"
+      },
+      {
+       "name": "Lateral Shuffles",
+       "video": "",
+       "reps": "60 s",
+       "note": "",
+       "code": "4"
+      },
+      {
+       "name": "Walking Lunges",
+       "video": "",
+       "reps": "60 s",
+       "note": "",
+       "code": "5",
+       "cue": "Step forward and lower until both knees are at 90 degrees. Push through the front heel and step the back foot through into the next lunge."
+      },
+      {
+       "name": "Lateral Shuffles",
+       "video": "",
+       "reps": "60 s",
+       "note": "",
+       "code": "6"
+      },
+      {
+       "name": "Plank Butt Kicks",
+       "video": "",
+       "reps": "60 s",
+       "note": "Skip this one if you have diastasis recti",
+       "code": "7"
+      },
+      {
+       "name": "Lateral Shuffles",
+       "video": "",
+       "reps": "60 s",
+       "note": "",
+       "code": "8"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w1-arms",
+   "week": 1,
+   "name": "Toned Arms",
+   "kind": "strength",
+   "pdf": "Toned Arms Workout.pdf",
+   "lessonVideo": "1Ty1ZnqnpjE",
+   "sets": 2,
+   "setsLabel": "2 rounds",
+   "reps": "20",
+   "restSeconds": 75,
+   "restLabel": "60 to 90 s",
+   "circuit": true,
+   "how": "Six arm exercises back to back, 20 reps each. Rest after the last one, then go again. About 15 to 20 minutes.",
+   "gear": "dumbbells, a chair or couch",
+   "blocks": [
+    {
+     "label": "Circuit",
+     "exercises": [
+      {
+       "name": "Dumbbell Shoulder Press Neutral Grip",
+       "video": "7FcLkHdf4Js",
+       "reps": "20",
+       "note": "",
+       "code": "1",
+       "cue": "Dumbbells at shoulder height, palms facing in. Chest up, shoulder blades down. Press overhead until the arms are straight, then lower slowly.",
+       "photo": "images/7FcLkHdf4Js-pdf.webp",
+       "startPhoto": "images/7FcLkHdf4Js-start.webp",
+       "endPhoto": "images/7FcLkHdf4Js-end.webp"
+      },
+      {
+       "name": "Dips",
+       "video": "RdnPNgzKTSU",
+       "reps": "20",
+       "note": "",
+       "code": "2",
+       "cue": "Hands on a couch, table or chair, butt close to it. Feet far from your hands (closer makes it easier). Chest up, shoulders down. Bend the elbows to 90 degrees, press back up and squeeze the back of the arms.",
+       "photo": "images/RdnPNgzKTSU-pdf.webp",
+       "startPhoto": "images/RdnPNgzKTSU-start.webp",
+       "endPhoto": "images/RdnPNgzKTSU-end.webp"
+      },
+      {
+       "name": "Hammer Curls",
+       "video": "iJcMgzNCkV0",
+       "reps": "20",
+       "note": "",
+       "code": "3",
+       "cue": "Chest up, shoulders down. Dumbbells at your sides, palms facing in. Curl towards the shoulders, squeeze the front of the arms, lower slowly.",
+       "photo": "images/iJcMgzNCkV0-pdf.webp",
+       "startPhoto": "images/iJcMgzNCkV0-start.webp",
+       "endPhoto": "images/iJcMgzNCkV0-end.webp"
+      },
+      {
+       "name": "Lateral Raises",
+       "video": "XAsfEvsmSDg",
+       "reps": "20",
+       "note": "",
+       "code": "4",
+       "cue": "Dumbbells at your sides, soft elbows. Lift out to the sides to shoulder height, then lower slowly.",
+       "photo": "images/XAsfEvsmSDg-pdf.webp",
+       "startPhoto": "images/XAsfEvsmSDg-start.webp",
+       "endPhoto": "images/XAsfEvsmSDg-end.webp"
+      },
+      {
+       "name": "Tricep Kickbacks Underhand",
+       "video": "IvXGVym4t_Y",
+       "reps": "20",
+       "note": "",
+       "code": "5",
+       "cue": "Bend from the hips, chest up, back flat. Elbows tucked, palms facing forward. Extend the arms back and squeeze the back of the arms, then return.",
+       "photo": "images/IvXGVym4t_Y-pdf.webp",
+       "startPhoto": "images/IvXGVym4t_Y-start.webp",
+       "endPhoto": "images/IvXGVym4t_Y-end.webp"
+      },
+      {
+       "name": "Dumbbell Bicep Curls",
+       "video": "WbuvVZAbhPY",
+       "reps": "20",
+       "note": "",
+       "code": "6",
+       "cue": "Chest up, shoulders down. Dumbbells at your sides, palms facing up. Curl towards the shoulders, squeeze, lower slowly.",
+       "photo": "images/WbuvVZAbhPY-pdf.webp",
+       "startPhoto": "images/WbuvVZAbhPY-start.webp",
+       "endPhoto": "images/WbuvVZAbhPY-end.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w1-cardio-2",
+   "week": 1,
+   "name": "Cardio Fat Burning II",
+   "kind": "cardio",
+   "sets": 4,
+   "setsLabel": "3 to 5 rounds",
+   "work": 45,
+   "restSeconds": 45,
+   "restLabel": "same as the work",
+   "circuit": true,
+   "how": "30 to 60 seconds of each move, then rest the same amount of time. Go through all five, that is one round. 3 to 5 rounds to reach 15 to 20 minutes.",
+   "gear": "nothing",
+   "blocks": [
+    {
+     "label": "Circuit",
+     "exercises": [
+      {
+       "name": "Plie Squats",
+       "video": "",
+       "reps": "45 s",
+       "note": "",
+       "code": "1",
+       "cue": "Feet wide, toes pointed out. Hold one or both dumbbells between the thighs. Chest up, hips tucked. Lower slowly as far as you can, then come up and squeeze inner thighs and butt."
+      },
+      {
+       "name": "Lateral Shuffles",
+       "video": "",
+       "reps": "45 s",
+       "note": "",
+       "code": "2"
+      },
+      {
+       "name": "Squat Kick",
+       "video": "",
+       "reps": "45 s",
+       "note": "",
+       "code": "3"
+      },
+      {
+       "name": "Butt Kickers",
+       "video": "",
+       "reps": "45 s",
+       "note": "",
+       "code": "4"
+      },
+      {
+       "name": "Lateral Lunges",
+       "video": "",
+       "reps": "45 s",
+       "note": "",
+       "code": "5",
+       "cue": "Step wide to one side and sit into that hip, the other leg straight. Chest up. Push back to standing."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w1-thighs",
+   "week": 1,
+   "name": "Slimming & Toning The Thighs",
+   "kind": "strength",
+   "pdf": "Slimming & Toning The Thighs Workout.pdf",
+   "lessonVideo": "u6XovbrNPtQ",
+   "sets": 2,
+   "setsLabel": "2 rounds of each circuit",
+   "reps": "20",
+   "restSeconds": 75,
+   "restLabel": "60 to 90 s",
+   "circuit": true,
+   "how": "Circuit A: three exercises in a row, rest, repeat. Then circuit B the same way. Drink water and stretch after.",
+   "gear": "dumbbells",
+   "blocks": [
+    {
+     "label": "A",
+     "exercises": [
+      {
+       "name": "Dumbbell Squats",
+       "video": "6CbpPRbbDb8",
+       "reps": "20",
+       "note": "",
+       "code": "A1",
+       "cue": "Feet a little wider than shoulder width, dumbbells at your sides. Chest up. Sit back and down to about 90 degrees. Stand up and squeeze the booty.",
+       "photo": "images/6CbpPRbbDb8-pdf.webp",
+       "startPhoto": "images/6CbpPRbbDb8-start.webp",
+       "endPhoto": "images/6CbpPRbbDb8-end.webp"
+      },
+      {
+       "name": "Deadlifts",
+       "video": "q8RHLWKgRqY",
+       "reps": "20",
+       "note": "",
+       "code": "A2",
+       "cue": "Dumbbells in front of the thighs. Chest up, shoulders back. Hinge from the hips like a door, keep the lower back flat. Come up and squeeze the back of the legs and butt.",
+       "photo": "images/q8RHLWKgRqY-pdf.webp",
+       "startPhoto": "images/q8RHLWKgRqY-start.webp",
+       "endPhoto": "images/q8RHLWKgRqY-end.webp"
+      },
+      {
+       "name": "Reverse Lunges",
+       "video": "6JMzQ2D9LDQ",
+       "reps": "20 per side",
+       "note": "",
+       "code": "A3",
+       "cue": "Step one foot back onto the ball of the foot. Lower straight down, weight on the front heel, chest up. Push back up through the front leg and squeeze the butt.",
+       "photo": "images/6JMzQ2D9LDQ-pdf.webp",
+       "startPhoto": "images/6JMzQ2D9LDQ-start.webp",
+       "endPhoto": "images/6JMzQ2D9LDQ-end.webp"
+      }
+     ]
+    },
+    {
+     "label": "B",
+     "exercises": [
+      {
+       "name": "Bowlers",
+       "video": "hYDdcmwFUY8",
+       "reps": "20",
+       "note": "",
+       "code": "B1",
+       "cue": "Stand on one leg, the other behind. Hinge forward and reach across to tap the floor by your foot, then come back up. It is a quick, flowing movement.",
+       "photo": "images/hYDdcmwFUY8-pdf.webp",
+       "startPhoto": "images/hYDdcmwFUY8-start.webp",
+       "endPhoto": "images/hYDdcmwFUY8-end.webp"
+      },
+      {
+       "name": "Side Kicks",
+       "video": "57V67yN3nh4",
+       "reps": "20 per side",
+       "note": "",
+       "code": "B2",
+       "cue": "Hold a wall or chair. Pivot the standing foot out and hinge slightly. Bend the knee of the working leg, then extend it out to the side and squeeze the side of the butt.",
+       "photo": "images/57V67yN3nh4-pdf.webp",
+       "startPhoto": "images/57V67yN3nh4-start.webp",
+       "endPhoto": "images/57V67yN3nh4-end.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w2-full-body",
+   "week": 2,
+   "name": "Burn The Excess Fat Full Body",
+   "kind": "strength",
+   "pdf": "Burn The Excess Fat Full Body Workout.pdf",
+   "lessonVideo": "0ExCZIR-HS0",
+   "sets": 3,
+   "setsLabel": "3 rounds, 4 if you can",
+   "reps": "20",
+   "restSeconds": 75,
+   "restLabel": "60 to 90 s",
+   "circuit": true,
+   "how": "Five exercises in a circuit with minimal rest between them. Rest at the end, recover, repeat. 20 minutes of cardio after if you feel up to it.",
+   "gear": "dumbbells, stability ball",
+   "blocks": [
+    {
+     "label": "Circuit",
+     "exercises": [
+      {
+       "name": "Stationary Lunges",
+       "video": "bLZPKMxGQ2o",
+       "reps": "20 per side",
+       "note": "",
+       "code": "1",
+       "cue": "One foot in front of the other, back heel up. Lower as far as comfortable with the hips tucked and chest up. Push back up and squeeze the back leg glute.",
+       "photo": "images/bLZPKMxGQ2o-pdf.webp",
+       "startPhoto": "images/bLZPKMxGQ2o-start.webp",
+       "endPhoto": "images/bLZPKMxGQ2o-end.webp"
+      },
+      {
+       "name": "High Rows",
+       "video": "b-BYZkIZwPQ",
+       "reps": "20",
+       "note": "",
+       "code": "2",
+       "cue": "Bend from the hips, back flat and almost parallel to the floor, thumbs in. Pull the elbows up and out to make two 90 degree angles, squeeze the back, lower slowly.",
+       "photo": "images/b-BYZkIZwPQ-pdf.webp",
+       "startPhoto": "images/b-BYZkIZwPQ-start.webp",
+       "endPhoto": "images/b-BYZkIZwPQ-end.webp"
+      },
+      {
+       "name": "Stability Ball Supine Single Leg Hip Extensions",
+       "video": "3swvJ_oGOx4",
+       "reps": "20 per side",
+       "note": "",
+       "code": "3",
+       "cue": "Upper back on the ball, hands on the floor. One foot up, the other flat with the knee at 90 degrees. Lift the hips and squeeze, lower until the butt almost touches the floor.",
+       "photo": "images/3swvJ_oGOx4-pdf.webp",
+       "startPhoto": "images/3swvJ_oGOx4-start.webp",
+       "endPhoto": "images/3swvJ_oGOx4-end.webp"
+      },
+      {
+       "name": "Upright Rows",
+       "video": "3Sc_BEMB14I",
+       "reps": "20",
+       "note": "",
+       "code": "4",
+       "cue": "Dumbbells by the thighs. Chest up, shoulder blades down. Pull the elbows up and out, wrists straight. Lower slowly.",
+       "photo": "images/3Sc_BEMB14I-pdf.webp",
+       "startPhoto": "images/3Sc_BEMB14I-start.webp",
+       "endPhoto": "images/3Sc_BEMB14I-end.webp"
+      },
+      {
+       "name": "Overhead Tricep Extensions",
+       "video": "uicoxUY-unM",
+       "reps": "20",
+       "note": "",
+       "code": "5",
+       "cue": "Hold one dumbbell overhead with both hands. Elbows pointing forward, lower the weight behind your head, then press back up.",
+       "photo": "images/uicoxUY-unM-pdf.webp",
+       "startPhoto": "images/uicoxUY-unM-start.webp",
+       "endPhoto": "images/uicoxUY-unM-end.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w2-cardio-1",
+   "week": 2,
+   "name": "Cardio Fat Killa I",
+   "kind": "cardio",
+   "lessonVideo": "Q8AfbDxqS6E",
+   "sets": 2,
+   "setsLabel": "2 rounds, 3 max",
+   "work": 50,
+   "restSeconds": 0,
+   "restLabel": "catch your breath",
+   "circuit": true,
+   "how": "Seven exercises, 45 to 60 seconds each. Recover just enough to catch your breath between them. Complete the circuit 2 to 3 times. Follow Michelle in the video for the moves.",
+   "gear": "nothing",
+   "todo": "The seven exercises are only in the video. Add them here once Michelle lists them.",
+   "blocks": [
+    {
+     "label": "Circuit",
+     "exercises": [
+      {
+       "name": "Exercise 1",
+       "video": "",
+       "reps": "50 s",
+       "note": "Follow the video",
+       "code": "1"
+      },
+      {
+       "name": "Exercise 2",
+       "video": "",
+       "reps": "50 s",
+       "note": "Follow the video",
+       "code": "2"
+      },
+      {
+       "name": "Exercise 3",
+       "video": "",
+       "reps": "50 s",
+       "note": "Follow the video",
+       "code": "3"
+      },
+      {
+       "name": "Exercise 4",
+       "video": "",
+       "reps": "50 s",
+       "note": "Follow the video",
+       "code": "4"
+      },
+      {
+       "name": "Exercise 5",
+       "video": "",
+       "reps": "50 s",
+       "note": "Follow the video",
+       "code": "5"
+      },
+      {
+       "name": "Exercise 6",
+       "video": "",
+       "reps": "50 s",
+       "note": "Follow the video",
+       "code": "6"
+      },
+      {
+       "name": "Exercise 7",
+       "video": "",
+       "reps": "50 s",
+       "note": "Follow the video",
+       "code": "7"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w2-arms",
+   "week": 2,
+   "name": "Sexy Prego Arms",
+   "kind": "strength",
+   "pdf": "Sexy-Prego-Arms-Workout_PDF-File.pdf",
+   "lessonVideo": "3e7VlZZv-dA",
+   "sets": 3,
+   "setsLabel": "3 rounds, 4 if you can",
+   "reps": "20",
+   "restSeconds": 75,
+   "restLabel": "60 to 90 s",
+   "circuit": true,
+   "how": "Back to back with minimal rest. Rest at the end of the circuit, catch your breath, begin again. About 15 minutes.",
+   "gear": "dumbbells, a chair or couch",
+   "blocks": [
+    {
+     "label": "Circuit",
+     "exercises": [
+      {
+       "name": "Front Raises",
+       "video": "D3eIIeP0RcY",
+       "reps": "20",
+       "note": "",
+       "code": "1",
+       "cue": "Dumbbells in front of the legs, palms facing you. Lift the arms to shoulder height with a soft elbow, then lower under control.",
+       "photo": "images/D3eIIeP0RcY-pdf.webp",
+       "startPhoto": "images/D3eIIeP0RcY-start.webp",
+       "endPhoto": "images/D3eIIeP0RcY-end.webp"
+      },
+      {
+       "name": "Tricep Kickbacks Overhand Grip",
+       "video": "nQy1waEKPhY",
+       "reps": "20",
+       "note": "",
+       "code": "2",
+       "cue": "Bend from the hips, chest up, back flat. Elbows tucked, palms facing back. Extend the arms back and squeeze the back of the arms, then return.",
+       "photo": "images/nQy1waEKPhY-pdf.webp",
+       "startPhoto": "images/nQy1waEKPhY-start.webp",
+       "endPhoto": "images/nQy1waEKPhY-end.webp"
+      },
+      {
+       "name": "Twisting Bicep Curls",
+       "video": "gvYUU5lXQMc",
+       "reps": "20",
+       "note": "",
+       "code": "3",
+       "cue": "Start with palms facing your legs. Curl and turn the palms up as you lift. Squeeze at the top, lower slowly.",
+       "photo": "images/gvYUU5lXQMc-pdf.webp",
+       "startPhoto": "images/gvYUU5lXQMc-start.webp",
+       "endPhoto": "images/gvYUU5lXQMc-end.webp"
+      },
+      {
+       "name": "Dumbbell Shoulder Press",
+       "video": "nj0FUHY7rko",
+       "reps": "20",
+       "note": "",
+       "code": "4",
+       "cue": "Dumbbells at shoulder height, palms facing in. Chest up, shoulder blades down. Press overhead until the arms are straight, then lower slowly.",
+       "photo": "images/nj0FUHY7rko-pdf.webp",
+       "startPhoto": "images/nj0FUHY7rko-start.webp",
+       "endPhoto": "images/nj0FUHY7rko-end.webp"
+      },
+      {
+       "name": "Dips",
+       "video": "RdnPNgzKTSU",
+       "reps": "20",
+       "note": "",
+       "code": "5",
+       "cue": "Hands on a couch, table or chair, butt close to it. Feet far from your hands (closer makes it easier). Chest up, shoulders down. Bend the elbows to 90 degrees, press back up and squeeze the back of the arms.",
+       "photo": "images/RdnPNgzKTSU-pdf.webp",
+       "startPhoto": "images/RdnPNgzKTSU-start.webp",
+       "endPhoto": "images/RdnPNgzKTSU-end.webp"
+      },
+      {
+       "name": "Hammer Curls",
+       "video": "iJcMgzNCkV0",
+       "reps": "20",
+       "note": "",
+       "code": "6",
+       "cue": "Chest up, shoulders down. Dumbbells at your sides, palms facing in. Curl towards the shoulders, squeeze the front of the arms, lower slowly.",
+       "photo": "images/iJcMgzNCkV0-pdf.webp",
+       "startPhoto": "images/iJcMgzNCkV0-start.webp",
+       "endPhoto": "images/iJcMgzNCkV0-end.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w2-cardio-2",
+   "week": 2,
+   "name": "Cardio Fat Killa II",
+   "kind": "cardio",
+   "sets": 3,
+   "setsLabel": "2 to 5 rounds",
+   "work": 50,
+   "restSeconds": 0,
+   "restLabel": "catch your breath",
+   "circuit": true,
+   "how": "Five exercises, 45 to 60 seconds each. Catch your breath between them, no long rests. 2 to 5 rounds to reach 15 to 20 minutes. Eaten protein and carbs an hour before? Good.",
+   "gear": "nothing",
+   "blocks": [
+    {
+     "label": "Circuit",
+     "exercises": [
+      {
+       "name": "Quick Feet",
+       "video": "",
+       "reps": "50 s",
+       "note": "",
+       "code": "1"
+      },
+      {
+       "name": "Reverse Lunges",
+       "video": "",
+       "reps": "50 s",
+       "note": "",
+       "code": "2",
+       "cue": "Step one foot back onto the ball of the foot. Lower straight down, weight on the front heel, chest up. Push back up through the front leg and squeeze the butt."
+      },
+      {
+       "name": "In & Out Quick Feet",
+       "video": "",
+       "reps": "50 s",
+       "note": "",
+       "code": "3"
+      },
+      {
+       "name": "Running In Place",
+       "video": "",
+       "reps": "50 s",
+       "note": "",
+       "code": "4"
+      },
+      {
+       "name": "Skiers",
+       "video": "",
+       "reps": "50 s",
+       "note": "",
+       "code": "5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w2-butt",
+   "week": 2,
+   "name": "Tone & Lift The Prego Butt",
+   "kind": "strength",
+   "pdf": "Tone-Lift-The-Prego-Butt_PDF-File.pdf",
+   "lessonVideo": "JzmB0YnQzWQ",
+   "sets": 3,
+   "setsLabel": "3 rounds, 4 if you can",
+   "reps": "20",
+   "restSeconds": 75,
+   "restLabel": "60 to 90 s",
+   "circuit": true,
+   "how": "Back to back with minimal rest. Rest at the end, catch your breath, go again. Last workout of week 2: the hips and butt.",
+   "gear": "dumbbells, stability ball, something to hold on to",
+   "blocks": [
+    {
+     "label": "Circuit",
+     "exercises": [
+      {
+       "name": "Lateral Lunges",
+       "video": "j6PWWcyeUno",
+       "reps": "20 per side",
+       "note": "",
+       "code": "1",
+       "cue": "Step wide to one side and sit into that hip, the other leg straight. Chest up. Push back to standing.",
+       "photo": "images/j6PWWcyeUno-pdf.webp",
+       "startPhoto": "images/j6PWWcyeUno-start.webp",
+       "endPhoto": "images/j6PWWcyeUno-end.webp"
+      },
+      {
+       "name": "Single Leg Squats",
+       "video": "CN4AyMsLts4",
+       "reps": "20 per side",
+       "note": "",
+       "code": "2",
+       "cue": "Stand on one leg, the other just off the floor. Hold on to something if you need to. Sit back and down as far as comfortable, then stand and squeeze the glute.",
+       "photo": "images/CN4AyMsLts4-pdf.webp",
+       "startPhoto": "images/CN4AyMsLts4-start.webp",
+       "endPhoto": "images/CN4AyMsLts4-end.webp"
+      },
+      {
+       "name": "Stability Ball Hip Extensions",
+       "video": "ZxgZ7J5r8Sw",
+       "reps": "20",
+       "note": "",
+       "code": "3",
+       "cue": "Upper back on the ball, feet flat, knees at 90 degrees. Lift the hips and squeeze the butt, then lower until it almost touches the floor.",
+       "photo": "images/ZxgZ7J5r8Sw-pdf.webp",
+       "startPhoto": "images/ZxgZ7J5r8Sw-start.webp",
+       "endPhoto": "images/ZxgZ7J5r8Sw-end.webp"
+      },
+      {
+       "name": "Side Kicks",
+       "video": "57V67yN3nh4",
+       "reps": "20 to 30 per side",
+       "note": "",
+       "code": "4",
+       "cue": "Hold a wall or chair. Pivot the standing foot out and hinge slightly. Bend the knee of the working leg, then extend it out to the side and squeeze the side of the butt.",
+       "photo": "images/57V67yN3nh4-pdf.webp",
+       "startPhoto": "images/57V67yN3nh4-start.webp",
+       "endPhoto": "images/57V67yN3nh4-end.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w3-back",
+   "week": 3,
+   "name": "Bra & Back Fat",
+   "kind": "strength",
+   "pdf": "Bra & Back Fat Prego Workout.pdf",
+   "sets": 3,
+   "setsLabel": "3 rounds of each circuit",
+   "reps": "20",
+   "restSeconds": 90,
+   "restLabel": "90 s",
+   "circuit": true,
+   "how": "Two circuits of three. Do A1, A2, A3 in a row, rest 90 seconds, repeat twice more. Then the same with B. No cardio this week, five short weight workouts instead.",
+   "gear": "resistance band or tubing, dumbbells",
+   "blocks": [
+    {
+     "label": "A",
+     "exercises": [
+      {
+       "name": "Tubing Chest Presses",
+       "video": "BTfQ536mJ34",
+       "reps": "20",
+       "note": "",
+       "code": "A1",
+       "cue": "Band anchored behind you. Press both hands forward at chest height until the arms are straight, then return slowly.",
+       "photo": "images/BTfQ536mJ34-pdf.webp",
+       "startPhoto": "images/BTfQ536mJ34-start.webp",
+       "endPhoto": "images/BTfQ536mJ34-end.webp"
+      },
+      {
+       "name": "Tubing Chest Flys",
+       "video": "2Y0TlHw_BhU",
+       "reps": "20",
+       "note": "",
+       "code": "A2",
+       "cue": "Band anchored behind you, arms wide with soft elbows. Bring the hands together in front of the chest, then open slowly.",
+       "photo": "images/2Y0TlHw_BhU-pdf.webp",
+       "startPhoto": "images/2Y0TlHw_BhU-start.webp",
+       "endPhoto": "images/2Y0TlHw_BhU-end.webp"
+      },
+      {
+       "name": "Pushups Knees",
+       "video": "vOPVNwnK5iA",
+       "reps": "20",
+       "note": "",
+       "code": "A3",
+       "cue": "On your knees, hands a little wider than the shoulders. Lower the chest towards the floor and press back up. Keep the hips in line with the body.",
+       "photo": "images/vOPVNwnK5iA-pdf.webp",
+       "startPhoto": "images/vOPVNwnK5iA-start.webp",
+       "endPhoto": "images/vOPVNwnK5iA-end.webp"
+      }
+     ]
+    },
+    {
+     "label": "B",
+     "exercises": [
+      {
+       "name": "Dumbbell Reverse Flys",
+       "video": "prQqq9R5Fso",
+       "reps": "20",
+       "note": "",
+       "code": "B1",
+       "cue": "Bend from the hips, back flat, dumbbells hanging. Lift the arms out to the sides and squeeze the shoulder blades, lower slowly.",
+       "photo": "images/prQqq9R5Fso-pdf.webp",
+       "startPhoto": "images/prQqq9R5Fso-start.webp",
+       "endPhoto": "images/prQqq9R5Fso-end.webp"
+      },
+      {
+       "name": "Dumbbell Straight Arm Pulls",
+       "video": "hYnUMhkfVOc",
+       "reps": "20",
+       "note": "",
+       "code": "B2",
+       "cue": "Bend from the hips, arms straight in front. Pull the dumbbells back towards the hips in an arc, squeeze the back, return slowly.",
+       "photo": "images/hYnUMhkfVOc-pdf.webp",
+       "startPhoto": "images/hYnUMhkfVOc-start.webp",
+       "endPhoto": "images/hYnUMhkfVOc-end.webp"
+      },
+      {
+       "name": "Dumbbell Rows",
+       "video": "0JjGINr6jSg",
+       "reps": "20",
+       "note": "",
+       "code": "B3",
+       "cue": "Bend from the hips with a flat, arched back, almost parallel to the floor. Dumbbells hanging at your sides. Pull the elbows up and squeeze the shoulder blades together, then lower slowly.",
+       "photo": "images/0JjGINr6jSg-pdf.webp",
+       "startPhoto": "images/0JjGINr6jSg-start.webp",
+       "endPhoto": "images/0JjGINr6jSg-end.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w3-butt-core",
+   "week": 3,
+   "name": "Butt & Core",
+   "kind": "strength",
+   "pdf": "Butt & Core Prego Workout.pdf",
+   "sets": 2,
+   "setsLabel": "2 rounds of each circuit",
+   "reps": "20",
+   "restSeconds": 90,
+   "restLabel": "90 s",
+   "circuit": true,
+   "how": "Two circuits of three. A1 to A3 in a row, rest 90 seconds, one more round. Then B the same way.",
+   "gear": "dumbbells, a mat",
+   "blocks": [
+    {
+     "label": "A",
+     "exercises": [
+      {
+       "name": "Curtsy Lunges",
+       "video": "4KBbFMIzh0Q",
+       "reps": "20 per side",
+       "note": "",
+       "code": "A1",
+       "cue": "Step one foot back and across behind the other, like a curtsy. Lower, keeping the front knee over the foot, then push back up.",
+       "photo": "images/4KBbFMIzh0Q-pdf.webp",
+       "startPhoto": "images/4KBbFMIzh0Q-start.webp",
+       "endPhoto": "images/4KBbFMIzh0Q-end.webp"
+      },
+      {
+       "name": "Quadruped Bent Knee Hip Extensions",
+       "video": "KrcFks4Ac50",
+       "reps": "20 per side",
+       "note": "",
+       "code": "A2",
+       "cue": "On hands and knees, back flat. Lift one bent knee towards the ceiling, foot flat, squeeze the butt, lower without touching the floor.",
+       "photo": "images/KrcFks4Ac50-pdf.webp",
+       "startPhoto": "images/KrcFks4Ac50-start.webp",
+       "endPhoto": "images/KrcFks4Ac50-end.webp"
+      },
+      {
+       "name": "Quadruped Arm & Leg Extension",
+       "video": "VIt03PSoH34",
+       "reps": "20 per side",
+       "note": "",
+       "code": "A3",
+       "cue": "On hands and knees. Reach one arm forward and the opposite leg back, hold for a second, return. Keep the belly drawn in.",
+       "photo": "images/VIt03PSoH34-pdf.webp",
+       "startPhoto": "images/VIt03PSoH34-start.webp",
+       "endPhoto": "images/VIt03PSoH34-end.webp"
+      }
+     ]
+    },
+    {
+     "label": "B",
+     "exercises": [
+      {
+       "name": "Lateral Lunges",
+       "video": "2smpeUvfg8s",
+       "reps": "20 per side",
+       "note": "",
+       "code": "B1",
+       "cue": "Step wide to one side and sit into that hip, the other leg straight. Chest up. Push back to standing.",
+       "photo": "images/2smpeUvfg8s-pdf.webp",
+       "startPhoto": "images/2smpeUvfg8s-start.webp",
+       "endPhoto": "images/2smpeUvfg8s-end.webp"
+      },
+      {
+       "name": "Quadruped Single Leg Hip Extensions In & Outs",
+       "video": "NCqReUnN9tI",
+       "reps": "20 per side",
+       "note": "",
+       "code": "B2",
+       "cue": "On hands and knees. Extend one leg back, then swing it out to the side and back in without lowering it.",
+       "photo": "images/NCqReUnN9tI-pdf.webp",
+       "startPhoto": "images/NCqReUnN9tI-start.webp",
+       "endPhoto": "images/NCqReUnN9tI-end.webp"
+      },
+      {
+       "name": "Side Plank with Hip Lifts",
+       "video": "wGKG_76FnOw",
+       "reps": "10 per side",
+       "note": "Skip this one if you have diastasis recti",
+       "code": "B3",
+       "cue": "On your forearm and knee or feet, hips stacked. Lower the hip towards the floor and lift it back up. Skip this if you have diastasis recti.",
+       "photo": "images/wGKG_76FnOw-pdf.webp",
+       "startPhoto": "images/wGKG_76FnOw-start.webp",
+       "endPhoto": "images/wGKG_76FnOw-end.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w3-arms",
+   "week": 3,
+   "name": "Prego Lean Arms",
+   "kind": "strength",
+   "pdf": "Prego Lean Arms Workout.pdf",
+   "sets": 3,
+   "setsLabel": "3 rounds of each circuit",
+   "reps": "20",
+   "restSeconds": 90,
+   "restLabel": "90 s",
+   "circuit": true,
+   "how": "Two circuits of three plus one finisher. A1 to A3 in a row, rest 90 seconds, repeat twice more. Then B. Then the kickbacks on their own.",
+   "gear": "dumbbells, a mat",
+   "blocks": [
+    {
+     "label": "A",
+     "exercises": [
+      {
+       "name": "Front Raises",
+       "video": "f4FTCUD6F8Q",
+       "reps": "20",
+       "note": "",
+       "code": "A1",
+       "cue": "Dumbbells in front of the legs, palms facing you. Lift the arms to shoulder height with a soft elbow, then lower under control.",
+       "photo": "images/f4FTCUD6F8Q-pdf.webp",
+       "startPhoto": "images/f4FTCUD6F8Q-start.webp",
+       "endPhoto": "images/f4FTCUD6F8Q-end.webp"
+      },
+      {
+       "name": "Hammer Curls",
+       "video": "Ko4In6Hca4E",
+       "reps": "20",
+       "note": "",
+       "code": "A2",
+       "cue": "Chest up, shoulders down. Dumbbells at your sides, palms facing in. Curl towards the shoulders, squeeze the front of the arms, lower slowly.",
+       "photo": "images/Ko4In6Hca4E-pdf.webp",
+       "startPhoto": "images/Ko4In6Hca4E-start.webp",
+       "endPhoto": "images/Ko4In6Hca4E-end.webp"
+      },
+      {
+       "name": "Pushups Knees",
+       "video": "vOPVNwnK5iA",
+       "reps": "20",
+       "note": "",
+       "code": "A3",
+       "cue": "On your knees, hands a little wider than the shoulders. Lower the chest towards the floor and press back up. Keep the hips in line with the body.",
+       "photo": "images/vOPVNwnK5iA-pdf.webp",
+       "startPhoto": "images/vOPVNwnK5iA-start.webp",
+       "endPhoto": "images/vOPVNwnK5iA-end.webp"
+      }
+     ]
+    },
+    {
+     "label": "B",
+     "exercises": [
+      {
+       "name": "Overhead Tricep Extensions",
+       "video": "qLPaZ_qQ8uI",
+       "reps": "20",
+       "note": "",
+       "code": "B1",
+       "cue": "Hold one dumbbell overhead with both hands. Elbows pointing forward, lower the weight behind your head, then press back up.",
+       "photo": "images/qLPaZ_qQ8uI-pdf.webp",
+       "startPhoto": "images/qLPaZ_qQ8uI-start.webp",
+       "endPhoto": "images/qLPaZ_qQ8uI-end.webp"
+      },
+      {
+       "name": "Lateral Raises",
+       "video": "A7g06iUnhT8",
+       "reps": "20",
+       "note": "",
+       "code": "B2",
+       "cue": "Dumbbells at your sides, soft elbows. Lift out to the sides to shoulder height, then lower slowly.",
+       "photo": "images/A7g06iUnhT8-pdf.webp",
+       "startPhoto": "images/A7g06iUnhT8-start.webp",
+       "endPhoto": "images/A7g06iUnhT8-end.webp"
+      },
+      {
+       "name": "Twisting Bicep Curls",
+       "video": "gvYUU5lXQMc",
+       "reps": "20",
+       "note": "",
+       "code": "B3",
+       "cue": "Start with palms facing your legs. Curl and turn the palms up as you lift. Squeeze at the top, lower slowly.",
+       "photo": "images/gvYUU5lXQMc-pdf.webp",
+       "startPhoto": "images/gvYUU5lXQMc-start.webp",
+       "endPhoto": "images/gvYUU5lXQMc-end.webp"
+      }
+     ]
+    },
+    {
+     "label": "C",
+     "exercises": [
+      {
+       "name": "Tricep Kickbacks Underhand",
+       "video": "NrIh6YCyfUo",
+       "reps": "20",
+       "note": "",
+       "code": "C1",
+       "cue": "Bend from the hips, chest up, back flat. Elbows tucked, palms facing forward. Extend the arms back and squeeze the back of the arms, then return.",
+       "photo": "images/NrIh6YCyfUo-pdf.webp",
+       "startPhoto": "images/NrIh6YCyfUo-start.webp",
+       "endPhoto": "images/NrIh6YCyfUo-end.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w3-legs",
+   "week": 3,
+   "name": "Lean Legs",
+   "kind": "strength",
+   "pdf": "Lean Legs Prego Workout.pdf",
+   "sets": 3,
+   "setsLabel": "3 rounds",
+   "reps": "20",
+   "restSeconds": 90,
+   "restLabel": "90 s",
+   "circuit": true,
+   "how": "One circuit of four. Do them in a row, rest 90 seconds, repeat twice more.",
+   "gear": "dumbbells, stability ball",
+   "blocks": [
+    {
+     "label": "Circuit",
+     "exercises": [
+      {
+       "name": "Walking Lunges",
+       "video": "Zt8MUV7N474",
+       "reps": "20 per side",
+       "note": "",
+       "code": "1",
+       "cue": "Step forward and lower until both knees are at 90 degrees. Push through the front heel and step the back foot through into the next lunge.",
+       "photo": "images/Zt8MUV7N474-pdf.webp",
+       "startPhoto": "images/Zt8MUV7N474-start.webp",
+       "endPhoto": "images/Zt8MUV7N474-end.webp"
+      },
+      {
+       "name": "Stability Ball Leg Curls",
+       "video": "MBcIiW0W3c8",
+       "reps": "20",
+       "note": "",
+       "code": "2",
+       "cue": "Lie on your back, heels on the ball, hips lifted. Pull the ball in with your heels, then roll it back out under control. Keep the hips up the whole set.",
+       "photo": "images/MBcIiW0W3c8-pdf.webp",
+       "startPhoto": "images/MBcIiW0W3c8-start.webp",
+       "endPhoto": "images/MBcIiW0W3c8-end.webp"
+      },
+      {
+       "name": "Squat",
+       "video": "rDL47VYziWo",
+       "reps": "20",
+       "note": "",
+       "code": "3",
+       "cue": "Feet a little wider than shoulder width. Chest up, shoulders down. Sit back and down to about 90 degrees with a slight arch in the back. Stand up and squeeze the booty.",
+       "photo": "images/rDL47VYziWo-pdf.webp",
+       "startPhoto": "images/rDL47VYziWo-start.webp",
+       "endPhoto": "images/rDL47VYziWo-end.webp"
+      },
+      {
+       "name": "Single Leg Reaches",
+       "video": "WVfg-Hizz50",
+       "reps": "20 per side",
+       "note": "",
+       "code": "4",
+       "cue": "Stand on one leg. Hinge forward and reach towards the floor while the other leg goes back. Squeeze the standing glute to come back up.",
+       "photo": "images/WVfg-Hizz50-pdf.webp",
+       "startPhoto": "images/WVfg-Hizz50-start.webp",
+       "endPhoto": "images/WVfg-Hizz50-end.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "w3-burner",
+   "week": 3,
+   "name": "Full Body Burner",
+   "kind": "strength",
+   "sets": 2,
+   "setsLabel": "2 rounds",
+   "reps": "20",
+   "restSeconds": 90,
+   "restLabel": "90 s",
+   "circuit": true,
+   "how": "One long circuit of seven exercises. Do them all in a row, rest 90 seconds, one more round, and you are done.",
+   "gear": "dumbbells, stability ball",
+   "todo": "The PDF for this workout is a broken file in Dropbox (a saved 404 page) and the exercise list is only in the FG Files section. Fill in the seven exercises once Michelle sends the PDF.",
+   "blocks": [
+    {
+     "label": "Circuit",
+     "exercises": [
+      {
+       "name": "Exercise 1",
+       "video": "",
+       "reps": "20",
+       "note": "PDF needed",
+       "code": "1"
+      },
+      {
+       "name": "Exercise 2",
+       "video": "",
+       "reps": "20",
+       "note": "PDF needed",
+       "code": "2"
+      },
+      {
+       "name": "Exercise 3",
+       "video": "",
+       "reps": "20",
+       "note": "PDF needed",
+       "code": "3"
+      },
+      {
+       "name": "Exercise 4",
+       "video": "",
+       "reps": "20",
+       "note": "PDF needed",
+       "code": "4"
+      },
+      {
+       "name": "Exercise 5",
+       "video": "",
+       "reps": "20",
+       "note": "PDF needed",
+       "code": "5"
+      },
+      {
+       "name": "Exercise 6",
+       "video": "",
+       "reps": "20",
+       "note": "PDF needed",
+       "code": "6"
+      },
+      {
+       "name": "Exercise 7",
+       "video": "",
+       "reps": "20",
+       "note": "PDF needed",
+       "code": "7"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bonus-day-1",
+   "week": 0,
+   "name": "3 Day Butt & Thighs · Day 1",
+   "kind": "strength",
+   "docx": "Day 1.docx",
+   "sets": 3,
+   "setsLabel": "2 to 3 rounds",
+   "reps": "20",
+   "restSeconds": 75,
+   "restLabel": "60 to 90 s",
+   "circuit": true,
+   "how": "Four exercises in a row, rest 60 to 90 seconds, repeat. No band? Do them without it and add 10 reps to each.",
+   "gear": "mini band, a mat",
+   "blocks": [
+    {
+     "label": "Circuit",
+     "exercises": [
+      {
+       "name": "Side Walking Plie Squats",
+       "video": "4o1eHeFCSDw",
+       "reps": "10 per side",
+       "note": "",
+       "code": "1",
+       "photo": "images/4o1eHeFCSDw-pdf.webp",
+       "startPhoto": "images/4o1eHeFCSDw-start.webp",
+       "endPhoto": "images/4o1eHeFCSDw-end.webp"
+      },
+      {
+       "name": "Bent Knee Band Hip Extensions",
+       "video": "KLZ-zMZ85Uw",
+       "reps": "20",
+       "note": "",
+       "code": "2",
+       "photo": "images/KLZ-zMZ85Uw-pdf.webp",
+       "startPhoto": "images/KLZ-zMZ85Uw-start.webp",
+       "endPhoto": "images/KLZ-zMZ85Uw-end.webp"
+      },
+      {
+       "name": "Side Lying Band Abductions",
+       "video": "OuZUC0_o0A0",
+       "reps": "20 per side + 20 pulses",
+       "note": "",
+       "code": "3",
+       "photo": "images/OuZUC0_o0A0-pdf.webp",
+       "startPhoto": "images/OuZUC0_o0A0-start.webp",
+       "endPhoto": "images/OuZUC0_o0A0-end.webp"
+      },
+      {
+       "name": "Flutters",
+       "video": "g4r8FJUKLCo",
+       "reps": "1 minute",
+       "note": "Flutter 5 seconds, hold down 5 seconds, repeat for a minute",
+       "code": "4",
+       "photo": "images/g4r8FJUKLCo-pdf.webp",
+       "startPhoto": "images/g4r8FJUKLCo-start.webp",
+       "endPhoto": "images/g4r8FJUKLCo-end.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bonus-day-2",
+   "week": 0,
+   "name": "3 Day Butt & Thighs · Day 2",
+   "kind": "strength",
+   "docx": "Day 2.docx",
+   "sets": 3,
+   "setsLabel": "2 to 3 rounds",
+   "reps": "20",
+   "restSeconds": 75,
+   "restLabel": "60 to 90 s",
+   "circuit": true,
+   "how": "Five exercises in a row, rest 60 to 90 seconds, repeat.",
+   "gear": "mini band, a mat",
+   "blocks": [
+    {
+     "label": "Circuit",
+     "exercises": [
+      {
+       "name": "Squat Kicks",
+       "video": "SwXQoySvqTQ",
+       "reps": "20",
+       "note": "",
+       "code": "1",
+       "photo": "images/SwXQoySvqTQ-pdf.webp",
+       "startPhoto": "images/SwXQoySvqTQ-start.webp",
+       "endPhoto": "images/SwXQoySvqTQ-end.webp"
+      },
+      {
+       "name": "Straight Leg Back Kicks",
+       "video": "YCZv2e3BNY8",
+       "reps": "20 to 30 per side",
+       "note": "",
+       "code": "2",
+       "photo": "images/YCZv2e3BNY8-pdf.webp",
+       "startPhoto": "images/YCZv2e3BNY8-start.webp",
+       "endPhoto": "images/YCZv2e3BNY8-end.webp"
+      },
+      {
+       "name": "Lying Hip Extensions with Abductions",
+       "video": "DOD-agA1G78",
+       "reps": "20 + 20 abductions",
+       "note": "",
+       "code": "3",
+       "photo": "images/DOD-agA1G78-pdf.webp",
+       "startPhoto": "images/DOD-agA1G78-start.webp",
+       "endPhoto": "images/DOD-agA1G78-end.webp"
+      },
+      {
+       "name": "Side Kicks",
+       "video": "1IbmT1hfDpo",
+       "reps": "20 per side",
+       "note": "",
+       "code": "4",
+       "cue": "Hold a wall or chair. Pivot the standing foot out and hinge slightly. Bend the knee of the working leg, then extend it out to the side and squeeze the side of the butt.",
+       "photo": "images/1IbmT1hfDpo-pdf.webp",
+       "startPhoto": "images/1IbmT1hfDpo-start.webp",
+       "endPhoto": "images/1IbmT1hfDpo-end.webp"
+      },
+      {
+       "name": "The CAT",
+       "video": "xMZJcGfp2gY",
+       "reps": "10",
+       "note": "Inhale 6 seconds and drop the belly, exhale 6 seconds and pull the belly in",
+       "code": "5",
+       "photo": "images/xMZJcGfp2gY-pdf.webp",
+       "startPhoto": "images/xMZJcGfp2gY-start.webp",
+       "endPhoto": "images/xMZJcGfp2gY-end.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bonus-day-3",
+   "week": 0,
+   "name": "3 Day Butt & Thighs · Day 3",
+   "kind": "strength",
+   "docx": "Day 3.docx",
+   "sets": 3,
+   "setsLabel": "2 to 3 rounds",
+   "reps": "20",
+   "restSeconds": 75,
+   "restLabel": "60 to 90 s",
+   "circuit": true,
+   "how": "Four exercises in a row, rest 60 to 90 seconds, repeat. Finish each round in the deep squat hold, breathing.",
+   "gear": "mini band, a mat",
+   "blocks": [
+    {
+     "label": "Circuit",
+     "exercises": [
+      {
+       "name": "Reverse Lunges with Kick",
+       "video": "1MiyIDslZwg",
+       "reps": "20 per side",
+       "note": "",
+       "code": "1",
+       "photo": "images/1MiyIDslZwg-pdf.webp",
+       "startPhoto": "images/1MiyIDslZwg-start.webp",
+       "endPhoto": "images/1MiyIDslZwg-end.webp"
+      },
+      {
+       "name": "Butterfly Hip Extensions",
+       "video": "bHpThj7mC18",
+       "reps": "20 + 20 pulses",
+       "note": "",
+       "code": "2",
+       "photo": "images/bHpThj7mC18-pdf.webp",
+       "startPhoto": "images/bHpThj7mC18-start.webp",
+       "endPhoto": "images/bHpThj7mC18-end.webp"
+      },
+      {
+       "name": "Standing Band Abductions",
+       "video": "KBemSo8sjr8",
+       "reps": "20 per side",
+       "note": "",
+       "code": "3",
+       "photo": "images/KBemSo8sjr8-pdf.webp",
+       "startPhoto": "images/KBemSo8sjr8-start.webp",
+       "endPhoto": "images/KBemSo8sjr8-end.webp"
+      },
+      {
+       "name": "Deep Squat Hold",
+       "video": "wA2bvSLveeI",
+       "reps": "1 minute",
+       "note": "Inhale 6 seconds and hold the deep squat, exhale 6 seconds pushing the knees out with the elbows",
+       "code": "4",
+       "photo": "images/wA2bvSLveeI-pdf.webp",
+       "startPhoto": "images/wA2bvSLveeI-start.webp",
+       "endPhoto": "images/wA2bvSLveeI-end.webp"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "days": [
+  {
+   "day": 1,
+   "lesson": "day1",
+   "workout": "w1-full-body"
+  },
+  {
+   "day": 2,
+   "lesson": "day2",
+   "workout": "w1-cardio-1"
+  },
+  {
+   "day": 3,
+   "lesson": "day3",
+   "workout": "w1-arms"
+  },
+  {
+   "day": 4,
+   "lesson": "day4",
+   "workout": "w1-cardio-2"
+  },
+  {
+   "day": 5,
+   "lesson": "day5",
+   "workout": "w1-thighs",
+   "extra": "Optional: the Prego Core bonus video after this workout"
+  },
+  {
+   "day": 6,
+   "lesson": "day6",
+   "workout": null,
+   "title": "Rest day"
+  },
+  {
+   "day": 7,
+   "lesson": "day7",
+   "workout": null,
+   "title": "Rest day"
+  },
+  {
+   "day": 8,
+   "workout": "w2-full-body"
+  },
+  {
+   "day": 9,
+   "workout": "w2-cardio-1"
+  },
+  {
+   "day": 10,
+   "workout": "w2-arms"
+  },
+  {
+   "day": 11,
+   "workout": "w2-cardio-2"
+  },
+  {
+   "day": 12,
+   "workout": "w2-butt"
+  },
+  {
+   "day": 13,
+   "workout": null,
+   "title": "Rest day"
+  },
+  {
+   "day": 14,
+   "workout": null,
+   "title": "Rest day"
+  },
+  {
+   "day": 15,
+   "workout": "w3-back"
+  },
+  {
+   "day": 16,
+   "workout": "w3-butt-core"
+  },
+  {
+   "day": 17,
+   "workout": "w3-arms"
+  },
+  {
+   "day": 18,
+   "workout": "w3-legs"
+  },
+  {
+   "day": 19,
+   "workout": "w3-burner"
+  },
+  {
+   "day": 20,
+   "workout": null,
+   "title": "Rest day",
+   "extra": "Stretch, walk, drink water. Tomorrow you finish."
+  },
+  {
+   "day": 21,
+   "lesson": "celebrate",
+   "workout": null,
+   "title": "Celebrate & share your results"
+  }
+ ]
+}
