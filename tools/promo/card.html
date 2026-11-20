@@ -1,0 +1,103 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Promo card</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Lato:wght@400;700;900&display=swap">
+<style>
+/* Promo cards for the diet plan app. Rendered by make_promo.js with ?card=<name>.
+   Each phone is a live iframe of ../../diet/, so the screenshots are always the current app. */
+html,body{margin:0;overflow:hidden;background:#F9F5F2;font-family:Lato,system-ui,sans-serif;color:#362D70}
+.card{position:relative;overflow:hidden;background:#F9F5F2}
+.card.pink{background:linear-gradient(160deg,#F8E4ED 0%,#F9F5F2 60%)}
+.card.brand{background:#362D70;color:#fff}
+.blob{position:absolute;border-radius:50%;background:#F8E4ED;z-index:0}
+.phone{position:absolute;width:390px;height:844px;border-radius:56px;background:#1b1b1f;padding:12px;box-shadow:0 40px 80px rgba(54,45,112,.28),0 0 0 2px #333;z-index:2;transform-origin:top left}
+.phone:after{content:"";position:absolute;top:12px;left:50%;transform:translateX(-50%);width:120px;height:30px;background:#1b1b1f;border-radius:0 0 18px 18px;z-index:3}
+.phone iframe{width:390px;height:844px;border:0;border-radius:44px;background:#fff;display:block}
+.eyebrow{font:700 22px/1 'Barlow Condensed';letter-spacing:.14em;text-transform:uppercase;color:#DD2289}
+h1{font:700 86px/.98 'Barlow Condensed';text-transform:uppercase;margin:10px 0 0;color:#362D70;letter-spacing:-.005em}
+.brand h1{color:#fff}
+h1 em{font-style:normal;color:#DD2289}
+p.lead{font:400 28px/1.35 Lato;margin:18px 0 0;color:#362D70;max-width:560px}
+.brand p.lead{color:#F8E4ED}
+.call{position:absolute;z-index:4;background:#fff;border:2px solid #DD2289;color:#362D70;border-radius:18px;padding:14px 18px;font:700 22px/1.15 Lato;box-shadow:0 14px 30px rgba(54,45,112,.18);max-width:300px}
+.call:before{content:"";position:absolute;width:16px;height:16px;background:#fff;border-left:2px solid #DD2289;border-bottom:2px solid #DD2289;transform:rotate(45deg);left:-10px;top:calc(50% - 8px)}
+.call.r:before{left:auto;right:-10px;transform:rotate(225deg)}
+.call small{display:block;font:400 17px/1.3 Lato;color:#6b6788;margin-top:3px}
+.tag{display:inline-block;background:#DD2289;color:#fff;font:700 20px/1 'Barlow Condensed';letter-spacing:.1em;text-transform:uppercase;padding:9px 14px;border-radius:999px}
+.copy{position:absolute;z-index:4}
+.foot{position:absolute;left:60px;bottom:40px;font:700 18px/1 'Barlow Condensed';letter-spacing:.14em;text-transform:uppercase;color:#DD2289;z-index:4}
+.brand .foot{color:#F8E4ED}
+.old{position:absolute;z-index:1;width:420px;border:1px solid #ddd;box-shadow:0 20px 50px rgba(0,0,0,.15);transform:rotate(-4deg);background:#fff}
+.old img{width:100%;display:block;filter:saturate(.7)}
+.old .lbl{position:absolute;top:-22px;left:-10px}
+.tag.grey{background:#9a97b3}
+.check{font:700 26px/1.3 Lato;margin:0;padding:0;list-style:none}
+.check li{padding-left:44px;position:relative;margin:14px 0}
+.check li:before{content:"✓";position:absolute;left:0;top:-2px;width:32px;height:32px;border-radius:50%;background:#DD2289;color:#fff;font:900 20px/32px Lato;text-align:center}
+</style>
+<div id="card" class="card"></div>
+<script>
+const q=new URLSearchParams(location.search);const card=q.get('card')||'hero';const app='../../diet/index.html';
+const ph=(name,x,y,s,hash='')=>`<div class="phone" style="left:${x}px;top:${y}px;transform:scale(${s})"><iframe name="${name}" src="${app}${hash}"></iframe></div>`;
+const C=document.getElementById('card');
+const cards={
+ hero:{w:1600,h:1000,cls:'pink',html:`
+   <div class="blob" style="width:900px;height:900px;right:-250px;top:-300px"></div>
+   <div class="copy" style="left:70px;top:150px;width:620px"><span class="eyebrow">Michelle Marie's</span><h1>The Pregnancy Diet Plan is now <em>an app</em></h1>
+   <p class="lead">It tells you what to eat today, writes your grocery list, and turns tonight's dinner into tomorrow's lunch. 8 weeks. 79 recipes. On your phone.</p></div>
+   ${ph('week',660,130,.8)}${ph('today',960,60,.95)}${ph('recipe',1300,170,.74)}
+   <div class="foot">fitpregnancyworkouts.com</div>`},
+ today:{w:1200,h:1200,cls:'pink',html:`
+   <div class="copy" style="left:70px;top:70px;width:560px"><span class="eyebrow">Open it in the morning</span><h1>It tells you what to eat <em>today</em></h1>
+   <p class="lead">Breakfast, two snacks, lunch, dinner. Tick them off. No flipping through a PDF.</p></div>
+   ${ph('today',640,120,1.12)}
+   <div class="call" style="left:360px;top:520px">Eat every 2 to 3 hours<small>Tap "I just ate" and it tells you when the next bite is due.</small></div>
+   <div class="call" style="left:330px;top:870px">Lunch is already decided<small>It shows last night's dinner, packed up.</small></div>
+   <div class="foot">The MMF Pregnancy Diet Plan</div>`},
+ cook:{w:1200,h:1200,cls:'',html:`
+   <div class="copy" style="left:70px;top:70px;width:560px"><span class="eyebrow">Cook once, eat twice</span><h1>Every recipe <em>doubles itself</em></h1>
+   <p class="lead">Tap 2× and every amount rescales. Tonight's dinner becomes tomorrow's lunch, so you cook five times a week, not fourteen.</p></div>
+   ${ph('recipe',640,120,1.12)}
+   <div class="call r" style="left:300px;top:420px;max-width:320px">79 recipes, 30 minutes or less<small>Dinners, snacks and breakfasts. Tick ingredients off as you go.</small></div>
+   <div class="foot">The MMF Pregnancy Diet Plan</div>`},
+ shop:{w:1200,h:1200,cls:'pink',html:`
+   <div class="copy" style="left:70px;top:70px;width:560px"><span class="eyebrow">One trip a week</span><h1>Your grocery list, <em>by aisle</em></h1>
+   <p class="lead">Every week's list is built for you. Tick as you shop, hide what you have, add your own, or print it.</p></div>
+   ${ph('shop',640,120,1.12)}
+   <div class="call r" style="left:300px;top:560px;max-width:320px">Sunday prep, done<small>Shop the list, bake two batches of snacks. Twenty minutes saves the week.</small></div>
+   <div class="foot">The MMF Pregnancy Diet Plan</div>`},
+ aversion:{w:1200,h:1200,cls:'',html:`
+   <div class="copy" style="left:70px;top:70px;width:560px"><span class="eyebrow">First trimester proof</span><h1>Can't face fish this week? <em>One tap.</em></h1>
+   <p class="lead">Tell it what you can't stomach. It flags every recipe that has it and lets you swap any dinner for one that doesn't.</p></div>
+   ${ph('recipes',640,120,1.12)}
+   <div class="call r" style="left:300px;top:700px;max-width:320px">No fish · no eggs · no dairy · no nuts<small>Aversions come and go. The plan keeps up.</small></div>
+   <div class="foot">The MMF Pregnancy Diet Plan</div>`},
+ week:{w:1200,h:1200,cls:'pink',html:`
+   <div class="copy" style="left:70px;top:70px;width:560px"><span class="eyebrow">8 weeks, then it repeats</span><h1>Your whole week <em>at a glance</em></h1>
+   <p class="lead">Seven dinners, the breakfast list, and a swap button on every day. Your week, not a stranger's.</p></div>
+   ${ph('week',640,120,1.12)}
+   <div class="call r" style="left:300px;top:640px;max-width:320px">Works offline, installs like an app<small>No login. No app store. Add it to your home screen.</small></div>
+   <div class="foot">The MMF Pregnancy Diet Plan</div>`},
+ before:{w:1600,h:1000,cls:'',html:`
+   <div class="copy" style="left:70px;top:60px;width:1460px;text-align:center"><span class="eyebrow">Same plan Michelle followed through two pregnancies</span><h1 style="font-size:66px">From a PDF you scroll to <em>an app that does the work</em></h1></div>
+   <div class="old" style="left:120px;top:330px"><img src="../diet-pages/p-46.webp"></div>
+   <div class="old" style="left:200px;top:400px;transform:rotate(3deg)"><img src="../diet-pages/p-50.webp"></div>
+   <div class="tag grey" style="position:absolute;left:120px;top:270px;z-index:5">Then: 90 pages to scroll</div>
+   ${ph('today',760,320,.78)}${ph('shop',1090,320,.78)}
+   <div class="tag" style="position:absolute;left:760px;top:270px;z-index:5">Now: on your phone</div>
+   <div class="foot">The MMF Pregnancy Diet Plan</div>`},
+ included:{w:1200,h:1200,cls:'brand',html:`
+   <div class="copy" style="left:70px;top:70px;width:600px"><span class="eyebrow">What's included</span><h1>Everything, <em>in one app</em></h1>
+   <ul class="check" style="margin-top:28px">
+   <li>8 weeks of meal calendars that know what day it is</li>
+   <li>57 dinners, 14 baked snacks, 8 breakfasts, all scalable</li>
+   <li>10 grocery lists by aisle, with ticks</li>
+   <li>Eat-every-2-3-hours reminder and water tracker</li>
+   <li>Aversion filters and dinner swaps</li>
+   <li>Michelle's rules, the foods to avoid, the easy snacks</li>
+   <li>Print any week, list or recipe</li></ul></div>
+   ${ph('today',720,110,1.05)}
+   <div class="foot">The MMF Pregnancy Diet Plan</div>`}
+};
+const c=cards[card];C.className='card '+c.cls;C.style.width=c.w+'px';C.style.height=c.h+'px';C.innerHTML=c.html;document.title=card;
+</script>
