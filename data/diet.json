@@ -1,0 +1,4482 @@
+{
+ "program": "MMF Pregnancy Diet Plan",
+ "weeks": [
+  {
+   "week": 1,
+   "days": {
+    "Sun": {
+     "breakfast": [
+      "4-6 Egg White Scramble with cottage cheese and gluten-free toast or English Muffin."
+     ],
+     "lunch": [
+      "Chicken with Nectarine Salad"
+     ],
+     "dinner": [
+      "Paprika Turkey Meatballs",
+      "Mashed Sweet Potato",
+      "Roasted Broccoli"
+     ],
+     "lunchIds": [],
+     "dinnerIds": [
+      1
+     ],
+     "breakfastIds": []
+    },
+    "Mon": {
+     "breakfast": [
+      "Banana Split Oatmeal and 4-6 egg whites, Hard Boiled or Scrambled"
+     ],
+     "lunch": [
+      "Paprika Turkey Meatballs",
+      "Mashed Sweet Potato",
+      "Roasted Broccoli"
+     ],
+     "dinner": [
+      "Moroccan Chicken with Mango Relish",
+      "Brown Rice",
+      "Arugula Salad with Palm, Artichokes and Citrus Dressing"
+     ],
+     "lunchIds": [
+      1
+     ],
+     "dinnerIds": [
+      2
+     ],
+     "breakfastIds": [
+      "Banana Split Oatmeal"
+     ]
+    },
+    "Tue": {
+     "breakfast": [
+      "Vegetable Frittata and Gluten-Free Toast"
+     ],
+     "lunch": [
+      "Moroccan Chicken with Mango Relish",
+      "Brown Rice",
+      "Arugula Salad with Palm, Artichokes and Citrus Dressing"
+     ],
+     "dinner": [
+      "Grilled or Baked Chicken",
+      "Quinoa Salad"
+     ],
+     "lunchIds": [
+      2
+     ],
+     "dinnerIds": [
+      3
+     ],
+     "breakfastIds": [
+      "Vegetable Frittata"
+     ]
+    },
+    "Wed": {
+     "breakfast": [
+      "Oatmeal and Egg White Veggie and Cheese Omelet"
+     ],
+     "lunch": [
+      "Grilled or Baked Chicken",
+      "Quinoa Salad"
+     ],
+     "dinner": [
+      "White Fish Tomato & Artichoke",
+      "Brown Rice",
+      "Roasted Vegetables"
+     ],
+     "lunchIds": [
+      3
+     ],
+     "dinnerIds": [
+      4
+     ],
+     "breakfastIds": []
+    },
+    "Thu": {
+     "breakfast": [
+      "Scrambled Egg Whites with cottage cheese and Gluten-Free Toast"
+     ],
+     "lunch": [
+      "White Fish Tomato & Artichoke",
+      "Brown Rice",
+      "Roasted Vegetables"
+     ],
+     "dinner": [
+      "Country Curry Chicken",
+      "Brown Rice",
+      "Parmesan Broccoli and Cauliflower"
+     ],
+     "lunchIds": [
+      4
+     ],
+     "dinnerIds": [
+      5
+     ],
+     "breakfastIds": []
+    },
+    "Fri": {
+     "breakfast": [
+      "Coconut Mango Protein Shake"
+     ],
+     "lunch": [
+      "Country Curry Chicken",
+      "Brown Rice",
+      "Parmesan Broccoli and Cauliflower"
+     ],
+     "dinner": [
+      "Chicken with Peach Relish",
+      "Orange Quinoa",
+      "Roasted or Grilled Vegetables"
+     ],
+     "lunchIds": [
+      5
+     ],
+     "dinnerIds": [
+      6
+     ],
+     "breakfastIds": [
+      "Coconut Mango Protein Shake"
+     ]
+    },
+    "Sat": {
+     "breakfast": [
+      "BeFit Moms Oatmeal Pancake"
+     ],
+     "lunch": [
+      "Chicken with Peach Relish",
+      "Orange Quinoa",
+      "Roasted or Grilled Vegetables"
+     ],
+     "dinner": [
+      "Cheat Meal"
+     ],
+     "lunchIds": [
+      6
+     ],
+     "dinnerIds": [],
+     "breakfastIds": [
+      "BeFit Moms Oatmeal Pancake"
+     ]
+    }
+   }
+  },
+  {
+   "week": 2,
+   "days": {
+    "Sun": {
+     "breakfast": [
+      "4-6 Egg White Scramble with cottage cheese and oatmeal"
+     ],
+     "lunch": [
+      "Greens and Veggie Salad with Chicken, Turkey, Shrimp or Fish",
+      "Side of Fruit (your favorite)"
+     ],
+     "dinner": [
+      "Grilled or Baked Chicken",
+      "Broccoli Puree",
+      "Brown or Jasmine Rice"
+     ],
+     "lunchIds": [
+      8
+     ],
+     "dinnerIds": [
+      7
+     ],
+     "breakfastIds": []
+    },
+    "Mon": {
+     "breakfast": [
+      "Coco-Choco- Chunky Monkey Protein Shake"
+     ],
+     "lunch": [
+      "Grilled or Baked Chicken",
+      "Broccoli Puree",
+      "Brown or Jasmine Rice"
+     ],
+     "dinner": [
+      "Grilled or Baked Chicken, Turkey or Shrimp",
+      "Quinoa Salad with Roasted Veggies"
+     ],
+     "lunchIds": [
+      7
+     ],
+     "dinnerIds": [
+      7,
+      8
+     ],
+     "breakfastIds": []
+    },
+    "Tue": {
+     "breakfast": [
+      "Banana Split Oatmeal and 4-6 Hard Boiled Egg Whites"
+     ],
+     "lunch": [
+      "Grilled or Baked Chicken, Turkey or Shrimp",
+      "Quinoa Salad with Roasted Veggies"
+     ],
+     "dinner": [
+      "White Fish with Edamame & Pepper Relish",
+      "Greens Salad",
+      "Jasmine Rice"
+     ],
+     "lunchIds": [
+      7,
+      8
+     ],
+     "dinnerIds": [
+      9
+     ],
+     "breakfastIds": [
+      "Banana Split Oatmeal"
+     ]
+    },
+    "Wed": {
+     "breakfast": [
+      "Veggie Egg White Omelet and Gluten- Free Toast with Cottage Cheese on it."
+     ],
+     "lunch": [
+      "White Fish with Edamame & Pepper Relish",
+      "Greens Salad",
+      "Jasmine Rice"
+     ],
+     "dinner": [
+      "Chicken Veggies & Rice Risotto",
+      "Greens Salad"
+     ],
+     "lunchIds": [
+      9
+     ],
+     "dinnerIds": [
+      10
+     ],
+     "breakfastIds": []
+    },
+    "Thu": {
+     "breakfast": [
+      "BeFit Moms Oatmeal Pancake"
+     ],
+     "lunch": [
+      "Chicken Veggies & Rice Risotto",
+      "Greens Salad"
+     ],
+     "dinner": [
+      "Tomato- Artichoke Chicken",
+      "Brown Rice",
+      "Roasted Vegetables"
+     ],
+     "lunchIds": [
+      10
+     ],
+     "dinnerIds": [
+      11
+     ],
+     "breakfastIds": [
+      "BeFit Moms Oatmeal Pancake"
+     ]
+    },
+    "Fri": {
+     "breakfast": [
+      "4-6 Hard Boiled Egg Whites and Gluten-Free Toast"
+     ],
+     "lunch": [
+      "Tomato- Artichoke Chicken",
+      "Brown Rice",
+      "Roasted Vegetables"
+     ],
+     "dinner": [
+      "Sesame Mango Chicken",
+      "Brown Rice",
+      "Roasted Asparagus"
+     ],
+     "lunchIds": [
+      11
+     ],
+     "dinnerIds": [
+      12
+     ],
+     "breakfastIds": []
+    },
+    "Sat": {
+     "breakfast": [
+      "4-6 Egg White and Veggie Scramble and Oatmeal"
+     ],
+     "lunch": [
+      "Sesame Mango Chicken",
+      "Brown Rice",
+      "Roasted Asparagus"
+     ],
+     "dinner": [
+      "Cheat Meal"
+     ],
+     "lunchIds": [
+      12
+     ],
+     "dinnerIds": [],
+     "breakfastIds": []
+    }
+   }
+  },
+  {
+   "week": 3,
+   "days": {
+    "Sun": {
+     "breakfast": [
+      "Blue-Nana Protein Shake"
+     ],
+     "lunch": [
+      "Greens Salad with Chicken, Fish or Shrimp",
+      "Side of Fruit"
+     ],
+     "dinner": [
+      "Chili Rubbed Flank Steak",
+      "Jasmine Rice",
+      "Roasted Broccoli"
+     ],
+     "lunchIds": [],
+     "dinnerIds": [
+      13
+     ],
+     "breakfastIds": [
+      "Blue-Nana Protein Shake"
+     ]
+    },
+    "Mon": {
+     "breakfast": [
+      "Blue-Nana Protein Shake"
+     ],
+     "lunch": [
+      "Chili Rubbed Flank Steak",
+      "Jasmine Rice",
+      "Roasted Broccoli"
+     ],
+     "dinner": [
+      "Turkey Chili and Sweet Potato Shepherd’s Pie",
+      "Greens Salad"
+     ],
+     "lunchIds": [
+      13
+     ],
+     "dinnerIds": [
+      14,
+      17
+     ],
+     "breakfastIds": [
+      "Blue-Nana Protein Shake"
+     ]
+    },
+    "Tue": {
+     "breakfast": [
+      "BeFit Moms Oatmeal Pancake"
+     ],
+     "lunch": [
+      "Turkey Chili and Sweet Potato Shepherd’s Pie",
+      "Greens Salad"
+     ],
+     "dinner": [
+      "Oat & Herb Crusted Chicken Tenders",
+      "Herb Quinoa",
+      "Roasted Broccoli"
+     ],
+     "lunchIds": [
+      14,
+      17
+     ],
+     "dinnerIds": [
+      15
+     ],
+     "breakfastIds": [
+      "BeFit Moms Oatmeal Pancake"
+     ]
+    },
+    "Wed": {
+     "breakfast": [
+      "4-6 Scrambled Egg Whites and Oatmeal"
+     ],
+     "lunch": [
+      "Oat & Herb Crusted Chicken Tenders",
+      "Herb Quinoa",
+      "Roasted Broccoli"
+     ],
+     "dinner": [
+      "Honey Mustard Chicken",
+      "Spinach Rice Pilaf"
+     ],
+     "lunchIds": [
+      15
+     ],
+     "dinnerIds": [
+      16
+     ],
+     "breakfastIds": []
+    },
+    "Thu": {
+     "breakfast": [
+      "4-6 Egg Whites Veggie Omelet and Sliced Avocado"
+     ],
+     "lunch": [
+      "Oat & Herb Crusted Chicken Tenders",
+      "Herb Quinoa",
+      "Roasted Broccoli"
+     ],
+     "dinner": [
+      "Grilled or Baked Chicken",
+      "Sweet Potato Chili Fries",
+      "Greens Salad"
+     ],
+     "lunchIds": [
+      15
+     ],
+     "dinnerIds": [
+      17
+     ],
+     "breakfastIds": []
+    },
+    "Fri": {
+     "breakfast": [
+      "Gluten-Free Toast with Cottage Cheese (melted)"
+     ],
+     "lunch": [
+      "Grilled or Baked Chicken",
+      "Sweet Potato Chili Fries",
+      "Greens Salad"
+     ],
+     "dinner": [
+      "Turkey Mole",
+      "Brown Rice",
+      "Roasted Asparagus"
+     ],
+     "lunchIds": [
+      17
+     ],
+     "dinnerIds": [
+      18
+     ],
+     "breakfastIds": []
+    },
+    "Sat": {
+     "breakfast": [
+      "Banana Split Oatmeal and 4 Hard Boiled Egg Whites"
+     ],
+     "lunch": [
+      "Turkey Mole",
+      "Brown Rice",
+      "Roasted Asparagus"
+     ],
+     "dinner": [
+      "Cheat Meal"
+     ],
+     "lunchIds": [
+      18
+     ],
+     "dinnerIds": [],
+     "breakfastIds": [
+      "Banana Split Oatmeal"
+     ]
+    }
+   }
+  },
+  {
+   "week": 4,
+   "days": {
+    "Sun": {
+     "breakfast": [
+      "Oatmeal and 4-6 Hard Boiled Egg Whites"
+     ],
+     "lunch": [
+      "Greens Salad with Grilled or Baked Chicken, Fish, Turkey, or Steak"
+     ],
+     "dinner": [
+      "Black Bean Chicken With Rice",
+      "Greens Salad"
+     ],
+     "lunchIds": [
+      3,
+      7,
+      17
+     ],
+     "dinnerIds": [
+      19
+     ],
+     "breakfastIds": []
+    },
+    "Mon": {
+     "breakfast": [
+      "Nutty Choco-Nana Protein Shake"
+     ],
+     "lunch": [
+      "Black Bean Chicken With Rice",
+      "Greens Salad"
+     ],
+     "dinner": [
+      "Grilled Chicken with Sesame Seeds (grilled chicken with sprinkled sesame seeds on top).",
+      "Asian Quinoa",
+      "Roasted Asparagus"
+     ],
+     "lunchIds": [
+      19
+     ],
+     "dinnerIds": [
+      20
+     ],
+     "breakfastIds": [
+      "Nutty Choco-Nana Protein Shake"
+     ]
+    },
+    "Tue": {
+     "breakfast": [
+      "Veggie and Cheese Egg White Scramble with Avocado and Gluten-Free Toast"
+     ],
+     "lunch": [
+      "Grilled Chicken with Sesame Seeds (grilled chicken with sprinkled sesame seeds on top).",
+      "Asian Quinoa",
+      "Roasted Asparagus"
+     ],
+     "dinner": [
+      "Turkey Sloppy Joes",
+      "Brown Rice",
+      "Greens Salad"
+     ],
+     "lunchIds": [
+      20
+     ],
+     "dinnerIds": [
+      21,
+      23
+     ],
+     "breakfastIds": []
+    },
+    "Wed": {
+     "breakfast": [
+      "Gluten-Free Toast with melted cottage cheese and sliced avocado on top"
+     ],
+     "lunch": [
+      "Turkey Sloppy Joes",
+      "Brown Rice",
+      "Greens Salad"
+     ],
+     "dinner": [
+      "Lemon Chicken Quinoa",
+      "Roasted Broccoli"
+     ],
+     "lunchIds": [
+      21,
+      23
+     ],
+     "dinnerIds": [
+      22
+     ],
+     "breakfastIds": []
+    },
+    "Thu": {
+     "breakfast": [
+      "BeFit Moms Oatmeal Pancake"
+     ],
+     "lunch": [
+      "Lemon Chicken Quinoa",
+      "Roasted Broccoli"
+     ],
+     "dinner": [
+      "Turkey and Bean Burger over Brown Rice",
+      "Greens Salad"
+     ],
+     "lunchIds": [
+      22
+     ],
+     "dinnerIds": [
+      23
+     ],
+     "breakfastIds": [
+      "BeFit Moms Oatmeal Pancake"
+     ]
+    },
+    "Fri": {
+     "breakfast": [
+      "4-6 Egg White Scramble with Gluten-Free Toast and Slilced Avocado on Top"
+     ],
+     "lunch": [
+      "Turkey and Bean Burger over Brown Rice",
+      "Greens Salad"
+     ],
+     "dinner": [
+      "Blackberry Glazed Salmon",
+      "Jasmine Rice",
+      "Roasted Asparagus"
+     ],
+     "lunchIds": [
+      23
+     ],
+     "dinnerIds": [
+      24
+     ],
+     "breakfastIds": []
+    },
+    "Sat": {
+     "breakfast": [
+      "Banana Split Oatmeal and 4 Egg Whites with Cottage Cheese melted"
+     ],
+     "lunch": [
+      "Blackberry Glazed Salmon",
+      "Jasmine Rice",
+      "Roasted Asparagus"
+     ],
+     "dinner": [
+      "Cheat Meal"
+     ],
+     "lunchIds": [
+      24
+     ],
+     "dinnerIds": [],
+     "breakfastIds": [
+      "Banana Split Oatmeal"
+     ]
+    }
+   }
+  },
+  {
+   "week": 5,
+   "days": {
+    "Sun": {
+     "breakfast": [
+      "Scrambled Eggs",
+      "Avocado Toast"
+     ],
+     "lunch": [
+      "Sun-dried Tomato",
+      "Feta Turkey Meatloaf Quinoa & Roasted Veggies"
+     ],
+     "dinner": [
+      "Cheat Meal"
+     ],
+     "lunchIds": [
+      32
+     ],
+     "dinnerIds": [],
+     "breakfastIds": []
+    },
+    "Mon": {
+     "breakfast": [
+      "Avocado Toast"
+     ],
+     "lunch": [
+      "Grilled Chicken Brown Rice Greens Salad"
+     ],
+     "dinner": [
+      "Spinach Turkey Meatballs & Tomato Basil Rice"
+     ],
+     "dinnerIds": [
+      25,
+      26
+     ],
+     "lunchIds": [],
+     "breakfastIds": []
+    },
+    "Tue": {
+     "breakfast": [
+      "Oatmeal Pancake"
+     ],
+     "lunch": [
+      "Spinach Turkey Meatballs & Tomato Basil Rice"
+     ],
+     "dinner": [
+      "Cheesy Turkey Chili & Brown Spinach Rice"
+     ],
+     "lunchIds": [
+      25,
+      26
+     ],
+     "dinnerIds": [
+      27,
+      28
+     ],
+     "breakfastIds": []
+    },
+    "Wed": {
+     "breakfast": [
+      "Eggs & Healthy Toast"
+     ],
+     "lunch": [
+      "Cheesy Turkey Chili & Brown Spinach Rice"
+     ],
+     "dinner": [
+      "Grilled Chicken Steak or Fish and Veggie Supreme Rice"
+     ],
+     "lunchIds": [
+      27,
+      28
+     ],
+     "dinnerIds": [],
+     "breakfastIds": []
+    },
+    "Thu": {
+     "breakfast": [
+      "Bowl of Oatmeal cooked with Almond milk (optional) few chocolate chips and toasted almonds"
+     ],
+     "lunch": [
+      "Grilled Chicken Steak or Fish and Veggie Supreme Rice"
+     ],
+     "dinner": [
+      "Chicken Apple Chili Jasmine Rice topped with Cilantro and Roasted Broccoli or Asparagus"
+     ],
+     "lunchIds": [],
+     "dinnerIds": [
+      29
+     ],
+     "breakfastIds": []
+    },
+    "Fri": {
+     "breakfast": [
+      "Scrambled Veggie",
+      "Cheese Eggs",
+      "Gluten-Free Toast or Whole Wheat"
+     ],
+     "lunch": [
+      "Chicken Apple Chili Jasmine Rice topped with Cilantro and Roasted Broccoli or Asparagus"
+     ],
+     "dinner": [
+      "Tex Mex Baked chicken & SouthWest Brown Rice Pilaf"
+     ],
+     "dinnerIds": [
+      30,
+      31
+     ],
+     "lunchIds": [
+      29
+     ],
+     "breakfastIds": []
+    },
+    "Sat": {
+     "breakfast": [
+      "Bowl of Oatmeal with berries"
+     ],
+     "lunch": [
+      "Tex Mex Baked chicken & SouthWest Brown Rice Pilaf"
+     ],
+     "dinner": [
+      "Sun-dried Tomato & Feta Turkey Meatloaf Quinoa & Roasted Veggies"
+     ],
+     "lunchIds": [
+      30,
+      31
+     ],
+     "dinnerIds": [
+      32
+     ],
+     "breakfastIds": []
+    }
+   }
+  },
+  {
+   "week": 6,
+   "days": {
+    "Sun": {
+     "breakfast": [
+      "Oatmeal with berries"
+     ],
+     "lunch": [
+      "Turkey Veg Skillet Brown Rice Greens Salad"
+     ],
+     "dinner": [
+      "Cheat Meal"
+     ],
+     "lunchIds": [
+      39
+     ],
+     "dinnerIds": [],
+     "breakfastIds": []
+    },
+    "Mon": {
+     "breakfast": [
+      "Oatmeal Pancake"
+     ],
+     "lunch": [
+      "Raspberry Chicken Salad over rice"
+     ],
+     "dinner": [
+      "Tex Mex Sloppy Joes over Brown Spinach Rice"
+     ],
+     "dinnerIds": [
+      33,
+      34
+     ],
+     "lunchIds": [
+      40
+     ],
+     "breakfastIds": []
+    },
+    "Tue": {
+     "breakfast": [
+      "Egg white omelet with avocado"
+     ],
+     "lunch": [
+      "Tex Mex Sloppy Joes over Brown Spinach Rice"
+     ],
+     "dinner": [
+      "Edamame Quinoa Salad"
+     ],
+     "lunchIds": [
+      33,
+      34
+     ],
+     "dinnerIds": [
+      35
+     ],
+     "breakfastIds": []
+    },
+    "Wed": {
+     "breakfast": [
+      "Avocado Toast with Cottage Cheese"
+     ],
+     "lunch": [
+      "Edamame Quinoa Salad"
+     ],
+     "dinner": [
+      "Easy Chicken Chili Brown Rice Roasted Broccoli"
+     ],
+     "lunchIds": [
+      35
+     ],
+     "dinnerIds": [
+      36
+     ],
+     "breakfastIds": []
+    },
+    "Thu": {
+     "breakfast": [
+      "Oatmeal Pancake"
+     ],
+     "lunch": [
+      "Easy Chicken Chili Brown Rice Roasted Broccoli"
+     ],
+     "dinner": [
+      "Barbecue Fit Chicken Veggies of choice and Brown Spinach Rice"
+     ],
+     "dinnerIds": [
+      37,
+      34
+     ],
+     "lunchIds": [
+      36
+     ],
+     "breakfastIds": []
+    },
+    "Fri": {
+     "breakfast": [
+      "Eggs and Avocado"
+     ],
+     "lunch": [
+      "Barbecue Fit Chicken Veggies of choice and Brown Spinach Rice"
+     ],
+     "dinner": [
+      "Baked or grilled chicken or steak and Fruity Rice Salad"
+     ],
+     "lunchIds": [
+      37,
+      34
+     ],
+     "dinnerIds": [
+      38
+     ],
+     "breakfastIds": []
+    },
+    "Sat": {
+     "breakfast": [
+      "Any breakfast from the list (the PDF leaves this one blank)"
+     ],
+     "lunch": [
+      "Fresh Turkey Veg Skillet Brown Rice Greens Salad"
+     ],
+     "dinner": [
+      "Turkey Veg Skillet Brown Rice Greens Salad"
+     ],
+     "lunchIds": [
+      39
+     ],
+     "dinnerIds": [
+      39
+     ],
+     "breakfastIds": []
+    }
+   }
+  },
+  {
+   "week": 7,
+   "days": {
+    "Sun": {
+     "breakfast": [
+      "Scrambled Egg Whites Avocado and Fruit"
+     ],
+     "lunch": [
+      "Leftovers from any meal from the week or eat out"
+     ],
+     "dinner": [
+      "Asian Chicken and Edamame Rice"
+     ],
+     "dinnerIds": [
+      47,
+      48
+     ],
+     "lunchIds": [],
+     "breakfastIds": []
+    },
+    "Mon": {
+     "breakfast": [
+      "Oatmeal Muffins"
+     ],
+     "lunch": [
+      "Mexican Tuna Salad over Brown Rice"
+     ],
+     "dinner": [
+      "Grilled/Baked Chicken Brown Rice",
+      "Roasted Asparagus with Citrus Dressing"
+     ],
+     "lunchIds": [
+      47,
+      48
+     ],
+     "dinnerIds": [
+      42
+     ],
+     "breakfastIds": []
+    },
+    "Tue": {
+     "breakfast": [
+      "Scrambled Eggs with Fruit"
+     ],
+     "lunch": [
+      "Grilled/Baked Chicken Brown Rice",
+      "Roasted Asparagus with Citrus Dressing"
+     ],
+     "dinner": [
+      "Fresh Lentil Salad over jasmine or brown rice"
+     ],
+     "lunchIds": [
+      42
+     ],
+     "dinnerIds": [
+      43
+     ],
+     "breakfastIds": []
+    },
+    "Wed": {
+     "breakfast": [
+      "Avocado Toast"
+     ],
+     "lunch": [
+      "Fresh Lentil Salad over jasmine or brown rice"
+     ],
+     "dinner": [
+      "Sweet BBQ Sloppy Joes Brown Rice",
+      "Roasted Broccoli or your choice of veggie"
+     ],
+     "lunchIds": [
+      43
+     ],
+     "dinnerIds": [
+      44
+     ],
+     "breakfastIds": []
+    },
+    "Thu": {
+     "breakfast": [
+      "Egg & Veggie Omelet with Toast"
+     ],
+     "lunch": [
+      "Sweet BBQ Sloppy Joes Brown Rice & Roasted Broccoli or your choice of veggie"
+     ],
+     "dinner": [
+      "Tuscan Chicken with Quinoa"
+     ],
+     "lunchIds": [
+      44
+     ],
+     "dinnerIds": [
+      46
+     ],
+     "breakfastIds": []
+    },
+    "Fri": {
+     "breakfast": [
+      "Bowl of Oatmeal with berries/nuts"
+     ],
+     "lunch": [
+      "Tuscan Chicken with Quinoa"
+     ],
+     "dinner": [
+      "Cheesy Turkey Meatloaf with brown rice and side salad"
+     ],
+     "lunchIds": [
+      46
+     ],
+     "dinnerIds": [
+      45
+     ],
+     "breakfastIds": []
+    },
+    "Sat": {
+     "breakfast": [
+      "Oatmeal Muffins"
+     ],
+     "lunch": [
+      "Cheesy Turkey Meatloaf with brown rice and side salad"
+     ],
+     "dinner": [
+      "Cheat Meal"
+     ],
+     "lunchIds": [
+      45
+     ],
+     "dinnerIds": [],
+     "breakfastIds": []
+    }
+   }
+  },
+  {
+   "week": 8,
+   "days": {
+    "Sun": {
+     "breakfast": [
+      "Oatmeal Muffins"
+     ],
+     "lunch": [
+      "Tex Mex Turkey Meatloaf Jasmine Rice Roasted Veggies of choice"
+     ],
+     "dinner": [
+      "Cheat Meal"
+     ],
+     "lunchIds": [
+      55
+     ],
+     "dinnerIds": [],
+     "breakfastIds": []
+    },
+    "Mon": {
+     "breakfast": [
+      "Oatmeal muffins"
+     ],
+     "lunch": [
+      "Avocado Egg Salad and brown rice"
+     ],
+     "dinner": [
+      "Greek White Fish With Brown Rice"
+     ],
+     "lunchIds": [
+      49
+     ],
+     "dinnerIds": [
+      50
+     ],
+     "breakfastIds": []
+    },
+    "Tue": {
+     "breakfast": [
+      "Scrambled Egg Whites & Avocado Toast"
+     ],
+     "lunch": [
+      "Greek White Fish With Brown Rice"
+     ],
+     "dinner": [
+      "Nutty Pear Chicken Jasmine Rice Roasted or Steamed Asparagus"
+     ],
+     "lunchIds": [
+      50
+     ],
+     "dinnerIds": [
+      51
+     ],
+     "breakfastIds": []
+    },
+    "Wed": {
+     "breakfast": [
+      "Oatmeal Muffins"
+     ],
+     "lunch": [
+      "Nutty Pear Chicken Jasmine Rice Roasted or Steamed Asparagus"
+     ],
+     "dinner": [
+      "Baked Mexican Meatballs over brown rice or any gluten-free pasta/whole-wheat"
+     ],
+     "lunchIds": [
+      51
+     ],
+     "dinnerIds": [
+      52
+     ],
+     "breakfastIds": []
+    },
+    "Thu": {
+     "breakfast": [
+      "Eggs and Fruit"
+     ],
+     "lunch": [
+      "Baked Mexican Meatballs over brown rice or any gluten-free pasta/whole-wheat"
+     ],
+     "dinner": [
+      "Artichoke Crusted Chicken quinoa or brown rice side salad"
+     ],
+     "lunchIds": [
+      52
+     ],
+     "dinnerIds": [
+      53
+     ],
+     "breakfastIds": []
+    },
+    "Fri": {
+     "breakfast": [
+      "Oatmeal Pancake"
+     ],
+     "lunch": [
+      "Artichoke Crusted Chicken quinoa or brown rice side salad"
+     ],
+     "dinner": [
+      "Grilled Chicken Creamy Cauliflower Rice and Salad"
+     ],
+     "lunchIds": [
+      53
+     ],
+     "dinnerIds": [
+      54
+     ],
+     "breakfastIds": []
+    },
+    "Sat": {
+     "breakfast": [
+      "Avocado Toast with Cottage Cheese"
+     ],
+     "lunch": [
+      "Grilled Chicken Creamy Cauliflower Rice and Salad"
+     ],
+     "dinner": [
+      "Tex Mex Turkey Meatloaf Jasmine Rice Roasted Veggies of choice"
+     ],
+     "lunchIds": [
+      54
+     ],
+     "dinnerIds": [
+      55
+     ],
+     "breakfastIds": []
+    }
+   }
+  }
+ ],
+ "recipes": [
+  {
+   "number": 1,
+   "name": "Paprika Turkey Meatballs",
+   "sides": [
+    "Mashed Sweet Potato",
+    "Roasted Broccoli"
+   ],
+   "week": 1,
+   "components": [
+    {
+     "title": "Paprika Turkey Meatballs",
+     "servings": "4-6",
+     "ingredients": [
+      "2 onions, finely chopped",
+      "2 ribs celery, finely chopped",
+      "2 garlic cloves, finely chopped",
+      "One 14-ounce can diced tomatoes",
+      "One 12-ounce jar roasted peppers, drained",
+      "2 tbsp paprika",
+      "2 egg whites",
+      "¼ cup homemade Ezekiel Bread Crumbs or",
+      "Whole-Wheat",
+      "1 package extra lean ground turkey breast",
+      "Salt and pepper to taste",
+      "Low sodium chicken stock for cooking."
+     ],
+     "instructions": [
+      "In a large skillet add chicken stock to medium heat.",
+      "Add the onions, celery and garlic and sauté until cooked.",
+      "Transfer a little over a cup of the onion mixture to a large bowl and let cool.",
+      "In a food processor, puree the tomatoes and roasted peppers.",
+      "Add the puree to the skillet and bring to a boil over medium heat.",
+      "Stir in the paprika.",
+      "Add the mixture to a big pot and cook.",
+      "Whisk the breadcrumbs, egg whites into the remaining onion mixture.",
+      "Mix in the turkey and form meatballs.",
+      "Add the meatballs to the pot and cook until done."
+     ]
+    },
+    {
+     "title": "Mashed Sweet Potato",
+     "servings": "4",
+     "ingredients": [
+      "3 sweet potatoes",
+      "½ cup starchy water",
+      "½ cup fat-free cottage cheese",
+      "½ cup fat-free shredded cheddar cheese",
+      "Cinnamon to taste-optional"
+     ],
+     "instructions": [
+      "Peel and boil the sweet potatoes until soft.",
+      "Cut the potatoes in chunks and place them in a food processor, add the starchy water, the cottage cheese and the shredded cheddar cheese and blend until smooth and creamy."
+     ]
+    }
+   ],
+   "tags": [
+    "chicken",
+    "turkey",
+    "eggs",
+    "dairy"
+   ]
+  },
+  {
+   "number": 2,
+   "name": "Moroccan Chicken with Mango Relish",
+   "sides": [
+    "Brown Rice",
+    "Arugula Salad with Palms, Artichokes and Citrus Dressing"
+   ],
+   "week": 1,
+   "components": [
+    {
+     "title": "Morracan Chicken with Mango relish",
+     "servings": "4",
+     "ingredients": [
+      "4 chicken breasts",
+      "Salt and ground black pepper",
+      "2 teaspoons ground cumin",
+      "2 teaspoons ground coriander",
+      "1 tablespoon olive oil",
+      "1 ripe mango, diced",
+      "1/4 cup chopped fresh cilantro leaves",
+      "1 bag of hearts of romaine",
+      "1 bag of arugula",
+      "1 15-ounce can hearts of palms, drained and",
+      "chopped",
+      "1 15-ounce can artichoke hearts drained and",
+      "chopped",
+      "¼ cup orange marmalade",
+      "1 lemon juiced",
+      "2 tsp Dijon Mustard",
+      "1/3 cup extra virgin olive oil",
+      "¼ cup toasted sliced almonds"
+     ],
+     "instructions": [
+      "Season both sides of each chicken breast with salt and black pepper.",
+      "Rub cumin and coriander all over both sides.",
+      "Heat chicken stock in a large skillet over medium heat.",
+      "Add chicken and cook on both sides until done.",
+      "Meanwhile, in a small bowl, combine mango and cilantro.",
+      "Top tilapia with mango mixture just before serving. and Citrus Dressing (6 Servings) Combine marmalade, with lemon juice, mustard, salt and pepper to taste and whisk in olive oil.",
+      "Pour dressing over salad and top with almonds."
+     ]
+    }
+   ],
+   "tags": [
+    "chicken",
+    "nuts"
+   ]
+  },
+  {
+   "number": 3,
+   "name": "Grilled or Baked Chicken",
+   "sides": [
+    "Quinoa Salad"
+   ],
+   "week": 1,
+   "components": [
+    {
+     "title": "Quinoa Salad",
+     "servings": "4",
+     "ingredients": [
+      "1 cup of Quinoa",
+      "Complete seasoning",
+      "½ jar of roasted peppers, chopped",
+      "¼ cup pine nuts, toasted",
+      "½ cup arugula, chopped",
+      "1/8 cup crumbled goat cheese"
+     ],
+     "instructions": [
+      "Cook the Quinoa per instructions and add a dash of complete seasoning to the boiling water.",
+      "Once cooked, add roasted peppers, pine nuts, arugula, and goat cheese crumbles.",
+      "Mix well to combine and serve."
+     ]
+    }
+   ],
+   "tags": [
+    "chicken",
+    "dairy",
+    "nuts"
+   ]
+  },
+  {
+   "number": 4,
+   "name": "White Fish with Tomato & Artichoke",
+   "sides": [
+    "Brown Rice",
+    "Roasted Vegetables"
+   ],
+   "week": 1,
+   "components": [
+    {
+     "title": "White Fish Tomato & Artichoke",
+     "servings": "4",
+     "ingredients": [
+      "4 Fillets of your favorite white fish",
+      "2 Shallots, sliced thin",
+      "2 Garlic cloves, minced",
+      "1 lb frozen artichokes, thawed",
+      "½ cup white wine",
+      "1 ½ cup low sodium chicken stock",
+      "1-14ounce can diced tomatoes",
+      "½ tsp minced fresh thyme",
+      "Salt & Pepper"
+     ],
+     "instructions": [
+      "Season the fish with salt and pepper and grill for approximately 4 minutes per side.",
+      "In a medium sauce pan, heat a little stock and cook the shallots, add the garlic and artichokes and cook until golden brown.",
+      "Add the stock, tomatoes, and juice, thyme and a little s&p.",
+      "Laddle the mixture into bowls and top with the fish.",
+      "Serve immediately."
+     ]
+    },
+    {
+     "title": "Roasted Vegetables",
+     "servings": "10-12",
+     "ingredients": [
+      "1 eggplant, diced",
+      "2 zucchini, diced",
+      "2 yellow squash, diced",
+      "1 red onion, diced",
+      "1 package of Portobello mushrooms, sliced",
+      "1 package of asparagus"
+     ],
+     "instructions": [
+      "Pre-heat the oven to 425 degrees.",
+      "Line a baking sheet with foil.",
+      "Place all the veggies on the pan and sprinkle with your favorite dried herbs or seasoning blends.",
+      "Fold in with your hands and make sure veggies are all flat and spread along the sheet.",
+      "Roast in the oven for 25 minutes."
+     ]
+    }
+   ],
+   "tags": [
+    "chicken",
+    "fish",
+    "eggs"
+   ]
+  },
+  {
+   "number": 5,
+   "name": "Country Curry Chicken",
+   "sides": [
+    "Brown Rice",
+    "Parmesan Broccoli and Cauliflower"
+   ],
+   "week": 1,
+   "components": [
+    {
+     "title": "Country Curry Chicken",
+     "servings": "4",
+     "ingredients": [
+      "1 tbsp curry powder",
+      "1 lb chicken breast cut in pieces",
+      "1 onion, diced",
+      "1 red pepper, diced",
+      "2 garlic cloves, minced",
+      "2/3 cup low sodium chicken stock, plus more for",
+      "cooking",
+      "¼ cup dried cranberries",
+      "2 tbsp fresh thyme",
+      "1 14.5ounce can of diced tomatoes",
+      "1/2 cup sliced almonds, toasted"
+     ],
+     "instructions": [
+      "Combine Curry and grill seasoning and sprinkle over chicken.",
+      "Heat stock in a skillet and add chicken to pan and cook until browned.",
+      "Add onion, pepper and garlic and sauté for about 3 minutes.",
+      "Add broth, cranberries, and 1 tbsp thyme, add tomatoes and bring to a boil.",
+      "Reduce heat and simmer 5 minutes.",
+      "Stir in remaining thyme and cook one more minute.",
+      "Sprinkle almonds on top and serve"
+     ]
+    },
+    {
+     "title": "Parmesan Broccoli and Cauliflower",
+     "servings": "6",
+     "ingredients": [
+      "2 ½ cups bite-size broccoli florets",
+      "2 ½ cups bite-size cauliflower florets",
+      "3 egg whites",
+      "½ cup reduced fat Parmesan",
+      "4 cups packed spinach",
+      "½ lemon zested",
+      "S&P"
+     ],
+     "instructions": [
+      "Place the veggies in a bowl.",
+      "Toss the egg whites and coat evenly over the veggies.",
+      "Place the Parmesan in a large tray and dredge the veggies in it.",
+      "In a sauté pan place a little low sodium stock and cook the veggies until they are browned."
+     ]
+    }
+   ],
+   "tags": [
+    "chicken",
+    "eggs",
+    "dairy",
+    "nuts"
+   ]
+  },
+  {
+   "number": 6,
+   "name": "Chicken with Peach Relish",
+   "sides": [
+    "Orange Quinoa",
+    "Roasted or Grilled Vegetables"
+   ],
+   "week": 1,
+   "components": [
+    {
+     "title": "Chicken with Peach Relish",
+     "servings": "4",
+     "ingredients": [
+      "2 cups finely chopped peaches",
+      "½ cup finely chopped red onion",
+      "3 tbsp cilantro, chopped",
+      "1 tbsp lime juice",
+      "S&P to taste",
+      "1 garlic clove, minced",
+      "4 chicken breasts",
+      "Grill seasoning",
+      "Low sodium chicken stock"
+     ],
+     "instructions": [
+      "For relish, combine first 6 ingredients in a medium bowl, let stand for a few minutes.",
+      "Preheat oven to 375.",
+      "Sprinkle chicken with grill seasoning and bake on a baking sheet for 25 minutes.",
+      "When done, top with peach relish and serve."
+     ]
+    },
+    {
+     "title": "Orange Quinoa",
+     "servings": "4",
+     "ingredients": [
+      "1 ¾ cup low sodium chicken stock",
+      "¼ cup fresh orange juice",
+      "1 cup quinoa",
+      "¼ cup dried cranberries",
+      "¼ cup sliced almonds, toasted",
+      "1/4 cup parsley, chopped"
+     ],
+     "instructions": [
+      "In a saucepan, bring stock to boil.",
+      "Add orance quice and quinoa and reduce heat to low, cover and cook until liquid is absorbed.",
+      "Fluff quinoa with a fork and fold in cranberries, almonds and parsley."
+     ]
+    }
+   ],
+   "tags": [
+    "chicken",
+    "nuts"
+   ]
+  },
+  {
+   "number": 7,
+   "name": "Grilled or Baked Chicken",
+   "sides": [
+    "Broccoli Puree",
+    "Brown or Jasmine Rice"
+   ],
+   "week": 2,
+   "components": [
+    {
+     "title": "Broccoli Puree",
+     "servings": "6-8",
+     "ingredients": [
+      "1 russet potato, peeled and cut into chunks",
+      "1 lb broccoli florets",
+      "½ cup low sodium chicken stock",
+      "½ cup reduced fat cottage cheese",
+      "¼ cup reduced fat Parmesan cheese",
+      "S&P to taste"
+     ],
+     "instructions": [
+      "Fill a large pot of water to boil, add the potatoes and boil over high heat.",
+      "Cook until soft, after about 6-8 minutes add the broccoli to the water.",
+      "Transfer the potatoes to a bowl and mash.",
+      "Add the broccoli to a food processor, add the cottage cheese, stock, and Parmesan, and puree.",
+      "Add the mashed potatoes and puree a little more.",
+      "Season with s&p to taste"
+     ]
+    }
+   ],
+   "tags": [
+    "chicken",
+    "dairy"
+   ]
+  },
+  {
+   "number": 8,
+   "name": "Chicken, Turkey or Shrimp",
+   "sides": [
+    "Quinoa Salad with Roasted Veggies"
+   ],
+   "week": 2,
+   "components": [
+    {
+     "title": "Quinoa Salad with Roasted Veggies",
+     "servings": "6",
+     "ingredients": [
+      "1 cup quinoa",
+      "3 garlic cloves, minced",
+      "½ red onion, chopped",
+      "½ tsp cumin",
+      "1 tbsp paprika",
+      "½ lb asparagus, chopped",
+      "2 Eggplants, chopped",
+      "¼ cup parsley, chopped",
+      "1 tbsp balsamic vinegar",
+      "Feta Crumbles to taste",
+      "Low sodium chicken stock"
+     ],
+     "instructions": [
+      "Preheat oven to 400 degrees.",
+      "Cook Quinoa in 2 cups of water.",
+      "In a sauté pan cook the onions, garlic and cumin.",
+      "Sprinkle the veggies with paprika and pepper.",
+      "Place in a baking sheet and bake for 25 minutes.",
+      "In a large bowl mix the quinoa, onion mixture and roasted veggies.",
+      "Add the parsley and cheese and fold in.",
+      "Serve with chicken, turkey or shrimp."
+     ]
+    }
+   ],
+   "tags": [
+    "chicken",
+    "turkey",
+    "fish",
+    "eggs",
+    "dairy"
+   ]
+  },
+  {
+   "number": 9,
+   "name": "White Fish with Edamame & Pepper Relish",
+   "sides": [
+    "Greens Salad",
+    "Jasmine Rice"
+   ],
+   "week": 2,
+   "components": [
+    {
+     "title": "White Fish with Edamame & Pepper Relish",
+     "servings": "4",
+     "ingredients": [
+      "1 roasted red pepper, diced",
+      "¼ cup green onions, chopped",
+      "2 tsp thyme, chopped",
+      "2 tsp rice wine vinegar",
+      "2 tsp lime juice",
+      "2 tsp EVOO",
+      "2 garlic cloves, minced",
+      "1 cup corn",
+      "1 cup edamame",
+      "S&P to taste",
+      "Grill seasoning",
+      "4 Fillets of any white fish"
+     ],
+     "instructions": [
+      "To prepare relish, thaw the corn and edamame and add to a bowl.",
+      "Add the roasted pepper, green onions, and the next 5 ingredients, toss to combine.",
+      "Sprinkle the fish with grill seasoning and grill or sauté in a pan with stock until done.",
+      "Serve by adding relish on top."
+     ]
+    }
+   ],
+   "tags": [
+    "fish"
+   ]
+  },
+  {
+   "number": 10,
+   "name": "Chicken Veggies & Rice Risotto",
+   "sides": [
+    "Greens Salad"
+   ],
+   "week": 2,
+   "components": [
+    {
+     "title": "Chicken Veggies & Rice Risotto",
+     "servings": "",
+     "ingredients": [
+      "1 lb chicken breast cut into chunks",
+      "1 cup onion, chopped",
+      "1 tsp fresh ginger, minced",
+      "1 ½ tsp coriander",
+      "1 tsp cumin",
+      "Grill seasoning",
+      "2 garlic cloves, minced",
+      "2 cups plum tomatoes, chopped",
+      "1 cup brown rice",
+      "1/3 cup dried cranberries",
+      "2 cups low sodium chicken broth",
+      "¼ cup cilantro chopped",
+      "¼ cup almonds, toasted"
+     ],
+     "instructions": [
+      "In a skillet add stock and cook chicken until done.",
+      "Add onions, ginger, cumin, coriander and grill seasoning, and garlic.",
+      "Cook for a few minutes.",
+      "Add tomatoes, rice, cranberries and broth, bring to a boil.",
+      "Cover and reduce heat and simmer.",
+      "As the liquid evaporates add more stock a little at a time until the rice is tender.",
+      "When done, stir in cilantro and almonds."
+     ]
+    }
+   ],
+   "tags": [
+    "chicken",
+    "nuts"
+   ]
+  },
+  {
+   "number": 11,
+   "name": "Tomato-Artichoke Chicken",
+   "sides": [
+    "Brown Rice",
+    "Roasted Vegetables"
+   ],
+   "week": 2,
+   "components": [
+    {
+     "title": "Tomato-Artichoke Chicken",
+     "servings": "",
+     "ingredients": [
+      "4 chicken breasts",
+      "1 can diced tomatoes",
+      "1 can artichoke hearts, drained and rinced and",
+      "chopped",
+      "¼ cup balsamic vinegar",
+      "Dried garlic, oregano and basil to taste."
+     ],
+     "instructions": [
+      "In a skillet with stock sprinkle the chicken on both sides with grill seasoning and cook until done.",
+      "Set aside and keep warm.",
+      "In the same skillet add the tomatoes, artichokes, dried herbs and vinegar.",
+      "Bring to a simmer and cook for a few minutes.",
+      "To serve, pour over the chicken."
+     ]
+    }
+   ],
+   "tags": [
+    "chicken"
+   ]
+  },
+  {
+   "number": 12,
+   "name": "Sesame Mango Chicken",
+   "sides": [
+    "Brown Rice",
+    "Roasted Asparagus"
+   ],
+   "week": 2,
+   "components": [
+    {
+     "title": "Sesame Mango Chicken",
+     "servings": "",
+     "ingredients": [
+      "3 tbsp sesame seeds, toasted",
+      "1 lb chicken breast tenderloins",
+      "4 garlic cloves, minced",
+      "½ tsp ginger, minced",
+      "1 mango, peeled and diced",
+      "S&P to taste",
+      "3-4 tomatoes",
+      "Juice of 1 lime"
+     ],
+     "instructions": [
+      "Pour stock in a skillet and brown the chicken.",
+      "Add the garlic, ginger, and pepper and cook for a few minutes.",
+      "Add the diced mango and cook until tender.",
+      "Add the tomatoes and the limejuice and simmer for a few minutes.",
+      "Sprinkle the sesame seeds on top and serve."
+     ]
+    }
+   ],
+   "tags": [
+    "chicken"
+   ]
+  },
+  {
+   "number": 13,
+   "name": "Chili-Rubbed Flank Steak",
+   "sides": [
+    "Jasmine Rice",
+    "Roasted Broccoli"
+   ],
+   "week": 3,
+   "components": [
+    {
+     "title": "Chili Rubbed Flank Steak",
+     "servings": "",
+     "ingredients": [
+      "2 lbs Flank steak",
+      "1 ½ tbsp grill seasoning",
+      "1 tbsp chili powder",
+      "1 lime, zested",
+      "1 cup brown rice",
+      "1 small onion, chopped",
+      "½ red pepper, chopped",
+      "2 garlic cloves, minced",
+      "1 cup low sodium chicken stock",
+      "1 cup water",
+      "2 tbsp tomato paste",
+      "2 tbsp cilantro"
+     ],
+     "instructions": [
+      "Rub the meat with a mixture of grill seasoning, chili powder and lime zest.",
+      "Let stand for a few minutes and grill until cooked about 6 minutes on each side.",
+      "For the rice, heat a medium saucepan on medium heat and add stock and cook the rice for a couple of minutes.",
+      "Add the onion, pepper, and garlic and cook until veggies soften.",
+      "Add the stock and water and bring to a boil, stir in the tomato paste and reduce heat to simmer.",
+      "Cover the pan and cook until done.",
+      "Sprinkle with cilantro"
+     ]
+    }
+   ],
+   "tags": [
+    "chicken",
+    "beef"
+   ]
+  },
+  {
+   "number": 14,
+   "name": "Turkey Chili and Sweet Potato Shepherd’s Pie",
+   "sides": [
+    "Greens Salad"
+   ],
+   "week": 3,
+   "components": [
+    {
+     "title": "Turkey Chili and Sweet Potato Shepherd’s Pie",
+     "servings": "6",
+     "ingredients": [
+      "3 sweet potatoes, peeled and cubed",
+      "2 tsp orange zest",
+      "1 cup cottage cheese",
+      "2 lbs extra lean ground turkey",
+      "1 large onion, chopped",
+      "1 red pepper, chopped",
+      "3 garlic cloves, minced",
+      "3 tbsp chili powder",
+      "1 tbsp each of paprika, cumin, and coriander",
+      "¼ cup tomato paste",
+      "2-3 cups low sodium chicken stock",
+      "Low fat shredded cheddar to taste"
+     ],
+     "instructions": [
+      "In a large pot, add the potatoes, fill with water and bring to a boil.",
+      "Cook until tender.",
+      "Drain and return to the pot adding zest and cottage cheese and s&p to taste and mash.",
+      "Meanwhile in a pot add stock and brown the turkey with s&p.",
+      "Then add the onion, peppers and garlic and cook.",
+      "Add all the spices and cook for a few minutes.",
+      "Add the tomato paste and cook for another few minutes.",
+      "Stir in the stock a little at a time until desired thickness.",
+      "Transfer the chili to a casserole dish, spread the mash potato mixture on top and top with cheese.",
+      "Brown in the oven on broil for a few minutes until golden brown."
+     ]
+    }
+   ],
+   "tags": [
+    "chicken",
+    "turkey",
+    "dairy"
+   ]
+  },
+  {
+   "number": 15,
+   "name": "Oat & Herb Crusted Chicken Tenders",
+   "sides": [
+    "Herb Quinoa",
+    "Roasted Broccoli"
+   ],
+   "week": 3,
+   "components": [
+    {
+     "title": "Oat & Herb Crusted Chicken Tenders",
+     "servings": "4",
+     "ingredients": [
+      "1 tsp each of oregano, thyme, onion and garlic",
+      "powder",
+      "S&p to taste",
+      "1 package of skinless chicken tenderloins",
+      "½ cup low sugar orange preserves",
+      "2 tbsp Dijon mustard"
+     ],
+     "instructions": [
+      "In a zip-top bag, combine the oats, herbs and s&p.",
+      "Shake well.",
+      "In a small bowl, combine the preserves and mustard and use it to coat the tenders.",
+      "Add the chicken to the bag, seal it and shake well to coat all the pieces.",
+      "Preheat the oven to 400 degrees, line a baking sheet and place the tenders on it.",
+      "Bake until golden brown for about 20 minutes."
+     ]
+    },
+    {
+     "title": "Herb Quinoa",
+     "servings": "4",
+     "ingredients": [
+      "2 cups quinoa",
+      "¼ cup parsley, chopped",
+      "¼ cup scallions, chopped",
+      "¼ cup pine nuts, toasted (optional: or any kind",
+      "of nuts)"
+     ],
+     "instructions": [
+      "Cook the quinoa as directed.",
+      "Once it’s cooked, fluff with a fork and add in the herbs and nuts.",
+      "Every time you serve this you can add a drizzle of toasted sesame oil or a drizzle of rice wine vinegar to jazz it up.",
+      "But don’t store it with the oil or vinegar in it.",
+      "Only add it when served."
+     ]
+    }
+   ],
+   "tags": [
+    "chicken",
+    "nuts"
+   ]
+  },
+  {
+   "number": 16,
+   "name": "Honey Mustard Chicken",
+   "sides": [
+    "Spinach Rice Pilaf"
+   ],
+   "week": 3,
+   "components": [
+    {
+     "title": "Honey Mustard Chicken",
+     "servings": "4",
+     "ingredients": [
+      "1 lb chicken breast",
+      "1 tbsp honey",
+      "1 tbsp agave nectar",
+      "¼ cup Dijon mustard",
+      "2 tsp low sodium stock",
+      "2 tbsp apple cider vinegar",
+      "1 garlic clove, minced",
+      "2 tbsp parsley, c hopped"
+     ],
+     "instructions": [
+      "In a bowl, mix the honey, Dijon, apple cider vinegar, garlic and stock.",
+      "In a pan add a dash of stock, sprinkle chicken with grill seasoning and cook until done.",
+      "Add the honey mixture and let simmer for 2 minutes.",
+      "To serve, add parsley on top."
+     ]
+    },
+    {
+     "title": "Spinach Rice Pilaf",
+     "servings": "4-6",
+     "ingredients": [
+      "½ red onion, diced",
+      "1 10-ounce box frozen spinach, thawed",
+      "½ red pepper, diced",
+      "Italian salt-free seasoning"
+     ],
+     "instructions": [
+      "In a saucepan, cook brown rice as instructed and add seasoning to water.",
+      "In a skillet with stock cook the onions, red pepper and spinach, sprinkle with seasoning.",
+      "Add the cooked rice, fold in the veggies and serve."
+     ]
+    }
+   ],
+   "tags": [
+    "chicken"
+   ]
+  },
+  {
+   "number": 17,
+   "name": "Grilled or Baked Chicken",
+   "sides": [
+    "Sweet Potato Chili Fries",
+    "Greens Salad"
+   ],
+   "week": 3,
+   "components": [
+    {
+     "title": "Sweet Potato Chili Fries",
+     "servings": "4-6",
+     "ingredients": [
+      "4 sweet potatoes, cut into strips (steak fries",
+      "style)",
+      "1 tbsp cumin",
+      "1 tbsp chili powder",
+      "S&P to taste"
+     ],
+     "instructions": [
+      "Preheat oven to 475 degrees.",
+      "In a small bowl, combine the cumin and chili powder.",
+      "Sprinkle s&p on fries and cover with the spice mixture.",
+      "Massage the spices onto them.",
+      "Place them on a lined baking sheet and bake for 30 minutes or until cooked.",
+      "Right before taking them out of the oven, turn on the broiler for 2 minutes or until toasted."
+     ]
+    }
+   ],
+   "tags": [
+    "chicken",
+    "beef"
+   ]
+  },
+  {
+   "number": 18,
+   "name": "Turkey Mole",
+   "sides": [
+    "Brown Rice",
+    "Roasted Asparagus"
+   ],
+   "week": 3,
+   "components": [
+    {
+     "title": "Turkey Mole",
+     "servings": "4",
+     "ingredients": [
+      "1 cup chunky salsa",
+      "1/4 cup almonds, toasted plus 3 tbsp",
+      "1 chipotle pepper in adobo",
+      "1 tbsp lime juice",
+      "1.4 tsp cocoa powder",
+      "1 lb turkey breast tenderloins, cut into chunks",
+      "1/3 cup low sodium chicken broth",
+      "3 tbsp cilantro"
+     ],
+     "instructions": [
+      "In a food processor, combine the salsa , almonds, chipotle, lime juice, cocoa and process until blended.",
+      "In a skillet, with a little broth, cook the turkey until done, add broth and salsa mixture.",
+      "Bring to a boil.",
+      "Reduce heat to simmer for 10 minutes.",
+      "Sprinkle with cilantro and more almonds."
+     ]
+    }
+   ],
+   "tags": [
+    "chicken",
+    "turkey",
+    "nuts"
+   ]
+  },
+  {
+   "number": 19,
+   "name": "Black Bean Chicken With Rice",
+   "sides": [
+    "Greens Salad"
+   ],
+   "week": 4,
+   "components": [
+    {
+     "title": "Black Bean Chicken and Rice",
+     "servings": "4",
+     "ingredients": [
+      "4 tsp chili powder",
+      "2 tsp cumin",
+      "S&p to taste",
+      "4 chicken breasts",
+      "1 can black beans, rinsed and drained",
+      "1 cup frozen corn",
+      "1 cup salsa",
+      "2 cups cooked brown rice"
+     ],
+     "instructions": [
+      "Combine the chili powder, cumin and s&p and rub over chicken.",
+      "In a skillet with a little broth cook the chicken on both sides until done.",
+      "Stir in the black beans, corn and salsa.",
+      "Cover and cook over medium for 10 minutes.",
+      "Slice chicken and serve over rice and black bean mixture."
+     ]
+    }
+   ],
+   "tags": [
+    "chicken"
+   ]
+  },
+  {
+   "number": 20,
+   "name": "Grilled Chicken with Sesame Seeds",
+   "sides": [
+    "Asian Quinoa",
+    "Roasted Asparagus"
+   ],
+   "week": 4,
+   "components": [
+    {
+     "title": "Asian Quinoa",
+     "servings": "4-6",
+     "ingredients": [
+      "1 cup water",
+      "½ cup quinoa",
+      "3 tbsp rice vinegar",
+      "1 tbsp hoisin sauce",
+      "2 garlic cloves, minced",
+      "1 tsp fresh grated ginger",
+      "1 tsp sesame oil",
+      "1 roasted red pepper, chopped",
+      "½ cup water chestnuts, chopped",
+      "½ cup sugar snap peas",
+      "2 green onions, sliced"
+     ],
+     "instructions": [
+      "In a large saucepan, combine the first 7 ingredients, bring to a boil.",
+      "Reduce heat, cover and simmer for 15 minutes or until water is absorbed.",
+      "Add the remaining ingredients and fluff with a fork."
+     ]
+    }
+   ],
+   "note": "Grilled chicken with sesame seeds sprinkled on top.",
+   "tags": [
+    "chicken"
+   ]
+  },
+  {
+   "number": 21,
+   "name": "Turkey Sloppy Joes",
+   "sides": [
+    "Brown Rice",
+    "Greens Salad"
+   ],
+   "week": 4,
+   "components": [
+    {
+     "title": "Turkey Sloppy Joe",
+     "servings": "4",
+     "ingredients": [
+      "½ onion, chopped",
+      "1 tbsp garlic, minced",
+      "Grill seasoning to taste",
+      "1 lb extra lean ground turkey",
+      "3 carrots, grated",
+      "4 tsp chili powder",
+      "2 tsp brown sugar",
+      "1 tsp oregano",
+      "1 28-ounce can crushed tomatoes",
+      "1 15-ounce can kidney beans, rinsed and drained"
+     ],
+     "instructions": [
+      "In a skillet with a little stock, sauté the onions and garlic.",
+      "Add the turkey to pan and brown.",
+      "Add the carrots, chili powder, grill seasoning, oregano, and brown sugar.",
+      "Cook for 2 minutes and stir in the crushed tomatoes and beans.",
+      "Bring to a boil, then reduce heat and simmer.",
+      "Meanwhile, in a small bowl, combine mango and cilantro.",
+      "Top tilapia with mango mixture just before serving."
+     ]
+    }
+   ],
+   "tags": [
+    "turkey"
+   ]
+  },
+  {
+   "number": 22,
+   "name": "Lemon Chicken Quinoa",
+   "sides": [
+    "Roasted Broccoli"
+   ],
+   "week": 4,
+   "components": [
+    {
+     "title": "Lemon-Chicken Quinoa Salad",
+     "servings": "4",
+     "ingredients": [
+      "½ lb chicken breast, chopped",
+      "2 tbsp EVOO",
+      "2 tsp cumin",
+      "3 tbsp lemon juice",
+      "1 cup quinoa",
+      "Zest of 1 lemon",
+      "¼ cup almonds, sliced and toasted",
+      "¼ parsley, chopped",
+      "S&p to taste"
+     ],
+     "instructions": [
+      "In a small saucepan boil 2 cups of water and add the quinoa, cover reduce heat and simmer until cooked.",
+      "Grill the chicken breast with cumin and grill seasoning, until done.",
+      "In a large bowl toss the quinoa, chicken breast, lemon zest, parsley, EVOO and almonds."
+     ]
+    }
+   ],
+   "tags": [
+    "chicken",
+    "nuts"
+   ]
+  },
+  {
+   "number": 23,
+   "name": "Turkey and Bean Burger over Brown Rice",
+   "sides": [
+    "Greens Salad"
+   ],
+   "week": 4,
+   "components": [
+    {
+     "title": "Turkey and Bean Burger",
+     "servings": "4",
+     "ingredients": [
+      "1 lb extra lean ground turkey",
+      "1-can black beans, rinsed and drained",
+      "½ cup cooked brown rice",
+      "1 tbsp grill seasoning",
+      "1 tbsp chili powder",
+      "2 tsp cumin",
+      "2 tsp coriander",
+      "1 avocado",
+      "½ red onion, chopped",
+      "1 garlic clove, minced"
+     ],
+     "instructions": [
+      "1 lime, zested and juiced ½ cup low fat sour cream In a large bowl combine turkey,beans, rice, grill seasoning and spices.",
+      "Form into 4 patties.",
+      "In a skillet add stock and cook turkey burgers on both side until done.",
+      "Meanwhile, in a medium bowl, mash together the acovado, onion, garlic, lime zest and juice and then stir in the sour cream.",
+      "Layer mixture on top of turkey burger."
+     ]
+    }
+   ],
+   "tags": [
+    "turkey"
+   ]
+  },
+  {
+   "number": 24,
+   "name": "Blackberry Glazed Salmon",
+   "sides": [
+    "Jasmine Rice",
+    "Roasted Asparagus"
+   ],
+   "week": 4,
+   "components": [
+    {
+     "title": "Blackberry Glazed Salmon",
+     "servings": "4",
+     "ingredients": [
+      "4 small fillets of salmon",
+      "2 cups asparagus, chopped",
+      "2 cups blackberries",
+      "3 tsp honey or agave nectar",
+      "2 tbsp balsamic vinegar",
+      "2 tsp sesame oil",
+      "¼ cup fresh orange juice",
+      "¼ cup scallions, chopped",
+      "5 cups arugula"
+     ],
+     "instructions": [
+      "Season salmon with grill seasoning and bake in a 400 degree oven for 15-20 minutes until done.",
+      "In a sauté pan, add a little stock and cook the asparagus until crisp.",
+      "Meanwhile in a small bowl, mash ¾ of the berries with the honey, balsamic vinegar, oil and juice.",
+      "Mix until chuncky.",
+      "To serve, place a handful of arugula on a plate, top with asparagus, add the salmon on top and pour the berry mixture on top."
+     ]
+    }
+   ],
+   "tags": [
+    "fish"
+   ]
+  },
+  {
+   "number": 25,
+   "name": "Spinach Turkey Meatballs & Tomato Basil Rice",
+   "sides": [],
+   "week": 5,
+   "components": [
+    {
+     "title": "Spinach & Turkey Meatballs",
+     "servings": "6-8",
+     "ingredients": [
+      "2 egg whites",
+      "1/2 cup mozzarella cheese, shredded",
+      "¼ cup Parmesan Cheese",
+      "1/2 tsp garlic powder",
+      "Italian Seasoning to taste",
+      "¼ tsp ground pepper",
+      "1 10-ounce package frozen chopped spinach,",
+      "thawed",
+      "2 lb extra lean ground turkey"
+     ],
+     "instructions": [
+      "Preheat oven to 350 degrees F.",
+      "Line a cookie sheet with foil.",
+      "In a large bowl, combine, egg whites, mozzarella cheese, Parmesan, garlic powder, Italian seasoning and pepper.",
+      "Stir in the spinach.",
+      "Add ground turkey and mix well.",
+      "Shape mixture into small meatballs and place them on cookie sheet.",
+      "Bake about 20 minutes or until meatballs are no longer pink."
+     ]
+    }
+   ],
+   "tags": [
+    "turkey",
+    "eggs",
+    "dairy"
+   ]
+  },
+  {
+   "number": 26,
+   "name": "Brown Rice with Tomatoes and Basil",
+   "sides": [],
+   "week": 5,
+   "components": [
+    {
+     "title": "Brown Rice with Tomatoes and Basil",
+     "servings": "4-6",
+     "ingredients": [
+      "1 cup brown rice",
+      "2 teaspoons kosher salt, divided",
+      "¼ cup rice wine vinegar",
+      "1 packet sweetener",
+      "1 tablespoon good olive oil",
+      "Freshly ground black pepper",
+      "1 pound ripe tomatoes, large-diced",
+      "1 cup packed basil leaves (1 large bunch), chopped"
+     ],
+     "instructions": [
+      "Bring 2¼ cups water to a boil and add the rice and 1 teaspoon of salt.",
+      "Return to a boil, cover, and simmer for 30 to 40 minutes, until the rice is tender and all the water is absorbed.",
+      "Transfer the rice to a bowl.",
+      "Whisk together the vinegar, sweetener, olive oil, remaining teaspoon of salt, and a pinch of pepper.",
+      "Pour over the rice.",
+      "Add the tomatoes and basil.",
+      "Mix well and check the seasonings."
+     ]
+    }
+   ],
+   "tags": [
+    "meatless"
+   ]
+  },
+  {
+   "number": 27,
+   "name": "Cheesy Hash Brown Chili",
+   "sides": [],
+   "week": 5,
+   "components": [
+    {
+     "title": "Cheesy Hash Brown Chili",
+     "servings": "",
+     "ingredients": [
+      "1 onion, chopped",
+      "2 tbsp chili powder",
+      "1 tbsp cumin",
+      "1¾ cup tomato paste",
+      "1 lb lean ground turkey breast",
+      "1 15-ounce can kidney beans, rinsed and draine",
+      "1 15-ounce can diced tomatoes with garlic",
+      "½ cup part-skim shredded cheddar cheese"
+     ],
+     "instructions": [
+      "In a large saucepan, heat stock over medium heat and add the onion, chili powder and cumin stirring until soft.",
+      "Stir in the tomato paste.",
+      "Add the turkey and cook, breaking it up for about 5 minutes.",
+      "Add the beans and tomatoes with their juices and bring to a boil.",
+      "Lower the heat, cover and stir d occasionally.",
+      "Top with shredded cheese and serve."
+     ]
+    }
+   ],
+   "tags": [
+    "turkey",
+    "dairy"
+   ]
+  },
+  {
+   "number": 28,
+   "name": "Brown Spinach Rice",
+   "sides": [],
+   "week": 5,
+   "components": [
+    {
+     "title": "Brown Spinach Rice",
+     "servings": "4-6",
+     "ingredients": [
+      "1 cup brown rice",
+      "1 box frozen chopped spinach",
+      "Parmesan cheese (optional)"
+     ],
+     "instructions": [
+      "Cook rice as prescribed, and right before it is done cooking, put the frozen spinach in, mix well, cover and let finish cooking.",
+      "May fold in a little Parmesan cheese if desired."
+     ]
+    }
+   ],
+   "tags": [
+    "dairy",
+    "meatless"
+   ]
+  },
+  {
+   "number": 29,
+   "name": "Chicken Apple Chili",
+   "sides": [],
+   "week": 5,
+   "components": [
+    {
+     "title": "Chicken Apple Chili",
+     "servings": "8",
+     "ingredients": [
+      "2 lbs chicken breast cut in chunks",
+      "4 tsp chili powder",
+      "2 tsp cumin",
+      "S&P to taste",
+      "2 red apples, diced",
+      "1 onion, chopped",
+      "2 cups low sodium chicken stock",
+      "plus more for cooking",
+      "2 15o0unce cans cannellini beans,",
+      "rinsed and drained",
+      "2 cups part-skim shredded cheddar cheese"
+     ],
+     "instructions": [
+      "In a large pot or Dutch oven, heat stock and add chicken, chili powder and cumin.",
+      "Season with s&p.",
+      "Cook until chicken is browned and transfer to a bow.",
+      "In the same pot, add more stock and add apples, onions and cook until softened, add the chicken back in.",
+      "Add the chicken stock, beans and simmer for a few minutes.",
+      "Add the cheese and stir to combine."
+     ]
+    }
+   ],
+   "tags": [
+    "chicken",
+    "dairy"
+   ]
+  },
+  {
+   "number": 30,
+   "name": "Tex Mex Baked Chicken",
+   "sides": [],
+   "week": 5,
+   "components": [
+    {
+     "title": "Tex Mex Baked Chicken",
+     "servings": "6-8",
+     "ingredients": [
+      "2 lbs chicken breasts",
+      "1 tbsp chili powder",
+      "2 tsp cumin",
+      "1 tsp each garlic powder and onion powder",
+      "S&P to taste"
+     ],
+     "instructions": [
+      "Pre-heat the oven to 350 degrees.",
+      "Mix all the spices and sprinkle on the chicken on both sides.",
+      "Place on a baking dish and bake about 25 minutes or until done."
+     ]
+    }
+   ],
+   "tags": [
+    "chicken"
+   ]
+  },
+  {
+   "number": 31,
+   "name": "Southwestern Brown Rice Pilaf",
+   "sides": [],
+   "week": 5,
+   "components": [
+    {
+     "title": "Southwestern Brown Rice Pilaf",
+     "servings": "6-8",
+     "ingredients": [
+      "1 onion, diced",
+      "4 garlic cloves, minced",
+      "1½ tsp chili powder",
+      "1 tsp cumin",
+      "1 ½ cups brown rice",
+      "1½ cups low-sodium chicken stock",
+      "1½ cups water",
+      "One 14-0z can diced tomatoes",
+      "1 lime, zested",
+      "½ cup cilantro, chopped"
+     ],
+     "instructions": [
+      "In a saucepan, add stock, onion and garlic and cook for a few minutes.",
+      "Add the chili powder, cumin and stir until onion is cooked.",
+      "Add the rice and s&p to taste.",
+      "Toast for a few minutes stirring frequently.",
+      "Reduce the heat and add the water and chicken stock, and tomatoes.",
+      "Stir once and then bring to a boil.",
+      "Reduce heat, cover and let simmer until rice is cooked.",
+      "Remove from the heat, fold in the zest of one lime and the cilantro, and serve with lime wedges for spritzing."
+     ]
+    }
+   ],
+   "tags": [
+    "chicken"
+   ]
+  },
+  {
+   "number": 32,
+   "name": "Sun-Dried Tomatoes & Feta Turkey Meatloaf",
+   "sides": [],
+   "week": 5,
+   "components": [
+    {
+     "title": "Sun-Dried Tomatoes & Feta Turkey Meatloaf",
+     "servings": "6",
+     "ingredients": [
+      "¾ cup parsley, chopped",
+      "1/3 cup sun-dried tomatoes, julienne cut (dry)",
+      "2 garlic cloves, minced",
+      "2 egg whites",
+      "1/4 cup plain Greek yogurt",
+      "2 Tbsp milk (dairy free if possible)",
+      "½ cup reduced fat feta crumbles",
+      "Grill seasoning to taste",
+      "1 lb extra lean ground turkey"
+     ],
+     "instructions": [
+      "Preheat oven to 375 degrees.",
+      "In a large bowl stir together the yogurt, parsley, garlic, egg whites, sun-dried tomatoes, milk, feta and grill seasoning.",
+      "Add the turkey and combine.",
+      "Place the mixture on a baking sheet and mold into a think and packed meatloaf.",
+      "Bake for 20-25 minute"
+     ]
+    }
+   ],
+   "tags": [
+    "turkey",
+    "eggs"
+   ]
+  },
+  {
+   "number": 33,
+   "name": "Tex Mex Sloppy Joes",
+   "sides": [],
+   "week": 6,
+   "components": [
+    {
+     "title": "Tex Mex Sloppy Joes",
+     "servings": "6",
+     "ingredients": [
+      "1can corn, rinsed and drained",
+      "1 package lean ground turkey",
+      "1 red pepper, diced",
+      "1 yellow pepper, diced",
+      "1 red onion, diced",
+      "4 tsp chile powder",
+      "1 tsp garlic powder",
+      "3 tomatoes, diced",
+      "1 cup low sodium chicken broth",
+      "1 tbsp tomato paste",
+      "1 tbsp balsamic vinegar"
+     ],
+     "instructions": [
+      "In a large skillet, add stock and brown turkey.",
+      "Add red and yellow pepper, and onions and cook until done.",
+      "Add chile and garlic powder and grill seasoning and stir.",
+      "Stir in tomatoes, corn, broth, tomato paste and balsamic vinegar, bring to a boil.",
+      "Reduce to simmer, cover and cook for a few minutes."
+     ]
+    }
+   ],
+   "tags": [
+    "chicken",
+    "turkey"
+   ]
+  },
+  {
+   "number": 34,
+   "name": "Brown Spinach Rice",
+   "sides": [],
+   "week": 6,
+   "components": [
+    {
+     "title": "Brown Spinach Rice",
+     "servings": "4-6",
+     "ingredients": [
+      "1 cup brown rice",
+      "1 box frozen chopped spinach",
+      "Parmesan cheese (optional)"
+     ],
+     "instructions": [
+      "Cook rice as prescribed, and right before it is done cooking, put the frozen spinach in, mix well, cover and let finish cooking.",
+      "May fold in a little Parmesan cheese if desired."
+     ]
+    }
+   ],
+   "tags": [
+    "dairy",
+    "meatless"
+   ]
+  },
+  {
+   "number": 35,
+   "name": "Edamame Quinoa Salad",
+   "sides": [],
+   "week": 6,
+   "components": [
+    {
+     "title": "Edamame Quinoa Salad",
+     "servings": "6",
+     "ingredients": [
+      "1 cup quinoa",
+      "¼ cup prepared pesto",
+      "4 tbsp lemon juice",
+      "1½ cups cherry tomatoes, halved",
+      "2 cups edamame, shelled",
+      "1/3 cup reduced fat feta",
+      "1/3 cup scallions",
+      "3 tbsp chopped parsley",
+      "1 pckg of chicken breast",
+      "Grill seasoning to taste"
+     ],
+     "instructions": [
+      "Bake, grill or poach chicken breast with grill seasoning until done.",
+      "Cut into bite size pieces.",
+      "Boil 2 cups of water, add quinoa, reduce hear, cover and simmer until cooked.",
+      "Combine all ingredients in a large bowl, add quinoa, chicken and toss gently and serve.",
+      "Can substitute chicken for shrimp, scallops, turkey tenderloin or tofu."
+     ]
+    }
+   ],
+   "tags": [
+    "chicken",
+    "dairy"
+   ]
+  },
+  {
+   "number": 36,
+   "name": "Easy Chicken Chili",
+   "sides": [],
+   "week": 6,
+   "components": [
+    {
+     "title": "Easy Chicken Chili",
+     "servings": "4",
+     "ingredients": [
+      "1 onion, diced",
+      "4 garlic cloves, minced",
+      "4 tsp dried oregano",
+      "3 tsp cumin",
+      "1 tsp paprika",
+      "1 tbsp chili powder",
+      "4 chicken breasts",
+      "1 can diced tomatoes with their juice",
+      "115 ounce can kidney beans",
+      "Cilantro, chopped",
+      "1/4 cup plain Greek Yogurt"
+     ],
+     "instructions": [
+      "In a deep skillet over medium heat with a little stock, add the onions, garlic, oregano, cumin, chili powder, and paprika.",
+      "Cook until onion is translucent.",
+      "Add the chicken and cook until done.",
+      "Stir in the tomatoes and beans and bring to a boil.",
+      "Lower heat and simmer for a few minutes.",
+      "Take off of the heat and stir in the yogurt and cilantro."
+     ]
+    }
+   ],
+   "tags": [
+    "chicken",
+    "dairy"
+   ]
+  },
+  {
+   "number": 37,
+   "name": "Barbecue Fit Chicken",
+   "sides": [],
+   "week": 6,
+   "components": [
+    {
+     "title": "Barbecue Fit Chicken",
+     "servings": "4",
+     "ingredients": [
+      "1cup organic ketchup",
+      "2 tbsp coconut sugar or brown sugar",
+      "2 tbsp cider vinegar",
+      "2 tsp chili powder",
+      "1 tsp each of garlic powder, onion",
+      "powder, dry mustard, paprika and cumin",
+      "4 chicken breasts"
+     ],
+     "instructions": [
+      "Preheat the oven to 350degrees.",
+      "Season the chicken with grill seasoning and bake for 20 minutes or until done.",
+      "Meanwhile, in a small saucepan combine the remaining ingredients and bring to a simmer until slightly thickened.",
+      "Once chicken is cooked, dice it and put it in the barbecue sauce and fold well."
+     ]
+    }
+   ],
+   "tags": [
+    "chicken"
+   ]
+  },
+  {
+   "number": 38,
+   "name": "Fruity Rice Salad",
+   "sides": [],
+   "week": 6,
+   "components": [
+    {
+     "title": "Fruity Rice Salad",
+     "servings": "6-8",
+     "ingredients": [
+      "1½ cups brown rice",
+      "¼ cup quinoa",
+      "1 lime, juiced and zested",
+      "1 tbsp EVOO",
+      "3 tbsp rice wine vinegar",
+      "1 mango, peeled and chopped",
+      "1 English cucumber, chopped",
+      "2-3 scallions, chopped",
+      "½ cup cilantro, chopped",
+      "¼ to ⅓ cup sliced almonds, toasted"
+     ],
+     "instructions": [
+      "Cook rice and quinoa per instructions.",
+      "Fold the quinoa into the rice.",
+      "In a large bowl whisk the lime juice, zest, EVOO, vinegar and s&p to taste.",
+      "Add the rice and quinoa mixture to the bowl, folding in the cucumber, mango, scallions and cilantro.",
+      "Mix well and then fold in the almonds."
+     ]
+    }
+   ],
+   "tags": [
+    "nuts",
+    "meatless"
+   ]
+  },
+  {
+   "number": 39,
+   "name": "Fresh Turkey Veg Skillet",
+   "sides": [],
+   "week": 6,
+   "components": [
+    {
+     "title": "Fresh Turkey Veg Skillet",
+     "servings": "4-6",
+     "ingredients": [
+      "1b lean ground turkey",
+      "1lb new potatoes, quartered",
+      "¾ tsp dried thyme",
+      "2 bags baby spinach",
+      "1 pint grape tomatoes, halved",
+      "1 tsp fresh or dried rosemary, chopped",
+      "1 lemon, juiced",
+      "½ cup reduced-fat feta crumbles",
+      "Grill seasoning",
+      "¼ cup low-sodium chicken broth"
+     ],
+     "instructions": [
+      "Pre-heat the oven to 425 degrees.",
+      "Place the potatoes and tomatoes on a lined baking sheet and sprinkle with s&p and thyme.",
+      "Bake for 15 minutes or until golden brown.",
+      "Meanwhile, in a deep skillet with a little stock, cook the ground turkey until done.",
+      "Sprinkle with grill seasoning, rosemary, and add the spinach and wilt with stock.",
+      "Add the lemon juice and the veggies and fold well.",
+      "Top with the feta crumbles."
+     ]
+    }
+   ],
+   "tags": [
+    "chicken",
+    "turkey",
+    "dairy"
+   ]
+  },
+  {
+   "number": 40,
+   "name": "Raspberry Chicken Salad",
+   "sides": [],
+   "week": 7,
+   "components": [
+    {
+     "title": "Rasberry Chicken Salad",
+     "servings": "",
+     "ingredients": [
+      "¼ cup low-sugar raspberry preserves",
+      "2 tbsp EVOO",
+      "1 tbsp white wine vinegar",
+      "1 tsp Dijon mustard",
+      "S&P to taste",
+      "2 tbsp scallions, chopped",
+      "1 cup raspberries",
+      "4 cups cooked chicken breast, cubed"
+     ],
+     "instructions": [
+      "In a bowl, whisk together preserves, oil, vinegar, mustard, s&p.",
+      "Add scallions, raspberries and chicken.",
+      "Toss well."
+     ]
+    }
+   ],
+   "tags": [
+    "chicken"
+   ]
+  },
+  {
+   "number": 41,
+   "name": "Mexican Tuna Salad",
+   "sides": [],
+   "week": 7,
+   "components": [
+    {
+     "title": "Mexican Tuna Salad",
+     "servings": "4",
+     "ingredients": [
+      "4 cans tuna, in water",
+      "⅓ cup low-fat cottage cheese",
+      "2 ribs celery, diced",
+      "3 green onions, diced",
+      "2 tbsp lime juice",
+      "1 tsp each of chili powder and cumin",
+      "1 Hass avocado, sliced"
+     ],
+     "instructions": [
+      "Mix all ingredients in a bowl except for the avocado.",
+      "Serve with sliced avocado on top."
+     ]
+    }
+   ],
+   "tags": [
+    "fish",
+    "dairy"
+   ]
+  },
+  {
+   "number": 42,
+   "name": "Roasted Asparagus with Citrus Dressing",
+   "sides": [],
+   "week": 7,
+   "components": [
+    {
+     "title": "Roasted Asparagus With Citrus Dressing",
+     "servings": "6-8",
+     "ingredients": [
+      "2 lbs Asparagus, trimmed",
+      "1 pint cherry tomatoes",
+      "S&P to taste",
+      "1 tbsp fresh lemon juice",
+      "1 tbsp fresh orange juice",
+      "1 tbsp honey",
+      "½ tsp Dijon mustard",
+      "Feta Crumbles to taste"
+     ],
+     "instructions": [
+      "Preheat oven to 400 degrees F.",
+      "Ona baking sheet add the asparagus and tomatoes and sprinkle with S&P.",
+      "Roast about 20 minutes.",
+      "Meanwhile, whisk lemon and orange juice with honey and mustard.",
+      "When the asparagus and tomatoes are done pour dressing over them and top with feta."
+     ]
+    }
+   ],
+   "tags": [
+    "dairy",
+    "meatless"
+   ]
+  },
+  {
+   "number": 43,
+   "name": "Fresh Lentil Salad",
+   "sides": [],
+   "week": 7,
+   "components": [
+    {
+     "title": "Fresh Lentil Salad",
+     "servings": "8-10",
+     "ingredients": [
+      "8 ounces lentils, dry",
+      "2 bay leaves",
+      "1 sprig thyme",
+      "1 carrot, finely chopped",
+      "1 celery stalk, finely chopped",
+      "2 tbsp shallots, minced",
+      "1 tsp garlic, minced",
+      "2 plum tomatoes, seeded and diced",
+      "2 tbsp chopped parsley, thyme",
+      "2 tsp dried oregano",
+      "1/3 cup red wine vinegar",
+      "1 tbsp minced shallot",
+      "3 tsp Dijon mustard",
+      "1 cup vegetable oil"
+     ],
+     "instructions": [
+      "In a medium saucepan, combine lentils, bay leaves, thyme, carrot, celery, shallot, and garlic.",
+      "Cook until soft.",
+      "Cover with water by 1-inch and bring to a boil.",
+      "Reduce the heat and simmer until tender.",
+      "Drain and discard thyme and bay leaves.",
+      "Set aside and let cool.",
+      "Meanwhile mix the vinaigrette.",
+      "Whisk together the vinegar, shallot, mustard and s&p to taste.",
+      "Whisk in the oil and add to the cooled lentils and fold well."
+     ]
+    }
+   ],
+   "tags": [
+    "meatless"
+   ]
+  },
+  {
+   "number": 44,
+   "name": "Sweet BBQ Sloppy Joes",
+   "sides": [],
+   "week": 7,
+   "components": [
+    {
+     "title": "Sweet BBQ Sloppy Joes",
+     "servings": "8",
+     "ingredients": [
+      "1½ lbs extra lean ground turkey breast",
+      "1 tbsp any grill seasoning",
+      "1 red pepper, chopped",
+      "½ onion, chopped",
+      "2-3 garlic cloves, minced",
+      "1 cup tomato sauce",
+      "2 tbsp maple syrup",
+      "3 tbsp balsamic vinegar",
+      "2 tbsp apple cider vinegar",
+      "1 tbsp brown sugar",
+      "1 tbsp Dijon mustard"
+     ],
+     "instructions": [
+      "In a large skillet, add a little stock and add the turkey and brown.",
+      "Add the poultry seasoning and stir in the peppers, onions, and garlic and cook until tender.",
+      "In a bowl, stir together the tomato sauce, vinegars, syrup, brown sugar and mustard.",
+      "Pour the sauce over the turkey and veggies and simmer over low heat for a few minutes."
+     ]
+    }
+   ],
+   "tags": [
+    "turkey"
+   ]
+  },
+  {
+   "number": 45,
+   "name": "Cheesy Turkey Meatloaf",
+   "sides": [],
+   "week": 7,
+   "components": [
+    {
+     "title": "Cheesy Turkey Meatloaf",
+     "servings": "6",
+     "ingredients": [
+      "½ onion, chopped",
+      "2 garlic cloves, minced",
+      "¾ cup organic ketchup",
+      "handful of cheddar cheese, shredded",
+      "¼ cup parsley",
+      "2 tbsp Parmesan cheese",
+      "1 tbsp Dijon mustard",
+      "1 tsp dried oregano",
+      "grill seasoning",
+      "balsamic vinegar",
+      "1 egg white",
+      "1-2 lbs extra lean ground turkey breast"
+     ],
+     "instructions": [
+      "Pre-heat oven to 375 degrees.",
+      "Ina skillet with a little stock, cook the onions and garlic until tender.",
+      "Let cool, and add to a bowl.",
+      "Add the ½ cup ketchup and remaining ingredients and mix well.",
+      "Form into a meatloaf on a foil covered baking pan.",
+      "In a small bowl, combine the remaining ketchup with a little balsamic vinegar and top the meatloaf.",
+      "Bake for 20-25 minutes."
+     ]
+    }
+   ],
+   "tags": [
+    "turkey",
+    "eggs",
+    "dairy"
+   ]
+  },
+  {
+   "number": 46,
+   "name": "Tuscan Chicken",
+   "sides": [],
+   "week": 7,
+   "components": [
+    {
+     "title": "Tuscan Chicken",
+     "servings": "4",
+     "ingredients": [
+      "4 chicken breasts",
+      "1 cup onion, chopped",
+      "2 garlic cloves, minced",
+      "1 package fresh spinach",
+      "½ tsp fresh rosemary, chopped or dried",
+      "2 cans cannelini beans, rinsed and drained",
+      "1 14.50unce can diced tomatoes, undrained",
+      "Grill seasoning"
+     ],
+     "instructions": [
+      "In a sauté pan with a little stock, brown the chicken with a little grill seasoning.",
+      "Remove chicken from the pan and cook the onion and garlic until translucent.",
+      "Stir in the spinach, rosemary, beans and tomatoes.",
+      "Cook for a few minutes.",
+      "Add in the chicken and Let simmer for a few more minutes."
+     ]
+    }
+   ],
+   "tags": [
+    "chicken"
+   ]
+  },
+  {
+   "number": 47,
+   "name": "Asian Chicken",
+   "sides": [],
+   "week": 7,
+   "components": [
+    {
+     "title": "Asian Chicken",
+     "servings": "4",
+     "ingredients": [
+      "1/3 cup rice wine vinegar",
+      "¼ cup Balsamic vinegar",
+      "3 tbsp honey",
+      "2 tbsp dark sesame oil",
+      "5 garlic cloves, minced",
+      "4 chicken breasts",
+      "3 tbsp black sesame seeds, toasted",
+      "2 scallions, chopped"
+     ],
+     "instructions": [
+      "Pre-heat the oven to 350 degrees.",
+      "Combine vinegars, oil, honey and garlic in a plastic bag.",
+      "Add chicken to bag, seal and marinate in the refrigerator for 1 hour.",
+      "Place the marinade ina sauté pan and bring to a boil, cook until syrupy.",
+      "Ina lined baking sheet, place the chicken and sprinkle with a little salt.",
+      "Baste some of the marinade on the chicken and bake for 10 minutes.",
+      "Baste the chicken one more time and cook for another 5-10 minutes.",
+      "Once cooked, drizzle a little more marinade on the chicken.",
+      "Sprinkle with sesame seeds and scallions."
+     ]
+    }
+   ],
+   "tags": [
+    "chicken"
+   ]
+  },
+  {
+   "number": 48,
+   "name": "Edamame Rice",
+   "sides": [],
+   "week": 7,
+   "components": [
+    {
+     "title": "Edamame Rice",
+     "servings": "6",
+     "ingredients": [
+      "2 cups of white jasmine rice",
+      "1 cup of shelled edamame",
+      "¼ cup cilantro, chopped",
+      "2 scallions, chopped",
+      "Black or white sesame seeds, toasted (optional)",
+      "¼ cup rice wine vinegar",
+      "1 tbsp EVOO",
+      "brown sugar or honey to taste",
+      "s&p to taste"
+     ],
+     "instructions": [
+      "In a sauté pan with a little stock, toast the rice.",
+      "Add 4 cups of water and bring to a boil.",
+      "Reduce heat, cover, and simmer until almost done.",
+      "When the rice almost dries, add in the edamame and fold well.",
+      "Once cooked, take off heat, and fold in the cilantro and scallions and sesame seeds (optional).",
+      "Whisk together the EVOO, vinegar, sweetener and s&P.",
+      "Fold into the rice and serve."
+     ]
+    }
+   ],
+   "tags": [
+    "meatless"
+   ]
+  },
+  {
+   "number": 49,
+   "name": "Avocado Egg White Salad",
+   "sides": [],
+   "week": 8,
+   "components": [
+    {
+     "title": "Avocado Egg White Salad",
+     "servings": "4",
+     "ingredients": [
+      "10 hard-boiled egg whites, chopped",
+      "⅓ cup onions, chopped",
+      "¾ cup celery, chopped",
+      "2-3 avocados, peeled and chopped",
+      "1 tbsp Dijon mustard",
+      "1 tsp paprika",
+      "S&P to taste"
+     ],
+     "instructions": [
+      "In a bowl, combine all the ingredients and serve."
+     ]
+    }
+   ],
+   "tags": [
+    "eggs",
+    "meatless"
+   ]
+  },
+  {
+   "number": 50,
+   "name": "Greek White Fish",
+   "sides": [],
+   "week": 8,
+   "components": [
+    {
+     "title": "Greek White Fish",
+     "servings": "6",
+     "ingredients": [
+      "6 fillets of any white fish",
+      "1 egg",
+      "1 cup crumbled reduced-fat or organic feta cru!",
+      "¼ cup milk almond or dairy free if possible",
+      "1 large tomato, chopped",
+      "¼ cup pine nuts, toasted",
+      "3 tbsp parsley, chopped",
+      "1 lemon, juiced",
+      "Grill seasoning and pepper"
+     ],
+     "instructions": [
+      "Preheat the oven to 425 degrees.",
+      "Line a baking sheet and place the fish on it.",
+      "Sprinkle the fish with grill seasoning.",
+      "In a small bowl, combine the poles egg, cheese, milk and pepper.",
+      "Spoon the mixture over the fish.",
+      "Top it with the tomatoes and pine nuts and bake for 15-20 minutes or until done.",
+      "Meanwhile, in a small bowl, combine the parsley and lemon juice and drizzle over the fish before serving."
+     ]
+    }
+   ],
+   "tags": [
+    "fish",
+    "eggs",
+    "nuts"
+   ]
+  },
+  {
+   "number": 51,
+   "name": "Nutty Pear or Apple Chicken",
+   "sides": [],
+   "week": 8,
+   "components": [
+    {
+     "title": "Nutty Pear Or Apple Chicken",
+     "servings": "4",
+     "ingredients": [
+      "4 chicken breasts, chopped",
+      "2 garlic cloves, minced",
+      "2 tsp fresh or 1 tsp dried rosemary",
+      "2 shallots or red onion, minced",
+      "3 pears or apples, peeled, cored, diced",
+      "½ cup walnuts, toasted and chopped",
+      "3-4 tbsp balsamic vinegar",
+      "2 tbsp honey",
+      "1 tbsp lemon juice"
+     ],
+     "instructions": [
+      "In a sauté pan, add a little broth, sprinkle the chicken with grill seasoning and cook until browned.",
+      "Set aside.",
+      "In the same pan, add a little more broth and sauté the shallots, garlic, rosemary, and pears/apples.",
+      "Cook until done.",
+      "Add the chicken back in the pan, and fold in with the veggies.",
+      "Add in the honey, vinegar and lemon juice.",
+      "Mix well and top with walnuts."
+     ]
+    }
+   ],
+   "tags": [
+    "chicken",
+    "nuts"
+   ]
+  },
+  {
+   "number": 52,
+   "name": "Baked Mexican Meatballs",
+   "sides": [],
+   "week": 8,
+   "components": [
+    {
+     "title": "Baked Mexican Meatballs",
+     "servings": "",
+     "ingredients": [
+      "Meatballs:",
+      "2 lbs lean ground turkey",
+      "4 garlic cloves, minced",
+      "1 cup cilantro, chopped",
+      "3 egg whites",
+      "2 tbsp organic ketchup",
+      "1 tsp chili powder",
+      "Grill seasoning to taste",
+      "Sauce:",
+      "1 onion, chopped",
+      "4-6 garlic cloves, chopped",
+      "28-ounce can crushed tomatoes",
+      "1 tsp chili powder",
+      "½ cup cilantro, chopped",
+      "1 cup shredded cheddar cheese"
+     ],
+     "instructions": [
+      "In a large bowl, mix all the meatball ingredients, mix well and form into small meatballs.",
+      "Place ina 350-degree oven for about 15-18 minutes.",
+      "Meanwhile, in a large sauté pan with a little stock, cook the onions and garlic until translucent.",
+      "Then add the crushed tomatoes and chili powder.",
+      "Cook for a few minutes and when meatballs are cooked add them in the pan, let them simmer and get incorporated with the sauce for a few minutes.",
+      "Pour into a baking dish and top with cheese and bake for about 10 minutes.",
+      "Sprinkle with cilantro and serve."
+     ]
+    }
+   ],
+   "tags": [
+    "turkey",
+    "eggs",
+    "dairy"
+   ]
+  },
+  {
+   "number": 53,
+   "name": "Artichoke Crusted Chicken",
+   "sides": [],
+   "week": 8,
+   "components": [
+    {
+     "title": "Artichoke Crusted Chicken",
+     "servings": "4",
+     "ingredients": [
+      "4 chicken breasts",
+      "¼ cup plain Greek yogurt",
+      "1 can quartered artichoke hearts, rinsed, drained and chopped finely",
+      "Grill seasoning",
+      "2 tbsp Parmesan cheese"
+     ],
+     "instructions": [
+      "Preheat the oven to 350 degrees.",
+      "Meanwhile in a bowl, mix the yogurt, artichokes and Parmesan cheese.",
+      "Sprinkle grill seasoning on both sides of the chicken and bake for 10 minutes.",
+      "Take the chicken out of the oven, add the artichoke mixture and bake for another 10 minutes."
+     ]
+    }
+   ],
+   "tags": [
+    "chicken",
+    "dairy"
+   ]
+  },
+  {
+   "number": 54,
+   "name": "Creamy Cauliflower Rice",
+   "sides": [],
+   "week": 8,
+   "components": [
+    {
+     "title": "Creamy Cauliflower Rice",
+     "servings": "4-6",
+     "ingredients": [
+      "1 head cauliflower, florets chopped",
+      "½ cup plain Greek yogurt",
+      "1½ cups jasmine or brown rice",
+      "3-4 garlic cloves, minced",
+      "S&P to taste",
+      "Optional: shredded mozzarella (a few tablespoons)"
+     ],
+     "instructions": [
+      "In a saucepan with a little stock, cook the garlic, and toast the rice.",
+      "Add the water and cook until done.",
+      "In another large saucepan, boil the cauliflower until softened.",
+      "In a food processor, add the cauliflower, yogurt, s&p to taste, and stock if needed to thin out.",
+      "When the rice is cooked, take off the heat, add the cauliflower mixture, fold in well, add mozzarella if using, and fold again."
+     ]
+    }
+   ],
+   "tags": [
+    "dairy",
+    "meatless"
+   ]
+  },
+  {
+   "number": 55,
+   "name": "Tex-Mex Turkey Meatloaf",
+   "sides": [],
+   "week": 8,
+   "components": [
+    {
+     "title": "Tex-Mex Turkey Meatloaf",
+     "servings": "6",
+     "ingredients": [
+      "1-2 lbs extra lean ground turkey",
+      "¼ cup red peppers, chopped",
+      "½ cup frozen corn, thawed",
+      "½ cup fresh salsa, plus more for the top",
+      "¼ cup shredded cheddar cheese (optional)",
+      "1 tbsp each of oregano, cumin and chili powder",
+      "2 egg whites",
+      "½ cup or more Greek yogurt",
+      "½ cup cilantro"
+     ],
+     "instructions": [
+      "Preheat the oven to 350 degrees.",
+      "Meanwhile, in a large bowl, combine all the ingredients and mix well.",
+      "Mold into a meatloaf on a lined baking sheet.",
+      "Top with salsa and bake for 20-25 minutes."
+     ]
+    }
+   ],
+   "tags": [
+    "turkey",
+    "eggs",
+    "dairy"
+   ]
+  }
+ ],
+ "snacks": [
+  {
+   "title": "Blueberry Chip Cookies",
+   "servings": "",
+   "ingredients": [
+    "1 cup fresh blueberries",
+    "1/2 cup almond butter",
+    "1 1/2 cups almond flour",
+    "3 tbsp agave nectar",
+    "1 egg",
+    "1 tbsp cinnamon",
+    "1 tsp vanilla extract",
+    "1/4 tsp baking soda",
+    "2-3 tbsp dairy and gluten free chocolate chips"
+   ],
+   "instructions": [
+    "Preheat the oven to 350 degrees.",
+    "Meanwhile, In a small saute pan, cook the blueberries for a few minutes until juicy, plump and almost melted.",
+    "Then place all the ingredients in a food processor except the chocolate chips.",
+    "Pulse well to incorporate, fold in the chips and place in a parchment paper lined baking dish and bake for ~14 minutes."
+   ],
+   "source": "guide1 p38",
+   "tags": [
+    "eggs",
+    "nuts",
+    "meatless"
+   ]
+  },
+  {
+   "title": "Chunky Monkey Protein Muffins",
+   "servings": "",
+   "ingredients": [
+    "2 ripe bananas, mashed",
+    "3/4 cup almond meal",
+    "3/4 cup coconut flour",
+    "1tsp each baking powder, baking soda",
+    "1 1/2 tsp cinnamon",
+    "1 tsp vanilla",
+    "2 eggs, whisked",
+    "1/4 cup coconut oil, melted",
+    "1/4 cup walnuts, chopped",
+    "2-3 tbsp agave",
+    "1 scoop vanilla protein powder (I use Prograde)",
+    "1/4 cup applesauce",
+    "1/4 cup dairy and gluten free chocolate chips"
+   ],
+   "instructions": [
+    "Pre-heat the oven to 350 degrees.",
+    "Mix all the wet ingredients and then mix the dry ingredients into it and then fold in the walnuts and chocolate chips.",
+    "Place in a coconut oil or spray lined muffin pan and bake for 25 minutes or until golden brown and cooked through."
+   ],
+   "source": "guide1 p38",
+   "tags": [
+    "eggs",
+    "nuts",
+    "meatless"
+   ]
+  },
+  {
+   "title": "Banana Bread Protein Bars",
+   "servings": "",
+   "ingredients": [
+    "2/3 cups oats (I use Bob’s Red Mill Gluten-Free)",
+    "1/2 cup Almond Meal (I use Bob’s Red Mill)",
+    "1 scoop vanilla protein powder (I use Prograde)",
+    "1/4 cup walnuts, chopped",
+    "1/4 freeze dried bananas, chopped",
+    "2-3 tbsp chia seeds (I use Bob’s Red Mill)",
+    "3 tbsp gluten & dairy free chocolate chips (I use",
+    "Dream) (OPTIONAL)",
+    "1/4 tsp cinnamon",
+    "2 bananas, mashed",
+    "1/2 cup almond butter",
+    "2-4 tbsp agave nectar or coconut sugar or brown",
+    "sugar (depending on sweetness)",
+    "1 tsp vanilla extract"
+   ],
+   "instructions": [
+    "Preheat the oven to 350 degrees.",
+    "Line a 8x8 square pan with parchment paper.",
+    "In a large bowl, mix the bananas, almond butter, agave or sugar and vanilla extract.",
+    "Then add cinnamon, oats, almond flour, protein powder and mix well.",
+    "If you need to, add a tablespoon or more of applesauce to loosen the mixture.",
+    "Fold in the walnuts, chia seeds, freeze dried bananas and chocolate chips if using.",
+    "Mix well and pour the batter into the lined pan and with a spoon, make sure it is even.",
+    "Bake for ~ 25 minutes or until done.",
+    "Let it cool before serving."
+   ],
+   "source": "guide1 p39",
+   "tags": [
+    "nuts",
+    "meatless"
+   ]
+  },
+  {
+   "title": "Apple Cinnamon Bites",
+   "servings": "",
+   "ingredients": [
+    "1 cup almond meal",
+    "1 cup gluten-free oats",
+    "1 tsp cinnamon",
+    "½ tsp nutmeg",
+    "3 tbsp coconut sugar or brown sugar",
+    "1 tsp vanilla extract",
+    "1 cup apple, chopped",
+    "2 eggs, beaten",
+    "1 scoop vanilla protein powder"
+   ],
+   "instructions": [
+    "Preheat the oven to 350 degrees.",
+    "Mix all the ingredients in a large bowl, except the apples.",
+    "Fold in the apples and nuts at the end and place in a muffin pan.",
+    "Bake for 15- 20 minutes or until done."
+   ],
+   "source": "guide1 p39",
+   "tags": [
+    "eggs",
+    "nuts",
+    "meatless"
+   ]
+  },
+  {
+   "title": "No Bake Chocolate Chip Protein Balls",
+   "servings": "",
+   "ingredients": [
+    "1 very ripe banana, mashed",
+    "1 tbsp unsweetend organic cocoa powder",
+    "2 tbsp almond butter",
+    "1/2 tsp vanilla extract",
+    "1 tbsp flaxmeal (I use Bob’s Red Mill)",
+    "1 tbsp chia seeds",
+    "2 tbsp dairy and gluten-free chocolate chips (I",
+    "use Chocolate Dream)",
+    "2 tbsp vanilla protein powder (I use Prograde)",
+    "3/4 cup Gluten-Free Oats (I use Bob’s Red Mill",
+    "Quick Cooking Oats)"
+   ],
+   "instructions": [
+    "Mash the banana with almond butter and extract.",
+    "Then mix in the rest of the ingredients and with a small ice cream scooper, scoop little balls onto a parchment paper lined baking sheet.",
+    "Let them sit in the fridge for about an hour before trying."
+   ],
+   "source": "guide1 p40",
+   "tags": [
+    "nuts",
+    "meatless"
+   ]
+  },
+  {
+   "title": "Love At First Bite Granola Bars",
+   "servings": "",
+   "ingredients": [
+    "1/2 cup almond butter, cashew butter, sun butter",
+    "or peanut butter",
+    "1/4 cup coconut oil",
+    "1 tbsp agave nectar or honey",
+    "1/2 cup freeze dried raspberries",
+    "2 1/2 cups gluten-free oats",
+    "1/2 cup milk chocolate chips (gluten-free &",
+    "dairy-free)"
+   ],
+   "instructions": [
+    "In a small saucepan over medium heat, melt the nut butter with coconut oil and agave.",
+    "Turn off heat and fold in the rest of the ingredients.",
+    "Pour into an 8x8 baking dish and refrigerate for at least an hour."
+   ],
+   "source": "guide1 p40",
+   "tags": [
+    "nuts",
+    "meatless"
+   ]
+  },
+  {
+   "title": "Pumpkin Protein Pancakes",
+   "servings": "",
+   "ingredients": [
+    "1 scoop protein powder (I use Prograde)",
+    "1/2 cup pumpkin",
+    "1 tsp cinnamon",
+    "1 tsp pumpkin spice",
+    "1/4 tsp nutmeg",
+    "1/2 tsp baking powder",
+    "2 egg whites",
+    "1/2 cup gluten- free oats",
+    "1/2 cup + 2tbs water",
+    "2 packets stevia"
+   ],
+   "instructions": [
+    "Put all of the ingredients in a blender and blend until smooth!",
+    "Meanwhile, heat a nonstick griddle or large nonstick skillet coated with cooking spray (coconut oil spray if you can) over medium heat.",
+    "Use an ice cream scooper to scoop the batter into griddle or skillet to make the same size pancakes.",
+    "When the pancakes start to bubble, flip them over and cook until done.",
+    "The seconds side cooks much faster."
+   ],
+   "source": "guide1 p41",
+   "tags": [
+    "eggs",
+    "meatless"
+   ]
+  },
+  {
+   "title": "Avocado Egg Salad",
+   "servings": "4",
+   "ingredients": [
+    "10 hard- boiled egg whites, diced",
+    "½ cup onions, diced",
+    "½ cup celery, diced",
+    "2 avocados, diced",
+    "1 tbsp Dijon mustard",
+    "1 tsp paprika",
+    "½ tsp pepper",
+    "Pinch of salt"
+   ],
+   "instructions": [
+    "In a bowl, combine eggs, onions, celery, avocado and mustard.",
+    "Stir well and add paprika and s&p to taste."
+   ],
+   "source": "guide1 p41",
+   "tags": [
+    "eggs",
+    "meatless"
+   ]
+  },
+  {
+   "title": "The Best Protein Chocolate Chip Cookies Ever",
+   "servings": "",
+   "ingredients": [
+    "1 cup oats",
+    "½ cup unsweetened applesauce",
+    "1 banana, mashed",
+    "½ cup almond butter",
+    "1 tsp vanilla extract",
+    "Sweetener to taste (brown sugar, agave, etc)",
+    "2 scoops vanilla protein powder",
+    "3-4 tbsp dairy & gluten free chocolate chips"
+   ],
+   "instructions": [
+    "Preheat the oven to 350 degrees.",
+    "Meanwhile, in a bowl mash the banana with applesauce, almond butter and extract.",
+    "Then mix in the oats, sweetener, and protein powder.",
+    "Mix well and then fold in chocolate chips.",
+    "Place on a parchment paper lined baking sheet and bake for 15 minutes."
+   ],
+   "source": "plan p12",
+   "tags": [
+    "nuts",
+    "meatless"
+   ]
+  },
+  {
+   "title": "Oatmeal Muffins",
+   "servings": "",
+   "ingredients": [
+    "2¼ cups oats",
+    "1 tsp cinnamon",
+    "2 tbsp chia seeds",
+    "1 tsp baking powder",
+    "1 very ripe banana, mashed",
+    "1 tsp vanilla, coconut, maple or almond extract",
+    "1 cup non-dairy milk",
+    "2 egg whites",
+    "⅓ cup unsweetened applesauce",
+    "Toppings or fillings, pick any: ¼ cup freeze dried berries, ¼ cup chopped walnuts, ¼ cup sliced almonds, ¼ cup shredded coconut, ¼ cup dairy and gluten-free chocolate chips, ¼ cup fresh berries or banana"
+   ],
+   "instructions": [
+    "Preheat the oven to 350 degrees.",
+    "Meanwhile, in a bowl mix all the dry ingredients (first 5 ingredients).",
+    "In a separate bowl, mix the wet ingredients (banana through applesauce).",
+    "Then mix dry into wet ingredients and mix well.",
+    "Fold in any of the topping or filling ingredients it or use them just as topping or both.",
+    "Bake fro 30 minutes or until done."
+   ],
+   "source": "plan p13",
+   "tags": [
+    "eggs",
+    "nuts",
+    "meatless"
+   ]
+  },
+  {
+   "title": "Gluten-Free Brownies",
+   "servings": "9-12 brownies",
+   "ingredients": [
+    "1 can black beans, rinsed and drained",
+    "2 tbsp cocoa powder",
+    "½ cup quick oats",
+    "¼ tsp salt",
+    "¼ to ⅓ cup honey or agave",
+    "¼ cup coconut oil, melted",
+    "2 tsp pure vanilla extract",
+    "½ tsp baking powder",
+    "½ cup chocolate chips",
+    "1 scoop vanilla protein powder"
+   ],
+   "instructions": [
+    "Preheat oven to 350 F.",
+    "Combine all ingredients except chips in a good food processor, and blend until completely smooth.",
+    "Really blend well.",
+    "Stir in the chips, then pour into a greased (with coconut oil) 8x8 pan.",
+    "Optional: sprinkle extra chocolate chips over the top.",
+    "Cook the black bean brownies 15-18 minutes, then let cool at least 10 minutes before trying to cut.",
+    "If they still look a bit undercooked, you can place them in the fridge overnight and they will firm up."
+   ],
+   "source": "plan p14",
+   "tags": [
+    "meatless"
+   ]
+  },
+  {
+   "title": "Strawberry Protein Muffins",
+   "servings": "",
+   "ingredients": [
+    "2½ cups oats",
+    "1 cup plain low fat Greek yogurt",
+    "2 eggs",
+    "Sweetener to taste (honey, agave, brown sugar, coconut sugar)",
+    "1½ tsp baking powder",
+    "½ tsp baking soda",
+    "1 cup strawberries, half inside the batter and half for the top",
+    "Almond milk (¼ cup plus), added to the blender as needed to get the right consistency",
+    "½ cup almonds or walnuts (optional), for crunch and healthy fats"
+   ],
+   "instructions": [
+    "Preheat the oven to 400 degrees and spray a muffin pan (silicone if you have one) with coconut oil spray and wipe down.",
+    "Place all of the ingredients except the strawberries in a blender or food processor, and blend until the oats are smooth.",
+    "Fold in half the strawberries.",
+    "Pour into the muffin pan and top off with a few strawberries.",
+    "Bake for about 20 minutes or until golden brown and done."
+   ],
+   "source": "plan p15",
+   "tags": [
+    "eggs",
+    "dairy",
+    "nuts",
+    "meatless"
+   ]
+  },
+  {
+   "title": "Chewy Chocolate Chip Cookies",
+   "servings": "",
+   "ingredients": [
+    "3 bananas, mashed",
+    "1 tsp vanilla extract",
+    "¼ cup coconut oil, melted and cooled",
+    "2 cups quick cooking oats",
+    "⅔ cup almond meal",
+    "½ cup flax meal",
+    "¾ tsp cinnamon",
+    "1 tsp baking powder",
+    "3 tbsp chocolate chips",
+    "2 scoops vanilla protein powder"
+   ],
+   "instructions": [
+    "Preheat the oven to 350 degrees.",
+    "Meanwhile in a large bowl, mix the bananas, coconut oil and extract.",
+    "Add in the rest of the ingredients except chocolate chips and mix well.",
+    "Fold in the chocolate chips and dollop onto a parchment paper lined baking sheet and bake for approximately 14 minutes."
+   ],
+   "source": "plan p16",
+   "tags": [
+    "nuts",
+    "meatless"
+   ]
+  },
+  {
+   "title": "Raspberry Chicken Salad",
+   "servings": "",
+   "ingredients": [
+    "¼ cup low-sugar raspberry preserves",
+    "2 tbsp EVOO",
+    "1 tbsp white wine vinegar",
+    "1 tsp Dijon mustard",
+    "S&P to taste",
+    "2 tbsp scallions, chopped",
+    "1 cup raspberries",
+    "4 cups cooked chicken breast, cubed"
+   ],
+   "instructions": [
+    "In a bowl, whisk together preserves, oil, vinegar, mustard, s&p.",
+    "Add scallions, raspberries and chicken.",
+    "Toss well."
+   ],
+   "source": "plan p16",
+   "tags": [
+    "chicken"
+   ]
+  }
+ ],
+ "breakfasts": [
+  {
+   "title": "Banana Split Oatmeal",
+   "servings": "1",
+   "ingredients": [
+    "½ cup oatmeal",
+    "Almond Milk to desired texture",
+    "¼ very ripe banana, smashed",
+    "1 ½ tbsp gluten and dairy free chocolate chips",
+    "1 ½ tbsp sliced almonds, toasted"
+   ],
+   "instructions": [
+    "Cook the oatmeal on the stove or microwave in almond milk.",
+    "Meanwhile, toast the almonds on a skillet and smash the banana in a bowl.",
+    "Pour the cooked oatmeal over the banana and top with chocolate chips and almonds.",
+    "Mix well and devour."
+   ],
+   "source": "guide1 p42"
+  },
+  {
+   "title": "Vegetable Frittata",
+   "servings": "",
+   "ingredients": [],
+   "instructions": [
+    "Saute your favorite veggies chopped up in a skillet over medium heat with a little low sodium organic stock.",
+    "Add your favorite herbs and spices to the veggies while you cook them.",
+    "In a bowl, whisk 8 egg whites and 4 whole eggs with 1/4 cup of whatever milk you use, preferably non-dairy.",
+    "Once the veggies have cooled, fold them into the egg mixture, sprinkle a little bit of your favorite cheese (this is optional), and mix well.",
+    "Pour the mixture into a dish like this: And bake at 350 degrees for about 25-30 minutes or until it is golden brown and done.",
+    "Optional: You can add healthy carbs to it, by shredding some sweet potatoes, cooking them on the stove until they are golden and use that as a crust on the baking dish before you add the egg mixture!",
+    "YUMMMM- OOOOO."
+   ],
+   "source": "guide1 p43"
+  },
+  {
+   "title": "BeFit Moms Oatmeal Pancake",
+   "servings": "",
+   "ingredients": [
+    "1/2 cup oatmeal",
+    "1/4 cup low-fat cottage cheese",
+    "3 egg whites",
+    "1/4 banana or any fresh fruit",
+    "2 tbsp walnuts or almonds, chopped (optional)",
+    "Sweetener to taste: Agave Nectar, Coconut Sugar",
+    "Cinnamon to taste"
+   ],
+   "instructions": [
+    "In a blender, blend all the ingredients (except if using any fruit other than banana, which you would fold in to the batter).",
+    "Cook on a small skillet at medium heat like a normal pancake."
+   ],
+   "source": "guide1 p43"
+  },
+  {
+   "title": "Coconut Mango Protein Shake",
+   "servings": "",
+   "ingredients": [
+    "1 cup coconut milk plus water to desired texture",
+    "1/4 cup frozen mango",
+    "1/4 frozen banana",
+    "1/2 tbsp shredded coconut",
+    "1 scoop vanilla protein powder (I use Prograde)"
+   ],
+   "instructions": [
+    "Blend all ingredients in a blender and enjoy!"
+   ],
+   "source": "guide1 p44"
+  },
+  {
+   "title": "Nutty Choco-Nana Protein Shake",
+   "servings": "",
+   "ingredients": [
+    "1 scoop Chocolate Protein Powder (I use",
+    "Prograde)",
+    "1/2 tbsp almond butter",
+    "1/4 cup oatmeal (I use gluten-free)",
+    "1/4 frozen banana",
+    "1/2 cup almond milk",
+    "water to desired smoothness"
+   ],
+   "instructions": [
+    "Blend all ingredients and serve cold."
+   ],
+   "source": "guide1 p44"
+  },
+  {
+   "title": "Blue-Nana Protein Shake",
+   "servings": "",
+   "ingredients": [
+    "1 scoop vanilla protein powder, I used Prograde",
+    "1/2 banana",
+    "1/4 cup frozen blueberries",
+    "1 1/2 cup spinach",
+    "1/2 cup almond milk + 1/4 cup or more of water",
+    "(check for consistency)",
+    "1 tbsp chia seeds"
+   ],
+   "instructions": [
+    "Blend all ingredients in a blender."
+   ],
+   "source": "guide1 p44"
+  },
+  {
+   "title": "Coco-Choco Chunky Monkey",
+   "servings": "",
+   "ingredients": [
+    "2 scoops Vanilla protein powder (I use Prograde)",
+    "1 cup Almond milk",
+    "1/2 cup or less water (to your desired",
+    "consistency)",
+    "1 tbsp gluten-free, dairy-free semi-sweet",
+    "chocolate chips",
+    "1 tbsp coconut flakes",
+    "1/2 frozen banana (put a banana in freezer)"
+   ],
+   "instructions": [
+    "On stove, melt the chocolate chips in the almond milk and let cool, then place that and the rest of the ingredients in the blender and blend until smooth."
+   ],
+   "source": "guide1 p45"
+  }
+ ],
+ "shopping": {
+  "baked-snacks": {
+   "title": "MMF Baked Snacks",
+   "week": null,
+   "aisles": {
+    "Dairy": [
+     "Non Dairy Milk",
+     "Egg Whites",
+     "Plain Low Fat Greek Yogurt",
+     "Eggs",
+     "Almond Milk"
+    ],
+    "Spices & Baking": [
+     "Vanilla Extract",
+     "Sweetener",
+     "Dairy & Gluten Free Chocolate Chips",
+     "Cinnamon",
+     "Chia Seeds",
+     "Baking Powder",
+     "Chopped Walnuts",
+     "Sliced Almonds",
+     "Shredded Coconuts",
+     "Cocoa Powder",
+     "Salt",
+     "Honey or Agave",
+     "Coconut Oil",
+     "Baking Soda"
+    ],
+    "Canned Goods": [
+     "Black Beans",
+     "Unsweetened Applesauce"
+    ],
+    "Grains": [
+     "Oats",
+     "Almond Meal",
+     "Flax Meal"
+    ],
+    "Produce": [
+     "Banana",
+     "Fresh Berries",
+     "Strawberries",
+     "Scallions",
+     "Raspberries",
+     "Freeze Dried Blueberries, Strawberries or Raspberries"
+    ],
+    "Condiments": [
+     "Low Sugar Raspberry Preserves",
+     "EVOO",
+     "White Wine Vinegar",
+     "Dijon Mustard"
+    ],
+    "Protein": [
+     "Chicken Breast"
+    ],
+    "Misc": [
+     "Vanilla Protein Powder",
+     "Almond Butter"
+    ]
+   }
+  },
+  "week1": {
+   "title": "Shopping List for Week 1",
+   "week": 1,
+   "aisles": {
+    "Dairy": [
+     "Eggs",
+     "Goat Cheese",
+     "Low-Free Cottage Cheese",
+     "Low Fat Shredded Cheddar Cheese",
+     "Reduced Fat Parmesan Cheese"
+    ],
+    "Spices & Baking": [
+     "Paprika",
+     "Salt",
+     "Pepper",
+     "Cinnamon",
+     "Cumin",
+     "Chili Powder",
+     "Ground Coriander",
+     "Curry Powder",
+     "Grill Seasoning",
+     "Coconut Sugar"
+    ],
+    "Canned Goods": [
+     "Can Diced Tomatoes",
+     "Can Hearts of Palms",
+     "Can Artichoke Hearts"
+    ],
+    "Grains": [
+     "Quinoa",
+     "Pine Nuts"
+    ],
+    "Produce": [
+     "Onions",
+     "Red Onions",
+     "Celery",
+     "Garlic",
+     "Sweet Potatoes",
+     "Lemon",
+     "Limes",
+     "Fresh Thyme",
+     "Cilantro leaves",
+     "Hearts of Romaine",
+     "Arugula",
+     "Mango",
+     "Shallots",
+     "Red Pepper",
+     "Broccoli Florets",
+     "Cauliflower Florets",
+     "Parsley",
+     "Peaches",
+     "Orange",
+     "Nectarines",
+     "Avocado",
+     "Packed Spinach"
+    ],
+    "Condiments": [
+     "Dijon Mustard",
+     "Orange Marmalade",
+     "Extra Virgin Olive Oil",
+     "Low-Sodium Chicken Stock",
+     "Roasted Peppers"
+    ],
+    "Frozen Foods": [
+     "Frozen Artichokes",
+     "Ezekiel or any Gluten-Free Bread"
+    ],
+    "Protein": [
+     "Chicken Breast",
+     "White Fish",
+     "Extra Lean Ground Turkey Breast"
+    ],
+    "Misc": [
+     "Dried Cranberries",
+     "White Wine",
+     "Almonds",
+     "Protein Powder"
+    ]
+   }
+  },
+  "week2": {
+   "title": "Shopping List Week 2",
+   "week": 2,
+   "aisles": {
+    "Dairy": [
+     "Feta Crumbles Reduced Fat Cottage Cheese",
+     "Reduced Fat Parmesan Cheese"
+    ],
+    "Spices & Baking": [
+     "Salt",
+     "Pepper",
+     "Cumin",
+     "Paprika",
+     "Grill Seasoning",
+     "Sesame Seeds"
+    ],
+    "Canned Goods": [
+     "Diced Tomatoes"
+    ],
+    "Grains": [
+     "Quinoa",
+     "Brown Rice"
+    ],
+    "Produce": [
+     "Russet Potatoes",
+     "Broccoli Florets",
+     "Mangos",
+     "Garlic Cloves",
+     "Red Onions",
+     "Asparagus",
+     "Green Onions",
+     "Thyme",
+     "Corn",
+     "Edamame",
+     "Eggplants",
+     "Parsley",
+     "Coriander",
+     "Onions",
+     "Fresh Ginger",
+     "Plum Tomatoes",
+     "Cilantro",
+     "Artichoke Hearts",
+     "Oregano",
+     "Basil",
+     "Limes",
+     "Tomatoes"
+    ],
+    "Condiments": [
+     "Low Sodium Chicken Stock",
+     "Balsamic Vinegar",
+     "Rice Wine Vinegar",
+     "Roasted Red Pepper",
+     "EVOO"
+    ],
+    "Protein": [
+     "Chicken Breast Tenderloins",
+     "White Fish Fillets",
+     "Chicken Breast"
+    ],
+    "Misc": [
+     "Dried Cranberries",
+     "Almonds",
+     "Protein Powder"
+    ]
+   }
+  },
+  "week3": {
+   "title": "Shopping List Week 3",
+   "week": 3,
+   "aisles": {
+    "Dairy": [
+     "Cottage Cheese",
+     "Low-Fat Shredded Cheddar"
+    ],
+    "Spices & Baking": [
+     "Grill Seasoning",
+     "Chili Powder",
+     "Oregano",
+     "Thyme",
+     "Onion Powder",
+     "Garlic Powder",
+     "Salt",
+     "Pepper",
+     "Paprika",
+     "Cumin",
+     "Coriander",
+     "Italian Salt-Free seasoning",
+     "Cocoa Powder"
+    ],
+    "Canned Goods": [
+     "Tomato Paste"
+    ],
+    "Grains": [
+     "Brown Rice",
+     "Oats"
+    ],
+    "Produce": [
+     "Lime",
+     "Cilantro",
+     "Sweet Potatoes",
+     "Orange",
+     "Small Onion",
+     "Red Pepper",
+     "Garlic Cloves",
+     "Large Onions",
+     "Parsley",
+     "Red Onion"
+    ],
+    "Condiments": [
+     "Low Sodium Chicken Stock",
+     "Low Sugar Orange Preserves",
+     "Dijon Mustard",
+     "Honey",
+     "Agave Nectar",
+     "Apple Cider Vinegar",
+     "Chunky Salsa",
+     "Chipotle Pepper in Adobo"
+    ],
+    "Frozen Foods": [
+     "Frozen Spinach (boxed)"
+    ],
+    "Protein": [
+     "Chicken Breast",
+     "Flank Steak",
+     "Extra Lean Ground Turkey",
+     "Chicken Tenderloins Turkey Breast Tenderloins"
+    ],
+    "Misc": [
+     "Almonds",
+     "Lime Juice"
+    ]
+   }
+  },
+  "week4": {
+   "title": "Shopping List Week 4",
+   "week": 4,
+   "aisles": {
+    "Dairy": [
+     "Low-Fat Sour Cream"
+    ],
+    "Spices & Baking": [
+     "Chili Powder",
+     "Cumin",
+     "Salt",
+     "Pepper",
+     "Brown Sugar",
+     "Oregano",
+     "EVOO",
+     "Grill Seasoning",
+     "Honey or Agave Nectar"
+    ],
+    "Canned Goods": [
+     "Black Beans",
+     "Crushed Tomatoes",
+     "Kidney Beans"
+    ],
+    "Grains": [
+     "Brown Rice",
+     "Quinoa"
+    ],
+    "Produce": [
+     "Garlic Cloves",
+     "Fresh Ginger",
+     "Green Onions",
+     "Onions",
+     "Water Chestnuts",
+     "Sugar Snap Peas",
+     "Carrots",
+     "Lemon",
+     "Parsley",
+     "Coriander",
+     "Avocado",
+     "Red Onion",
+     "Lime",
+     "Arugula",
+     "Asparagus",
+     "Blackberries"
+    ],
+    "Condiments": [
+     "Salsa",
+     "Rice Vinegar",
+     "Hoisin Sauce",
+     "Sesame Oil",
+     "Roasted Red Pepper",
+     "Balsamic Vinegar"
+    ],
+    "Frozen Foods": [
+     "Frozen Corn"
+    ],
+    "Protein": [
+     "Chicken Breasts",
+     "Extra Lean Ground Turkey",
+     "Salmon Fillets",
+     "Scallions"
+    ],
+    "Misc": [
+     "Lemon Juice",
+     "Almond",
+     "Fresh Orange Juice"
+    ]
+   }
+  },
+  "week5": {
+   "title": "MMF Shopping List- Week 5",
+   "week": 5,
+   "aisles": {
+    "Dairy": [
+     "Egg Whites",
+     "Mozzarella Cheese",
+     "Parmesan Cheese",
+     "Part-skim Shredded Cheddar Cheese",
+     "Reduced Fat Feta Crumbles",
+     "Plain Greek Yogurt",
+     "Milk (dairy-free)"
+    ],
+    "Spices & Baking": [
+     "Garlic Powder",
+     "Italian Seasoning",
+     "Ground Pepper",
+     "Kosher Salt",
+     "Sweetener",
+     "Chili Powder",
+     "Cumin",
+     "Salt",
+     "Onion Powder",
+     "Grill Seasoning"
+    ],
+    "Canned Goods": [
+     "Tomato Paste",
+     "Kidney Beans",
+     "Diced Tomatoes with garlic",
+     "Cannellini Beans",
+     "Diced Tomatoes"
+    ],
+    "Grains": [
+     "Brown Rice",
+     "Jasmine Rice"
+    ],
+    "Produce": [
+     "Ripe Tomatoes",
+     "Basil Leaves",
+     "Onion",
+     "Red Apples",
+     "Garlic Cloves",
+     "Lime",
+     "Cilantro",
+     "Parsley",
+     "Sun-Dried Tomatoes"
+    ],
+    "Condiments": [
+     "Rice Wine Vinegar",
+     "Olive Oil",
+     "Low Sodium Chicken Stock"
+    ],
+    "Frozen Foods": [
+     "Chopped Spinach"
+    ],
+    "Protein": [
+     "Lean Ground Turkey",
+     "Chicken Breast"
+    ]
+   }
+  },
+  "week6": {
+   "title": "MMF Shopping List -Week 6",
+   "week": 6,
+   "aisles": {
+    "Dairy": [
+     "Reduced Fat Feta",
+     "Plain Greek Yogurt",
+     "Part-Skim Cheddar Cheese"
+    ],
+    "Spices & Baking": [
+     "Chili Powder",
+     "Garlic Powder",
+     "Salt",
+     "Grill Seasoning",
+     "Dried Oregano",
+     "Cumin",
+     "Paprika",
+     "Coconut Sugar or Brown Sugar",
+     "Onion Powder",
+     "Dry Mustard",
+     "Dried Thyme",
+     "Ground Pepper"
+    ],
+    "Canned Goods": [
+     "Corn",
+     "Tomato Paste",
+     "Prepared Pesto",
+     "Diced Tomatoes",
+     "Kidney Beans",
+     "Diced Tomatoes with Garlic"
+    ],
+    "Grains": [
+     "Brown Rice",
+     "Jasmine Rice",
+     "Quinoa"
+    ],
+    "Produce": [
+     "Red Pepper",
+     "Yellow Pepper",
+     "Red Onion",
+     "Tomatoes",
+     "Cherry Tomatoes",
+     "Edamame",
+     "Scallions",
+     "Parsley",
+     "Onion",
+     "Garlic Cloves",
+     "Cilantro",
+     "Lime",
+     "Mango",
+     "English Cucumber",
+     "Potatoes",
+     "Baby Spinach",
+     "Grape Tomatoes",
+     "Fresh Rosemary",
+     "Lemon",
+     "Raspberries",
+     "Sweet Potato"
+    ],
+    "Condiments": [
+     "Low Sodium Chicken Broth",
+     "Balsamic Vinegar",
+     "Lemon Juice",
+     "Organic Ketchup",
+     "Cider Vinegar",
+     "EVOO",
+     "Rice Wine Vinegar",
+     "Low- Sugar Raspberry Preserves",
+     "White Wine Vinegar",
+     "Dijon Mustard"
+    ],
+    "Frozen Foods": [
+     "Chopped Spinach"
+    ],
+    "Protein": [
+     "Lean Ground Turkey",
+     "Chicken Breast",
+     "Ground Turkey Breast"
+    ],
+    "Misc": [
+     "Sliced Almonds"
+    ]
+   }
+  },
+  "week7": {
+   "title": "MMF Shopping List- Week 7",
+   "week": 7,
+   "aisles": {
+    "Dairy": [
+     "Feta Crumbles",
+     "Shredded Cheddar Cheese",
+     "Parmesan Cheese",
+     "Egg White"
+    ],
+    "Spices & Baking": [
+     "Salt",
+     "Pepper",
+     "Bay Leaves",
+     "Thyme",
+     "Grill Seasoning",
+     "Brown Sugar",
+     "Dried Oregano",
+     "Black Sesame seeds"
+    ],
+    "Canned Goods": [
+     "Tomato Sauce",
+     "Cannelini Beans",
+     "Diced tomatoes"
+    ],
+    "Grains": [
+     "Lentils",
+     "Jasmine Rice"
+    ],
+    "Produce": [
+     "Asparagus",
+     "Cherry Tomatoes",
+     "Carrots",
+     "Celery Stalk",
+     "Shallots",
+     "Garlic",
+     "Parsley",
+     "Plum Tomatoes",
+     "Red Pepper",
+     "Onion",
+     "Spinach",
+     "Rosemary",
+     "Scallions",
+     "Shelled Edamame",
+     "Cilantro",
+     "Lemons",
+     "Organges"
+    ],
+    "Condiments": [
+     "Honey",
+     "Dijon Mustard",
+     "Red Wine Vinegar",
+     "Balsamic Vinegar",
+     "Organic ketchup",
+     "Rice Wine Vinegar",
+     "Apple Cider Vinegar",
+     "Dark Sesame oil",
+     "Maple Syrup",
+     "EVOO"
+    ],
+    "Protein": [
+     "Lean Ground Turkey Breast",
+     "Chicken Breast"
+    ]
+   }
+  },
+  "week8": {
+   "title": "MMF Shopping List Week 8",
+   "week": 8,
+   "aisles": {
+    "Dairy": [
+     "Egg Whites",
+     "Egg",
+     "Reduced Fat Feta Crumbles",
+     "Almond or Dairy Free Milk",
+     "Shredded Cheddar Cheese",
+     "Greek Yogurt",
+     "Parmesan Cheese"
+    ],
+    "Spices & Baking": [
+     "Paprika",
+     "Salt",
+     "Pepper",
+     "Pine Nuts",
+     "Grill Seasoning",
+     "Walnuts",
+     "Honey",
+     "Chili Powder",
+     "Oregano",
+     "Cumin"
+    ],
+    "Canned Goods": [
+     "Crushed Tomatoes",
+     "Artichoke Hearts"
+    ],
+    "Grains": [
+     "Jasmine Rice",
+     "Brown Rice"
+    ],
+    "Produce": [
+     "Onions",
+     "Celery",
+     "Avocado",
+     "Tomato",
+     "Parsley",
+     "Lemon",
+     "Garlic Cloves",
+     "Rosemary",
+     "Red Onion",
+     "Pears or Apples",
+     "Cilantro",
+     "Cauliflower",
+     "Red Peppers",
+     "Fresh Salsa"
+    ],
+    "Condiments": [
+     "Dijon Mustard",
+     "Balsamic Vinegar",
+     "Lemon Juice",
+     "Organic Ketchup"
+    ],
+    "Frozen Foods": [
+     "Corn"
+    ],
+    "Protein": [
+     "White Fish fillet",
+     "Chicken Breasts",
+     "Lean Ground Turkey"
+    ]
+   }
+  },
+  "snacks": {
+   "title": "Snacks Shopping List",
+   "week": null,
+   "aisles": {
+    "Dairy": [
+     "Eggs"
+    ],
+    "Spices & Baking": [
+     "Almond Flour",
+     "Coconut Flour",
+     "Baking Powder",
+     "Cinnamon",
+     "Baking Soda",
+     "Almond Meal",
+     "Nutmeg",
+     "Cocoa Powder",
+     "Flax Meal Pumpkin Spice",
+     "Paprika",
+     "Pepper",
+     "Salt"
+    ],
+    "Grains": [
+     "Oatmeal",
+     "Chia Seeds"
+    ],
+    "Produce": [
+     "Blueberries",
+     "Bananas",
+     "Apple",
+     "Pumpkin",
+     "Onions",
+     "Celery",
+     "Avocados"
+    ],
+    "Condiments": [
+     "Almond Butter",
+     "Dijon Mustard",
+     "Applesauce",
+     "Dairy & Gluten Free Chocolate Chips",
+     "Agave Nectar",
+     "Coconut Oil",
+     "Vanilla Extract",
+     "Coconut Sugar",
+     "Stevia"
+    ],
+    "Frozen Foods": [
+     "Freeze-Dried Raspberries",
+     "Freeze Dried Bananas"
+    ],
+    "Misc": [
+     "Walnuts",
+     "Vanilla Protein Powder"
+    ]
+   }
+  }
+ },
+ "rules": {
+  "intro": [
+   "Your Pregnancy nutrition is extremely important.",
+   "It doesn’t just affect you, but it affects your baby as well.",
+   "Plus, they say that they acquire a taste to foods and nutrients you eat during pregnancy, so it’s a good idea to eat all kinds of different foods and nutrients to increase the chances of you having a good eater and not a picky one.",
+   "My goal for you this pregnancy is to also diminish any morning sickness, increase your energy, and help you not gain any excess weight.",
+   "After 2 amazing pregnancies with only 20 lbs of weight gain in each and incredible experiences, as well as helping thousands of pregnant women accomplish the same, I have the perfect plan for you.",
+   "I know that most women get tons of cravings, especially for carbohydrates.",
+   "So I made sure to include healthy carbs in every meal as well as give you some incredibly amazing and yummy snacks that you can have to satisfy that sweet tooth without the bad calories and poor nutrition.",
+   "I know how stressful pregnancy can be in it of itself with all the new changes coming soon, and the lack of energy and all the work you are doing to the house to prepare for the baby, not to mention the financial stress that you are probably thinking about.",
+   "So I want to ease your stress by giving you a nutrition plan that is easy to follow, enjoyable and will deliver great results.",
+   "I don’t want you to have to stress about what you should eat and what you should cook, etc. So I have done all the work for you.",
+   "In this Nutrition Guide, you are to eat every 2-3 hours.",
+   "Please do not allow yourself to get hungry as that will increase your chances of feeling sick as well as will make you feel weak, fatigued and cranky.",
+   "It will also make you incredibly hungry for the following meal, which will most likely make you OVER-EAT for that next meal.",
+   "Plan to have 3 main meals and 2-4 snacks per day, depending on what time you wake up and go to sleep and your activity level.",
+   "Each week is divided by days and each day has 3 meals.",
+   "Your dinners will be the main meals you cook for."
+  ],
+  "how": [
+   "I want you to cook double or even triple the recipe’s servings so that you can have extra food left over because you will be eating left over’s from dinner for the next day’s lunch and maybe even snacks if you are in the mood for them.",
+   "This will save you tons of time and will ensure you have a healthy lunch ready for you the next day so this will prevent you from eating out, picking at “Bad Food”, and making poor choices, or end up feeling sick because you have no food available.",
+   "This will ensure that you are always prepared and being prepared is key!",
+   "For the 4 weeks, you have a total of 8 recipes for snacks.",
+   "I also gave you a bunch of other options that you can have that are just easy on-the -go snacks that you can just have in your fridge or pantry at all times.",
+   "You have a few different breakfast meals every day, but if you are one of those creatures of habit and you like having the same thing every day, that is ok, but just for breakfast. I want you to vary all your other meals so that you get enough of all the nutrients you and your baby need. Remember that everything you do now is affecting your baby too.",
+   "I am giving you 4 weeks of meal plans and recipes.",
+   "You can repeat these 4 weeks for the duration of your pregnancy.",
+   "I am sure that you will find your favorite meals and recipes and please, feel free after you try them all to swap one day for another or to make your favorites weekly.",
+   "So if I you are on week 3 but there is a recipe from week 1 that you love, feel free to make and eat that one instead. But try them all  I just want you to enjoy yourself, eat enough of the right nutrients, prevent morning sickness and have tons of energy so that you are in a good mood and can enjoy your pregnancy.",
+   "Sticking to your plan will help you only gain the weigh that is necessary. And if you do this, you will be able to lose your baby weight super fast."
+  ],
+  "steps": [
+   "1. Eat every 2-3 hours.",
+   "2. At the beginning of the week take your Grocery List to the store and stock up on everything that you will need for the whole week.",
+   "3. At the beginning of each week, bake 2 different batches of snacks to have for the week. Most of these you can also have for breakfast.",
+   "4. Plan your days out ahead of time and if you are on the go or working, make sure to pack up your meals and/or snacks and take them with you. Try to do this the night before.",
+   "5. If you need to, set alarms or notifications to remind you to eat every few hours. Remember that when you get hungry all heck can break loose.",
+   "6. Look at your week and days at a glance and plan ahead with your cooking. If you have a busy week, maybe you need to cook 2 days of dinners on 1 night.",
+   "7. This isn’t a diet so all things in moderation. If you are craving a bagel, have a bagel, just don’t eat a bagel every day. If you want some cookies, have just a few, but don’t eat 5 cookies every day. If when you fall off the wagon, you do so in moderation, you will still be in good shape.",
+   "8. Drink a lot of water. Get in the habit of having a bottle of water with you at all times. The last thing you want is water retention weight on top of the weight you are already gaining.",
+   "9. You may want to have some protein bars on hand at all times just in case you don’t get a chance to cook your healthy snacks or you run out of them and don’t have time to bake them for a few days. There is only one protein bar I have found is healthy enough to eat during pregnancy and that is Dale’s Raw Protein Bars and that is not because they are raw, but because they are made with 100% natural ingredients and they are organic and have no GMO’s. You can only get them online, here is the link. I always had one box in the freezer and one in the fridge. I pretty much took one with me daily every where I went. They are yummy too! Link: http://dalesrawfoods. com#oid=1108_1"
+  ],
+  "avoid": [
+   "Deli Meats",
+   "Unpasteurized Cheeses",
+   "Fish or seafood high in mercury",
+   "Artificial Sweeteners",
+   "Any pre-packaged foods that say Fat-Free or Sugar-Free",
+   "Raw Meats and fish",
+   "Alcohol",
+   "Caffeine"
+  ],
+  "breakfastList": [
+   "Banana Split Oatmeal and Scrambled Egg Whites",
+   "Regular Oatmeal and Veggie Egg White Omelet",
+   "Gluten-Free Toast or English Muffin with Scrambled Egg Whites and Cottage Cheese",
+   "Protein Smoothie",
+   "Oatmeal Pancakes",
+   "Egg White Veggie Frittata and Oatmeal",
+   "Egg White Veggie Frittata and Gluten-Free Toast"
+  ]
+ },
+ "easySnacks": [
+  "Raw veggies + hummus",
+  "Fruit + ¼ cup almond, cashew or sun butter",
+  "Fruit + ¼ cup almonds, cashews or pumpkin seeds",
+  "Hard boiled egg whites + avocado or guacamole",
+  "Leftovers from any meal",
+  "A protein shake or smoothie"
+ ]
+}

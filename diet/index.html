@@ -1,0 +1,343 @@
+<!doctype html>
+<meta charset="utf-8">
+<base target="_top">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MMF Pregnancy Diet Plan</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#dd2289">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Diet Plan">
+<link rel="apple-touch-icon" href="../icons/icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Lato:wght@400;700&display=swap">
+<link rel="stylesheet" href="../app.css">
+<style>
+/* The Pregnancy Diet Plan as an app. One page, five tabs. Reads ../data/diet.json (built from the PDF
+   by tools/build_diet.py). Everything she does saves on her phone (localStorage, keys pdp:).
+   Today: the five eating slots for the day, water, "eat every 2-3 hours" nudge.
+   Week: the 7 days of the week she is on, swap a dinner.  Recipes: all 55 dinners, snacks, breakfasts,
+   scaled servings, aversion filters.  Shopping: the week's list by aisle with ticks.  Plan: Michelle's rules. */
+body{padding-bottom:110px}
+.wrap{max-width:600px}
+header{padding-top:14px;display:flex;flex-direction:column;gap:6px}
+.tabs{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--card);border-top:1px solid var(--line);display:flex;justify-content:space-around;padding:6px max(8px,env(safe-area-inset-left)) max(8px,env(safe-area-inset-bottom))}
+.tabs button{flex:1;border:0;background:none;display:flex;flex-direction:column;align-items:center;gap:2px;padding:6px 2px;font:700 12px/1 var(--display);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border-radius:12px}
+.tabs button span{font-size:20px;line-height:1}
+.tabs button[aria-pressed="true"]{color:var(--accent);background:var(--accent-soft)}
+.daybar{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.daybar select,.daybar button{font:700 15px/1 var(--display);text-transform:uppercase;letter-spacing:.03em;padding:9px 12px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+.daybar .today{color:var(--accent);border-color:var(--accent)}
+.slot{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:12px 14px;display:grid;grid-template-columns:1fr 44px;gap:8px 10px;align-items:start}
+.slot.done{background:var(--done-soft);border-color:var(--accent)}
+.slot .k{font:700 12px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.slot .k small{color:var(--muted);letter-spacing:.04em;text-transform:none;font-weight:400;margin-left:6px}
+.slot h3{margin:4px 0 0;font:700 21px/1.1 var(--display);text-transform:uppercase}
+.slot ul{margin:4px 0 0;padding-left:18px;color:var(--ink)}
+.slot li{margin:2px 0}
+.slot .note{margin-top:6px}
+.slot .k,.slot>div{grid-column:1}
+.slot .tick{grid-column:2;grid-row:1/span 3;width:44px;height:44px;border-radius:50%;border:2px solid var(--line);background:var(--bg);font:700 20px/1 var(--display);color:transparent;align-self:center}
+.slot .tick[aria-pressed="true"]{background:var(--done);border-color:var(--done);color:var(--accent-ink)}
+.rlink{display:inline-flex;align-items:center;gap:6px;background:var(--accent-soft);color:var(--accent);border:0;border-radius:999px;padding:7px 11px;font:700 14px/1 var(--display);text-transform:uppercase;letter-spacing:.03em;margin:4px 6px 0 0;text-decoration:none;cursor:pointer}
+.rlink.quiet{background:var(--bg);color:var(--brand);border:1px solid var(--line)}
+.water{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.water button{width:34px;height:40px;border-radius:10px;border:1px solid var(--line);background:var(--card);font-size:18px}
+.water button[aria-pressed="true"]{background:var(--blue-soft);border-color:var(--blue)}
+.nudge{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.nudge b{font:700 20px/1.1 var(--display);text-transform:uppercase}
+.prog{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.prog div{border:1px solid var(--line);border-radius:12px;padding:8px 6px;text-align:center;background:var(--card)}
+.prog b{display:block;font:700 24px/1 var(--display);color:var(--accent)}
+.prog small{font:700 11px/1.2 var(--body);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.wk{display:flex;flex-direction:column;gap:8px}
+.wd{display:grid;grid-template-columns:54px 1fr;gap:10px;border:1px solid var(--line);border-radius:16px;padding:10px 12px;background:var(--card)}
+.wd.now{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-soft)}
+.wd .d b{display:block;font:700 22px/1 var(--display)}
+.wd .d small{font:700 10px/1.2 var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.wd .m{font-size:14px;color:var(--muted)}
+.wd .m b{color:var(--ink);font:700 16px/1.2 var(--display);text-transform:uppercase;display:block}
+.wd .m .l{display:block;margin-top:3px}
+.wd .acts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.wd .acts button{font:700 12px/1 var(--display);letter-spacing:.05em;text-transform:uppercase;color:var(--brand);border:1px solid var(--line);background:var(--bg);border-radius:999px;padding:6px 9px}
+.search{display:flex;gap:8px}
+.search input{flex:1;font:inherit;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chips button{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:7px 11px;font:700 13px/1 var(--display);letter-spacing:.04em;text-transform:uppercase}
+.chips button[aria-pressed="true"]{background:var(--brand);color:#fff;border-color:var(--brand)}
+.chips button.av[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.rc{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 12px;text-decoration:none;color:inherit;cursor:pointer}
+.rc b{display:block;font:700 18px/1.1 var(--display);text-transform:uppercase}
+.rc small{color:var(--muted);font-size:13px}
+.rc .fav{border:0;background:none;font-size:22px;color:var(--line)}
+.rc .fav.on{color:var(--accent)}
+.tag{display:inline-block;font:700 10px/1 var(--body);letter-spacing:.06em;text-transform:uppercase;border-radius:5px;padding:3px 5px;margin-right:4px;background:var(--bg);border:1px solid var(--line);color:var(--muted)}
+.tag.warn{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+dialog{border:0;border-radius:22px 22px 0 0;padding:0;width:100%;max-width:640px;margin:auto auto 0;background:var(--card);color:var(--ink);max-height:92vh}
+dialog::backdrop{background:rgba(54,45,112,.45)}
+.modal{padding:16px 18px 30px;display:flex;flex-direction:column;gap:12px}
+.modal .top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.modal h2{font-size:28px}
+.modal .x{border:1px solid var(--line);background:var(--bg);border-radius:999px;width:38px;height:38px;font-size:18px;flex:none}
+.scale{display:flex;gap:6px;align-items:center;flex-wrap:wrap;font-size:14px;color:var(--muted)}
+.scale button{border:1px solid var(--line);background:var(--bg);border-radius:999px;padding:7px 11px;font:700 14px/1 var(--display)}
+.scale button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.comp h3{margin:8px 0 2px;font:700 20px/1.1 var(--display);text-transform:uppercase}
+.comp .sv{font-size:13px;color:var(--muted)}
+.comp ul,.comp ol{margin:6px 0 0;padding-left:20px}
+.comp li{margin:3px 0}
+.comp li.have{text-decoration:line-through;color:var(--muted)}
+.comp ul li{cursor:pointer}
+.aisle h3{margin:10px 0 4px;font:700 13px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.aisle label{display:flex;gap:10px;align-items:center;padding:7px 0;border-bottom:1px dashed var(--line)}
+.aisle input{width:22px;height:22px;accent-color:var(--accent)}
+.aisle label.have span{text-decoration:line-through;color:var(--muted)}
+.addrow{display:flex;gap:8px}
+.addrow input{flex:1;font:inherit;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+.addrow button{border:0;background:var(--accent);color:var(--accent-ink);border-radius:12px;padding:0 14px;font:700 15px/1 var(--display);text-transform:uppercase}
+.steps ol{padding-left:20px;margin:0;display:flex;flex-direction:column;gap:6px}
+.pill{font:700 11px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;background:var(--brand-soft);color:var(--brand);border-radius:6px;padding:4px 6px}
+.hidden{display:none}
+@media print{.tabs,.daybar,.search,.chips,.addrow,.nudge,.water,.prog,header .lead{display:none !important}body{background:#fff;color:#000;padding:0}.slot,.wd,.rc{border-color:#999;background:#fff}}
+</style>
+<div class="wrap">
+  <header>
+    <span class="eyebrow">Michelle Marie Fit</span>
+    <h1 id="h1">Pregnancy Diet Plan</h1>
+    <p class="lead" id="lead">Eight weeks of meals, every recipe, and your grocery list. Eat every 2 to 3 hours, cook dinner once and eat it twice.</p>
+  </header>
+  <main id="main" class="wrap" style="gap:12px"></main>
+</div>
+<nav class="tabs" id="tabs"></nav>
+<dialog id="dlg"></dialog>
+
+<script>
+const store={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}},del(k){try{localStorage.removeItem(k)}catch(e){}}};
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const $=s=>document.querySelector(s);
+const DAYS=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+const DAYNAMES={Sun:'Sunday',Mon:'Monday',Tue:'Tuesday',Wed:'Wednesday',Thu:'Thursday',Fri:'Friday',Sat:'Saturday'};
+let D=null, tab=store.get('pdp:tab','today'), view=null, recipeFilter='all', q='', scale=1;
+const TABS=[['today','Today','🍽'],['week','Week','📅'],['recipes','Recipes','📖'],['shopping','Shop','🛒'],['plan','Plan','✨']];
+
+// ---------- calendar maths: the plan starts on a Sunday (week 1, Sun). "Today is week W day X" moves the start.
+const iso=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+const today=()=>{const d=new Date();d.setHours(0,0,0,0);return d};
+function startDate(){let s=store.get('pdp:start',null);if(!s){const d=today();d.setDate(d.getDate()-d.getDay());s=iso(d);store.set('pdp:start',s)}const [y,m,dd]=s.split('-').map(Number);return new Date(y,m-1,dd)}
+function dayIndex(date){return Math.round((date-startDate())/864e5)}
+function posOf(date){const i=dayIndex(date);const n=((i%56)+56)%56;return {week:Math.floor(n/7)+1,day:DAYS[n%7],cycle:Math.floor(i/56)}}
+function setPos(week,day){const d=today();const n=(week-1)*7+DAYS.indexOf(day);d.setDate(d.getDate()-n);store.set('pdp:start',iso(d))}
+function dateFor(week,day){const d=startDate();d.setDate(d.getDate()+(week-1)*7+DAYS.indexOf(day));return d}
+const fmt=d=>d.toLocaleDateString(undefined,{weekday:'short',month:'short',day:'numeric'});
+
+// ---------- data helpers
+const recipe=n=>D.recipes.find(r=>r.number===n);
+const weekData=w=>D.weeks.find(x=>x.week===w);
+const prevDay=(w,day)=>{const i=DAYS.indexOf(day);return i===0?[w===1?8:w-1,'Sat']:[w,DAYS[i-1]]};
+function dinnerIds(w,day){const sw=store.get(`pdp:swap:${w}:${day}`,null);if(sw)return sw;return (weekData(w).days[day].dinnerIds||[])}
+function dinnerText(w,day){const sw=store.get(`pdp:swap:${w}:${day}`,null);if(sw)return sw.map(n=>recipe(n).name);return weekData(w).days[day].dinner||[]}
+const aversions=()=>store.get('pdp:av',{});
+const bad=r=>Object.keys(aversions()).filter(a=>aversions()[a]&&(r.tags||[]).includes(a));
+const favs=()=>store.get('pdp:fav',{});
+
+// ---------- quantities: scale "1½ cups" or "2-3 scallions" when she cooks double
+const FR={'½':.5,'¼':.25,'¾':.75,'⅓':1/3,'⅔':2/3,'⅛':.125};
+function toNum(s){s=s.trim();let m=s.match(/^(\d+)?\s*([½¼¾⅓⅔⅛])$/);if(m)return (+(m[1]||0))+FR[m[2]];m=s.match(/^(\d+)\/(\d+)$/);if(m)return +m[1]/+m[2];m=s.match(/^(\d+)\s+(\d+)\/(\d+)$/);if(m)return +m[1]+(+m[2]/+m[3]);return isNaN(+s)?null:+s}
+function fmtNum(x){const w=Math.floor(x+1e-9),f=x-w;const near=[[0,''],[.25,'¼'],[1/3,'⅓'],[.5,'½'],[2/3,'⅔'],[.75,'¾'],[1,'']];let best=near[0];for(const n of near)if(Math.abs(n[0]-f)<Math.abs(best[0]-f))best=n;let W=w+(best[0]===1?1:0),F=best[0]===1?'':best[1];if(!W&&!F)return (Math.round(x*100)/100)+'';return (W||'')+F}
+function scaleLine(line,k){if(k===1)return line;const m=line.match(/^((?:\d+\s*)?[½¼¾⅓⅔⅛]|\d+\s+\d+\/\d+|\d+\/\d+|\d+(?:\.\d+)?)(\s*(?:-|to)\s*((?:\d+\s*)?[½¼¾⅓⅔⅛]|\d+\/\d+|\d+(?:\.\d+)?))?(.*)$/);if(!m)return line;const a=toNum(m[1]);if(a===null)return line;let out=fmtNum(a*k);if(m[3]){const b=toNum(m[3]);if(b!==null)out+='-'+fmtNum(b*k)}return out+m[4]}
+
+// ---------- rendering
+function render(){
+  $('#tabs').innerHTML=TABS.map(([k,l,i])=>`<button data-tab="${k}" aria-pressed="${tab===k}"><span>${i}</span>${l}</button>`).join('');
+  const m=$('#main');
+  if(tab==='today')m.innerHTML=renderToday();
+  else if(tab==='week')m.innerHTML=renderWeek();
+  else if(tab==='recipes')m.innerHTML=renderRecipes();
+  else if(tab==='shopping')m.innerHTML=renderShopping();
+  else m.innerHTML=renderPlan();
+}
+function slotHTML(key,label,sub,title,items,links,extra,dateKey){
+  const done=store.get('pdp:done:'+dateKey,{})[key];
+  return `<section class="slot ${done?'done':''}"><div class="k">${label}${sub?`<small>${esc(sub)}</small>`:''}</div>
+    <button class="tick" data-done="${key}" aria-pressed="${!!done}" aria-label="${label} done">✓</button>
+    <div>${title?`<h3>${title}</h3>`:''}${items&&items.length?`<ul>${items.map(i=>`<li>${esc(i)}</li>`).join('')}</ul>`:''}${links||''}${extra||''}</div></section>`;
+}
+function renderToday(){
+  const pos=view||posOf(today()); const isToday=!view||(view.week===posOf(today()).week&&view.day===posOf(today()).day);
+  const w=pos.week, day=pos.day, wd=weekData(w).days[day], date=dateFor(w,day), dk=iso(date);
+  const [pw,pd]=prevDay(w,day); const prevIds=dinnerIds(pw,pd);
+  const dIds=dinnerIds(w,day), dText=dinnerText(w,day);
+  const snackPick=i=>{const s=store.get(`pdp:snack:${dk}:${i}`,null);return s?`<h3>${esc(s)}</h3><button class="rlink quiet" data-pick-snack="${i}">Change</button>${D.snacks.find(x=>x.title===s)?`<button class="rlink" data-open-snack="${esc(s)}">Recipe</button>`:''}`:`<button class="rlink" data-pick-snack="${i}">Pick a snack</button><p class="note">Something from your two baked batches, or an easy one: ${esc(D.easySnacks.slice(0,2).join(', ').toLowerCase())}…</p>`};
+  const bLinks=(wd.breakfastIds||[]).map(t=>`<button class="rlink" data-open-bf="${esc(t)}">Recipe</button>`).join('');
+  const lunchIsLeft=/leftover|dinner leftovers/i.test((wd.lunch||[]).join(' '))||((wd.lunchIds||[]).length&&JSON.stringify(wd.lunchIds)===JSON.stringify(prevIds));
+  const lunchItems=lunchIsLeft&&prevIds.length?dinnerText(pw,pd):(wd.lunch||[]);
+  const lunchIds=lunchIsLeft?prevIds:(wd.lunchIds||[]);
+  const lunchNote=lunchIsLeft?`<p class="note">Last night's dinner, packed up. ${DAYS.indexOf(day)===0?'(Saturday night: cook extra or use any leftovers from the week.)':''}</p>`:'';
+  const warn=ids=>ids.flatMap(n=>bad(recipe(n))).filter((v,i,a)=>a.indexOf(v)===i);
+  const dWarn=warn(dIds);
+  const cheat=/cheat/i.test(dText.join(' '));
+  const water=store.get('pdp:water:'+dk,0);
+  const ate=store.get('pdp:ate',null); const nextBy=ate?new Date(ate+2.5*3600e3):null;
+  const doneCount=Object.values(store.get('pdp:done:'+dk,{})).filter(Boolean).length;
+  const streak=(()=>{let s=0;const d=today();for(let i=0;i<60;i++){const k=iso(d);const c=Object.values(store.get('pdp:done:'+k,{})).filter(Boolean).length;if(c>=3)s++;else if(i>0)break;d.setDate(d.getDate()-1)}return s})();
+  return `
+  <div class="daybar"><select id="wkPick">${[1,2,3,4,5,6,7,8].map(i=>`<option value="${i}" ${i===w?'selected':''}>Week ${i}</option>`).join('')}</select>
+    <select id="dayPick">${DAYS.map(d=>`<option value="${d}" ${d===day?'selected':''}>${DAYNAMES[d]}</option>`).join('')}</select>
+    ${isToday?`<span class="pill">Today · ${fmt(date)}</span>`:`<button class="today" data-goto-today="1">Back to today</button><button data-set-today="1">This is today</button>`}</div>
+  <section class="prog"><div><b>${doneCount}/5</b><small>eaten today</small></div><div><b>${water}/8</b><small>glasses</small></div><div><b>${streak}</b><small>day streak</small></div></section>
+  <section class="card nudge"><div><b>${nextBy?(nextBy>new Date()?`Next bite by ${nextBy.toLocaleTimeString([],{hour:'numeric',minute:'2-digit'})}`:'Time to eat something'):'Eat every 2 to 3 hours'}</b><p class="note">${nextBy?`You last ate at ${new Date(ate).toLocaleTimeString([],{hour:'numeric',minute:'2-digit'})}. Never let yourself get hungry: that is when nausea, fatigue and the crankies start.`:'Tap the button each time you eat and the app tells you when the next one is due.'}</p></div><button class="rlink" data-ate="1">I just ate</button></section>
+  ${slotHTML('b','Breakfast','',null,wd.breakfast,bLinks,'',dk)}
+  ${slotHTML('s1','Snack','mid-morning',null,null,snackPick(1),'',dk)}
+  ${slotHTML('l','Lunch',lunchIsLeft?'leftovers':'',null,lunchItems,lunchIds.map(n=>`<button class="rlink" data-open="${n}">${esc(recipe(n).name)}</button>`).join(''),lunchNote,dk)}
+  ${slotHTML('s2','Snack','afternoon',null,null,snackPick(2),'',dk)}
+  ${slotHTML('d','Dinner',cheat?'your call':'cook double',cheat?'Cheat meal':null,cheat?['Your favourite meal, in moderation. You earned it.']:dText,dIds.map(n=>`<button class="rlink" data-open="${n}">${esc(recipe(n).name)}</button>`).join('')+(cheat||!dIds.length?'':`<button class="rlink quiet" data-swap="${w}:${day}">Swap</button>`),
+    (dWarn.length?`<p class="note"><span class="tag warn">contains ${esc(dWarn.join(', '))}</span> Tap Swap for one that doesn't.</p>`:'')+(cheat?'':`<p class="note">Make 1.5× or 2× so tomorrow's lunch is done. Every recipe has a cook-double button.</p>`),dk)}
+  <section class="card"><h2>Water</h2><div class="water">${Array.from({length:8},(_,i)=>`<button data-water="${i+1}" aria-pressed="${i<water}">💧</button>`).join('')}<span class="note">Keep a bottle with you. The last thing you want is water-retention weight on top.</span></div></section>
+  ${DAYS.indexOf(day)===0?`<section class="card"><h2>Sunday prep</h2><p class="note">Shop the week ${w} list, then bake two batches of snacks for the week. Twenty minutes now saves the whole week. <button class="rlink" data-tab-go="shopping">Open the list</button></p></section>`:''}`;
+}
+function renderWeek(){
+  const pos=view||posOf(today()); const w=pos.week; const wd=weekData(w).days; const tp=posOf(today());
+  return `<div class="daybar"><select id="wkPick2">${[1,2,3,4,5,6,7,8].map(i=>`<option value="${i}" ${i===w?'selected':''}>Week ${i}</option>`).join('')}</select><button class="rlink quiet" data-print="1">🖨 Print week</button></div>
+  <p class="note">Dinner is the one you cook. Lunch the next day is that dinner's leftovers. Snacks: pick from your batches.</p>
+  <div class="wk">${DAYS.map(d=>{const ids=dinnerIds(w,d);const txt=dinnerText(w,d);const warn=ids.flatMap(n=>bad(recipe(n)));const cheat=/cheat/i.test(txt.join(' '));
+    return `<div class="wd ${tp.week===w&&tp.day===d?'now':''}"><div class="d"><b>${d}</b><small>${fmt(dateFor(w,d)).split(',')[1]||''}</small></div>
+      <div class="m"><b>${cheat?'Cheat meal':esc(txt.join(' · '))}</b><span class="l">Breakfast: ${esc((wd[d].breakfast||[]).join(' ')||'any from the list')}</span>
+      ${warn.length?`<span class="l"><span class="tag warn">contains ${esc([...new Set(warn)].join(', '))}</span></span>`:''}
+      <div class="acts"><button data-view-day="${w}:${d}">Open day</button>${ids.map(n=>`<button data-open="${n}">${esc(recipe(n).name)}</button>`).join('')}${cheat||!ids.length?'':`<button data-swap="${w}:${d}">Swap dinner</button>`}</div></div></div>`}).join('')}</div>
+  <section class="card"><h2>This week's dinners</h2><p class="note">${esc(D.weeks.find(x=>x.week===w)?'Cook each one once. Double it and lunch is done.':'')}</p>
+    <div class="chips">${[...new Set(DAYS.flatMap(d=>dinnerIds(w,d)))].map(n=>`<button data-open="${n}">${esc(recipe(n).name)}</button>`).join('')}</div>
+    <button class="rlink" data-tab-go="shopping">Grocery list for week ${w}</button></section>`;
+}
+function recipeCard(r,kind){
+  const f=favs(); const id=kind==='r'?r.number:(kind+':'+r.title); const t=kind==='r'?r.name:r.title; const warn=bad(r);
+  const sub=kind==='r'?`Week ${r.week}${r.components[0]&&r.components[0].servings?` · serves ${esc(r.components[0].servings)}`:''}${r.sides&&r.sides.length?` · with ${esc(r.sides.join(', '))}`:''}`:(kind==='s'?'Snack':'Breakfast')+(r.servings?` · serves ${esc(r.servings)}`:'');
+  return `<div class="rc" data-open${kind==='r'?'':kind==='s'?'-snack':'-bf'}="${esc(kind==='r'?r.number:r.title)}"><div><b>${esc(t)}</b><small>${sub}</small><div>${(r.tags||[]).filter(x=>x!=='meatless'||true).map(x=>`<span class="tag ${warn.includes(x)?'warn':''}">${x}</span>`).join('')}</div></div><button class="fav ${f[id]?'on':''}" data-fav="${esc(id)}" aria-label="Favourite">♥</button></div>`;
+}
+function renderRecipes(){
+  const av=aversions(); const f=favs(); const ql=q.toLowerCase();
+  const match=(r,kind)=>{const t=(kind==='r'?r.name+' '+r.components.map(c=>c.title+' '+c.ingredients.join(' ')).join(' '):r.title+' '+(r.ingredients||[]).join(' ')).toLowerCase();if(ql&&!t.includes(ql))return false;
+    if(recipeFilter==='fav')return !!f[kind==='r'?r.number:kind+':'+r.title];
+    if(recipeFilter==='snacks')return kind==='s';if(recipeFilter==='breakfast')return kind==='b';
+    if(kind!=='r'&&recipeFilter!=='all')return false;
+    if(['chicken','turkey','fish','meatless'].includes(recipeFilter))return (r.tags||[]).includes(recipeFilter);
+    return true};
+  const hide=r=>store.get('pdp:hideav',false)&&bad(r).length;
+  const rs=D.recipes.filter(r=>match(r,'r')&&!hide(r)), ss=D.snacks.filter(r=>match(r,'s')&&!hide(r)), bs=D.breakfasts.filter(r=>match(r,'b'));
+  return `<div class="search"><input id="q" placeholder="Search a recipe or an ingredient" value="${esc(q)}"></div>
+  <div class="chips">${[['all','All'],['chicken','Chicken'],['turkey','Turkey'],['fish','Fish'],['meatless','Meatless & sides'],['snacks','Snacks'],['breakfast','Breakfast'],['fav','♥ Mine']].map(([k,l])=>`<button data-filter="${k}" aria-pressed="${recipeFilter===k}">${l}</button>`).join('')}</div>
+  <div class="chips"><span class="note" style="align-self:center">Can't face:</span>${['fish','eggs','dairy','nuts'].map(a=>`<button class="av" data-av="${a}" aria-pressed="${!!av[a]}">no ${a}</button>`).join('')}<button class="av" data-hideav="1" aria-pressed="${store.get('pdp:hideav',false)}">hide those</button></div>
+  ${recipeFilter==='all'||recipeFilter==='breakfast'?`${bs.length?'<h2 style="margin-top:6px">Breakfasts</h2>':''}${bs.map(r=>recipeCard(r,'b')).join('')}`:''}
+  ${recipeFilter!=='snacks'&&recipeFilter!=='breakfast'?`${rs.length?'<h2 style="margin-top:6px">Dinners</h2>':''}${rs.map(r=>recipeCard(r,'r')).join('')}`:''}
+  ${recipeFilter==='all'||recipeFilter==='snacks'?`${ss.length?'<h2 style="margin-top:6px">Snacks</h2>':''}${ss.map(r=>recipeCard(r,'s')).join('')}`:''}
+  ${!rs.length&&!ss.length&&!bs.length?'<p class="note">Nothing matches. Clear the search or the filters.</p>':''}`;
+}
+function renderShopping(){
+  const pos=view||posOf(today()); const w=store.get('pdp:shopweek',pos.week); const key='week'+w; const lst=D.shopping[key]; const have=store.get('pdp:have:'+key,{}); const hide=store.get('pdp:hidehave',false); const own=store.get('pdp:own:'+key,[]);
+  const aisles=Object.entries(lst.aisles); const total=aisles.reduce((n,[,i])=>n+i.length,0)+own.length; const got=aisles.reduce((n,[,i])=>n+i.filter(x=>have[x]).length,0)+own.filter(x=>have[x]).length;
+  const snackKey=store.get('pdp:snacklist',null);
+  return `<div class="daybar"><select id="shopWeek">${[1,2,3,4,5,6,7,8].map(i=>`<option value="${i}" ${i===w?'selected':''}>Week ${i} list</option>`).join('')}</select><button class="rlink quiet" data-hidehave="1" aria-pressed="${hide}">${hide?'Show all':'Hide what I have'}</button><button class="rlink quiet" data-copy="1">Copy</button><button class="rlink quiet" data-print="1">🖨</button></div>
+  <section class="prog" style="grid-template-columns:1fr 1fr"><div><b>${got}/${total}</b><small>in the cart</small></div><div><b>${aisles.length}</b><small>aisles</small></div></section>
+  <p class="note">Everything for week ${w}'s dinners (and the lunches they turn into). Breakfast staples and snack ingredients are on the snack lists below. Tick as you shop; ticks stay until you clear them.</p>
+  <section class="card aisle" id="list">${aisles.map(([a,items])=>{const vis=items.filter(i=>!hide||!have[i]);return vis.length?`<h3>${esc(a)}</h3>${vis.map(i=>`<label class="${have[i]?'have':''}"><input type="checkbox" data-have="${esc(i)}" ${have[i]?'checked':''}><span>${esc(i)}</span></label>`).join('')}`:''}).join('')}
+    ${own.length?`<h3>My extras</h3>${own.filter(i=>!hide||!have[i]).map(i=>`<label class="${have[i]?'have':''}"><input type="checkbox" data-have="${esc(i)}" ${have[i]?'checked':''}><span>${esc(i)}</span> <button class="x" data-del-own="${esc(i)}" style="margin-left:auto;border:0;background:none;color:var(--muted)">✕</button></label>`).join('')}`:''}
+    <div class="addrow" style="margin-top:10px"><input id="ownItem" placeholder="Add something of your own"><button data-add-own="1">Add</button></div>
+    <button class="rlink quiet" data-clear-have="1" style="align-self:flex-start;margin-top:8px">Clear ticks for week ${w}</button></section>
+  <section class="card"><h2>Snack baking lists</h2><p class="note">Two batches a week. One list covers the original eight snacks, the other the ten newer baked ones.</p>
+    <div class="chips"><button data-snacklist="snacks" aria-pressed="${snackKey==='snacks'}">Snacks list</button><button data-snacklist="baked-snacks" aria-pressed="${snackKey==='baked-snacks'}">Baked snacks list</button></div>
+    ${snackKey&&D.shopping[snackKey]?`<div class="aisle">${Object.entries(D.shopping[snackKey].aisles).map(([a,items])=>`<h3>${esc(a)}</h3>${items.map(i=>{const h=store.get('pdp:have:'+snackKey,{})[i];return `<label class="${h?'have':''}"><input type="checkbox" data-have-list="${snackKey}" data-have="${esc(i)}" ${h?'checked':''}><span>${esc(i)}</span></label>`}).join('')}`).join('')}</div>`:''}</section>`;
+}
+function renderPlan(){
+  const r=D.rules;
+  const ps=a=>(Array.isArray(a)?a:[a]).map(x=>`<p>${esc(String(x).replace(/\uf04a/g,'🙂'))}</p>`).join('');
+  return `<section class="card"><h2>A note from Michelle</h2>${ps(r.intro)}</section>
+  <section class="card"><h2>How the plan works</h2>${ps(r.how)}</section>
+  <section class="card"><h2>The steps</h2><ol style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px">${r.steps.map(s=>`<li>${esc(s.replace(/^\d+\.\s*/,'').replace(/\s*Link: http:\/\/dalesrawfoods\.\s*com#oid=1108_1/,''))}</li>`).join('')}</ol></section>
+  <section class="card"><h2>Stay away from</h2><ul style="margin:0;padding-left:20px">${r.avoid.map(a=>`<li>${esc(a)}</li>`).join('')}</ul></section>
+  <section class="card"><h2>Breakfasts</h2><p class="note">Pick any of these any morning. Creatures of habit can repeat breakfast; vary everything else.</p><ul style="margin:0;padding-left:20px">${r.breakfastList.map(a=>`<li>${esc(a)}</li>`).join('')}</ul><div class="chips">${D.breakfasts.map(b=>`<button data-open-bf="${esc(b.title)}">${esc(b.title)}</button>`).join('')}</div></section>
+  <section class="card"><h2>Easy no-cook snacks</h2><ul style="margin:0;padding-left:20px">${D.easySnacks.map(a=>`<li>${esc(a)}</li>`).join('')}</ul></section>
+  <section class="card"><h2>Where you are</h2><p class="note">The plan is eight weeks and then repeats. You are on week ${posOf(today()).week}, ${DAYNAMES[posOf(today()).day]}. To change that, open Today, pick the week and day, and tap "This is today".</p>
+    <div class="chips"><button data-reset="1">Start from week 1 this Sunday</button><button data-reset-all="1">Clear everything on this phone</button></div></section>
+  <section class="card"><p class="note">This plan is not a diet and it is not medical advice. Get your doctor's OK on any plan during pregnancy, and ask about anything you react to. © Michelle Marie Fit.</p></section>`;
+}
+
+// ---------- modals
+function openRecipe(r,kind){
+  const comps=kind==='r'?r.components:[r]; const id=kind==='r'?r.number:kind+':'+r.title; const f=favs();
+  const have=store.get('pdp:ing:'+id,{});
+  $('#dlg').innerHTML=`<div class="modal"><div class="top"><div><span class="eyebrow">${kind==='r'?`Week ${r.week}${r.sides&&r.sides.length?' · with '+esc(r.sides.join(', ')):''}`:kind==='s'?'Snack':'Breakfast'}</span><h2>${esc(kind==='r'?r.name:r.title)}</h2>${r.note?`<p class="note">${esc(r.note)}</p>`:''}</div><button class="x" data-close="1">✕</button></div>
+    <div class="scale"><span>Cook</span>${[[1,'as written'],[1.5,'1.5×'],[2,'2× (eat twice)']].map(([k,l])=>`<button data-scale="${k}" aria-pressed="${scale===k}">${l}</button>`).join('')}<button class="fav ${f[id]?'on':''}" data-fav="${esc(id)}" style="border:0;background:none;font-size:24px;color:${f[id]?'var(--accent)':'var(--line)'};margin-left:auto">♥</button></div>
+    ${(bad(r).length?`<p class="note"><span class="tag warn">contains ${esc(bad(r).join(', '))}</span></p>`:'')}
+    ${comps.map((c,ci)=>`<div class="comp"><h3>${esc(c.title)}</h3>${c.servings?`<div class="sv">Serves ${esc(c.servings)}${scale!==1?` as written · you are making ${scale}×`:''}</div>`:''}
+      ${c.ingredients.length?`<ul>${c.ingredients.map((i,ii)=>`<li class="${have[ci+':'+ii]?'have':''}" data-ing="${ci}:${ii}">${esc(scaleLine(i,scale))}</li>`).join('')}</ul>`:''}
+      <div class="steps"><ol>${c.instructions.map(s=>`<li>${esc(s)}</li>`).join('')}</ol></div></div>`).join('')}
+    <p class="note">Tap an ingredient to cross it off while you cook. ${kind==='r'?'Leftovers are tomorrow\'s lunch.':''}</p></div>`;
+  $('#dlg').dataset.id=id; $('#dlg').dataset.kind=kind; $('#dlg').showModal(); $('#dlg').scrollTop=0;
+}
+function openSwap(w,day){
+  const cur=dinnerIds(w,day);
+  $('#dlg').innerHTML=`<div class="modal"><div class="top"><div><span class="eyebrow">Week ${w} · ${DAYNAMES[day]}</span><h2>Swap the dinner</h2><p class="note">Pick any dinner from the eight weeks. The grocery list stays the week's list, so check you have what it needs.</p></div><button class="x" data-close="1">✕</button></div>
+    <div class="search"><input id="swapq" placeholder="Search"></div>
+    <div id="swapList">${D.recipes.filter(r=>!bad(r).length||!store.get('pdp:hideav',false)).map(r=>`<div class="rc" data-swap-to="${w}:${day}:${r.number}"><div><b>${esc(r.name)}</b><small>Week ${r.week}${bad(r).length?` · <span class="tag warn">${esc(bad(r).join(', '))}</span>`:''}</small></div><span class="note">${cur.includes(r.number)?'current':''}</span></div>`).join('')}</div>
+    ${store.get(`pdp:swap:${w}:${day}`,null)?`<button class="rlink quiet" data-unswap="${w}:${day}">Put the original back</button>`:''}</div>`;
+  $('#dlg').showModal();
+}
+function openSnackPick(i,dk){
+  $('#dlg').innerHTML=`<div class="modal"><div class="top"><div><h2>Pick a snack</h2><p class="note">Ideally one of the two batches you baked on Sunday. Otherwise an easy one.</p></div><button class="x" data-close="1">✕</button></div>
+    <h3 style="margin:0;font:700 13px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)">Baked</h3>
+    ${D.snacks.map(s=>`<div class="rc" data-snack-choose="${esc(s.title)}" data-slot="${i}" data-dk="${dk}"><div><b>${esc(s.title)}</b><small>${(s.tags||[]).map(t=>`<span class="tag ${bad(s).includes(t)?'warn':''}">${t}</span>`).join('')}</small></div><span class="note">choose</span></div>`).join('')}
+    <h3 style="margin:8px 0 0;font:700 13px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)">Easy</h3>
+    ${D.easySnacks.map(s=>`<div class="rc" data-snack-choose="${esc(s)}" data-slot="${i}" data-dk="${dk}"><div><b>${esc(s)}</b></div><span class="note">choose</span></div>`).join('')}</div>`;
+  $('#dlg').showModal();
+}
+
+// ---------- events
+document.addEventListener('click',e=>{
+  const b=e.target.closest('[data-tab],[data-tab-go],[data-done],[data-open],[data-open-snack],[data-open-bf],[data-pick-snack],[data-snack-choose],[data-swap],[data-swap-to],[data-unswap],[data-close],[data-scale],[data-fav],[data-ing],[data-filter],[data-av],[data-hideav],[data-water],[data-ate],[data-goto-today],[data-set-today],[data-view-day],[data-print],[data-hidehave],[data-copy],[data-add-own],[data-del-own],[data-clear-have],[data-snacklist],[data-reset],[data-reset-all]');
+  if(!b)return;
+  const ds=b.dataset; const pos=view||posOf(today());
+  if(ds.tab){tab=ds.tab;store.set('pdp:tab',tab);render();window.scrollTo(0,0);return}
+  if(ds.tabGo){tab=ds.tabGo;store.set('pdp:tab',tab);render();window.scrollTo(0,0);return}
+  if(ds.done){const dk=iso(dateFor(pos.week,pos.day));const d=store.get('pdp:done:'+dk,{});d[ds.done]=!d[ds.done];store.set('pdp:done:'+dk,d);if(d[ds.done]){store.set('pdp:ate',Date.now())}render();return}
+  if(ds.open){scale=1;openRecipe(recipe(+ds.open),'r');return}
+  if(ds.openSnack){scale=1;const s=D.snacks.find(x=>x.title===ds.openSnack);if(s)openRecipe(s,'s');return}
+  if(ds.openBf){scale=1;const s=D.breakfasts.find(x=>x.title===ds.openBf);if(s)openRecipe(s,'b');return}
+  if(ds.pickSnack){openSnackPick(ds.pickSnack,iso(dateFor(pos.week,pos.day)));return}
+  if(ds.snackChoose){store.set(`pdp:snack:${ds.dk}:${ds.slot}`,ds.snackChoose);$('#dlg').close();render();return}
+  if(ds.swap){const [w,d]=ds.swap.split(':');openSwap(+w,d);return}
+  if(ds.swapTo){const [w,d,n]=ds.swapTo.split(':');store.set(`pdp:swap:${w}:${d}`,[+n]);$('#dlg').close();render();return}
+  if(ds.unswap){const [w,d]=ds.unswap.split(':');store.del(`pdp:swap:${w}:${d}`);$('#dlg').close();render();return}
+  if(ds.close){$('#dlg').close();return}
+  if(ds.scale){scale=+ds.scale;const id=$('#dlg').dataset.id,kind=$('#dlg').dataset.kind;const r=kind==='r'?recipe(+id):kind==='s'?D.snacks.find(x=>'s:'+x.title===id):D.breakfasts.find(x=>'b:'+x.title===id);openRecipe(r,kind);return}
+  if(ds.fav){const f=favs();f[ds.fav]=!f[ds.fav];store.set('pdp:fav',f);if($('#dlg').open){const id=$('#dlg').dataset.id,kind=$('#dlg').dataset.kind;const r=kind==='r'?recipe(+id):kind==='s'?D.snacks.find(x=>'s:'+x.title===id):D.breakfasts.find(x=>'b:'+x.title===id);openRecipe(r,kind)}else render();return}
+  if(ds.ing){const id=$('#dlg').dataset.id;const h=store.get('pdp:ing:'+id,{});h[ds.ing]=!h[ds.ing];store.set('pdp:ing:'+id,h);b.classList.toggle('have');return}
+  if(ds.filter){recipeFilter=ds.filter;render();return}
+  if(ds.av){const a=aversions();a[ds.av]=!a[ds.av];store.set('pdp:av',a);render();return}
+  if(ds.hideav){store.set('pdp:hideav',!store.get('pdp:hideav',false));render();return}
+  if(ds.water){const dk=iso(dateFor(pos.week,pos.day));const cur=store.get('pdp:water:'+dk,0);const n=+ds.water;store.set('pdp:water:'+dk,n===cur?n-1:n);render();return}
+  if(ds.ate){store.set('pdp:ate',Date.now());render();return}
+  if(ds.gotoToday){view=null;render();return}
+  if(ds.setToday){setPos(pos.week,pos.day);view=null;render();return}
+  if(ds.viewDay){const [w,d]=ds.viewDay.split(':');view={week:+w,day:d};tab='today';store.set('pdp:tab',tab);render();window.scrollTo(0,0);return}
+  if(ds.print){window.print();return}
+  if(ds.hidehave){store.set('pdp:hidehave',!store.get('pdp:hidehave',false));render();return}
+  if(ds.copy){const w=store.get('pdp:shopweek',pos.week);const lst=D.shopping['week'+w];const have=store.get('pdp:have:week'+w,{});const txt=`Week ${w} grocery list\n`+Object.entries(lst.aisles).map(([a,i])=>`\n${a}\n`+i.filter(x=>!have[x]).map(x=>'- '+x).join('\n')).join('\n');navigator.clipboard&&navigator.clipboard.writeText(txt).then(()=>{b.textContent='Copied'});return}
+  if(ds.addOwn){const w=store.get('pdp:shopweek',pos.week);const v=$('#ownItem').value.trim();if(!v)return;const own=store.get('pdp:own:week'+w,[]);own.push(v);store.set('pdp:own:week'+w,own);render();return}
+  if(ds.delOwn){const w=store.get('pdp:shopweek',pos.week);store.set('pdp:own:week'+w,store.get('pdp:own:week'+w,[]).filter(x=>x!==ds.delOwn));render();return}
+  if(ds.clearHave){const w=store.get('pdp:shopweek',pos.week);store.del('pdp:have:week'+w);render();return}
+  if(ds.snacklist){store.set('pdp:snacklist',store.get('pdp:snacklist',null)===ds.snacklist?null:ds.snacklist);render();return}
+  if(ds.reset){if(confirm('Start the plan from week 1 this Sunday?')){const d=today();d.setDate(d.getDate()-d.getDay());store.set('pdp:start',iso(d));view=null;render()}return}
+  if(ds.resetAll){if(confirm('Clear every tick, favourite and setting saved on this phone?')){Object.keys(localStorage).filter(k=>k.startsWith('pdp:')).forEach(k=>localStorage.removeItem(k));view=null;render()}return}
+});
+document.addEventListener('change',e=>{
+  const t=e.target; const pos=view||posOf(today());
+  if(t.id==='wkPick'||t.id==='dayPick'){view={week:+$('#wkPick').value,day:$('#dayPick').value};render();return}
+  if(t.id==='wkPick2'){view={week:+t.value,day:pos.day};render();return}
+  if(t.id==='shopWeek'){store.set('pdp:shopweek',+t.value);render();return}
+  if(t.dataset.have!==undefined){const key=t.dataset.haveList||('week'+store.get('pdp:shopweek',pos.week));const h=store.get('pdp:have:'+key,{});h[t.dataset.have]=t.checked;store.set('pdp:have:'+key,h);render();return}
+});
+document.addEventListener('input',e=>{if(e.target.id==='q'){q=e.target.value;const pos=document.activeElement===e.target;render();if(pos){const i=$('#q');i.focus();i.setSelectionRange(i.value.length,i.value.length)}}
+  if(e.target.id==='swapq'){const v=e.target.value.toLowerCase();document.querySelectorAll('#swapList .rc').forEach(el=>{el.style.display=el.textContent.toLowerCase().includes(v)?'':'none'})}});
+$('#dlg').addEventListener('click',e=>{if(e.target===$('#dlg'))$('#dlg').close()});
+fetch('../data/diet.json').then(r=>r.json()).then(d=>{D=d;render()}).catch(()=>{$('#main').innerHTML='<div class="err">The plan did not load. Check your connection and refresh.</div>'});
+if('serviceWorker' in navigator&&location.protocol==='https:')navigator.serviceWorker.register('sw.js').catch(()=>{});
+</script>

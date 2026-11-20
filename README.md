@@ -16,6 +16,7 @@ strength and two cardio workouts a week, all strength in week 3, and a 3 Day But
 - `print.html` is one landscape page per workout with photos. `pdf/` has the meal plan and bonus PDFs for download.
 - `data/challenge.json` holds the whole program: weeks, workouts, every exercise with name, reps, cue, YouTube demo ID and photos, and the 21 days. Every page reads this one file.
 - `images/` holds the start and end photos (`<video id>-start.webp`, `-end.webp`) and the untouched PDF composite (`-pdf.webp`). `images/meals/` holds the PDF page images.
+- `diet/` is the Pregnancy Diet Plan as its own installable app (today's meals, week, 55 recipes with servings scaler, grocery lists by aisle, the rules). Reads `data/diet.json`, built by `tools/build_diet.py` with hand fixes in `tools/diet-fixes.json`. See `docs/diet-plan-notes.md`.
 - `docs/catalogue.md` is what was found in Dropbox, the FG course and the sales page. `docs/review-notes.md` is what to fix in the members area.
 
 ## Links
@@ -32,6 +33,7 @@ Live at `https://michellemariefit.github.io/mmf-player/` once GitHub Pages is on
 | `print.html#w2-butt` | one printable page; `print.html` is all 18 |
 | `lessons.html#day3` | scrolls to that lesson |
 | `meals.html#recipes` | opens that tab |
+| `diet/` | the Pregnancy Diet Plan app |
 
 Workout ids: `w1-full-body w1-cardio-1 w1-arms w1-cardio-2 w1-thighs w2-full-body w2-cardio-1 w2-arms w2-cardio-2 w2-butt w3-back w3-butt-core w3-arms w3-legs w3-burner bonus-day-1 bonus-day-2 bonus-day-3`.
 

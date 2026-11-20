@@ -1,0 +1,429 @@
+{
+ "_note": "Hand fixes applied after tools/build_diet.py parses the PDFs. Keys: recipes by number, snacks by title, weeks by number then day.",
+ "recipes": {
+  "20": {
+   "name": "Grilled Chicken with Sesame Seeds",
+   "sides": [
+    "Asian Quinoa",
+    "Roasted Asparagus"
+   ],
+   "note": "Grilled chicken with sesame seeds sprinkled on top."
+  },
+  "30": {
+   "components": [
+    {
+     "title": "Tex Mex Baked Chicken",
+     "servings": "6-8",
+     "ingredients": [
+      "2 lbs chicken breasts",
+      "1 tbsp chili powder",
+      "2 tsp cumin",
+      "1 tsp each garlic powder and onion powder",
+      "S&P to taste"
+     ],
+     "instructions": [
+      "Pre-heat the oven to 350 degrees.",
+      "Mix all the spices and sprinkle on the chicken on both sides.",
+      "Place on a baking dish and bake about 25 minutes or until done."
+     ]
+    }
+   ]
+  },
+  "38": {
+   "components": [
+    {
+     "title": "Fruity Rice Salad",
+     "servings": "6-8",
+     "ingredients": [
+      "1½ cups brown rice",
+      "¼ cup quinoa",
+      "1 lime, juiced and zested",
+      "1 tbsp EVOO",
+      "3 tbsp rice wine vinegar",
+      "1 mango, peeled and chopped",
+      "1 English cucumber, chopped",
+      "2-3 scallions, chopped",
+      "½ cup cilantro, chopped",
+      "¼ to ⅓ cup sliced almonds, toasted"
+     ],
+     "instructions": [
+      "Cook rice and quinoa per instructions.",
+      "Fold the quinoa into the rice.",
+      "In a large bowl whisk the lime juice, zest, EVOO, vinegar and s&p to taste.",
+      "Add the rice and quinoa mixture to the bowl, folding in the cucumber, mango, scallions and cilantro.",
+      "Mix well and then fold in the almonds."
+     ]
+    }
+   ]
+  },
+  "41": {
+   "components": [
+    {
+     "title": "Mexican Tuna Salad",
+     "servings": "4",
+     "ingredients": [
+      "4 cans tuna, in water",
+      "⅓ cup low-fat cottage cheese",
+      "2 ribs celery, diced",
+      "3 green onions, diced",
+      "2 tbsp lime juice",
+      "1 tsp each of chili powder and cumin",
+      "1 Hass avocado, sliced"
+     ],
+     "instructions": [
+      "Mix all ingredients in a bowl except for the avocado.",
+      "Serve with sliced avocado on top."
+     ]
+    }
+   ]
+  },
+  "49": {
+   "components": [
+    {
+     "title": "Avocado Egg White Salad",
+     "servings": "4",
+     "ingredients": [
+      "10 hard-boiled egg whites, chopped",
+      "⅓ cup onions, chopped",
+      "¾ cup celery, chopped",
+      "2-3 avocados, peeled and chopped",
+      "1 tbsp Dijon mustard",
+      "1 tsp paprika",
+      "S&P to taste"
+     ],
+     "instructions": [
+      "In a bowl, combine all the ingredients and serve."
+     ]
+    }
+   ]
+  },
+  "2": {
+   "name": "Moroccan Chicken with Mango Relish"
+  },
+  "26": {
+   "components": [
+    {
+     "title": "Brown Rice with Tomatoes and Basil",
+     "servings": "4-6",
+     "ingredients": [
+      "1 cup brown rice",
+      "2 teaspoons kosher salt, divided",
+      "¼ cup rice wine vinegar",
+      "1 packet sweetener",
+      "1 tablespoon good olive oil",
+      "Freshly ground black pepper",
+      "1 pound ripe tomatoes, large-diced",
+      "1 cup packed basil leaves (1 large bunch), chopped"
+     ],
+     "instructions": [
+      "Bring 2¼ cups water to a boil and add the rice and 1 teaspoon of salt.",
+      "Return to a boil, cover, and simmer for 30 to 40 minutes, until the rice is tender and all the water is absorbed.",
+      "Transfer the rice to a bowl.",
+      "Whisk together the vinegar, sweetener, olive oil, remaining teaspoon of salt, and a pinch of pepper.",
+      "Pour over the rice.",
+      "Add the tomatoes and basil.",
+      "Mix well and check the seasonings."
+     ]
+    }
+   ]
+  },
+  "28": {
+   "components": [
+    {
+     "title": "Brown Spinach Rice",
+     "servings": "4-6",
+     "ingredients": [
+      "1 cup brown rice",
+      "1 box frozen chopped spinach",
+      "Parmesan cheese (optional)"
+     ],
+     "instructions": [
+      "Cook rice as prescribed, and right before it is done cooking, put the frozen spinach in, mix well, cover and let finish cooking.",
+      "May fold in a little Parmesan cheese if desired."
+     ]
+    }
+   ]
+  },
+  "34": {
+   "components": [
+    {
+     "title": "Brown Spinach Rice",
+     "servings": "4-6",
+     "ingredients": [
+      "1 cup brown rice",
+      "1 box frozen chopped spinach",
+      "Parmesan cheese (optional)"
+     ],
+     "instructions": [
+      "Cook rice as prescribed, and right before it is done cooking, put the frozen spinach in, mix well, cover and let finish cooking.",
+      "May fold in a little Parmesan cheese if desired."
+     ]
+    }
+   ]
+  },
+  "53": {
+   "components": [
+    {
+     "title": "Artichoke Crusted Chicken",
+     "servings": "4",
+     "ingredients": [
+      "4 chicken breasts",
+      "¼ cup plain Greek yogurt",
+      "1 can quartered artichoke hearts, rinsed, drained and chopped finely",
+      "Grill seasoning",
+      "2 tbsp Parmesan cheese"
+     ],
+     "instructions": [
+      "Preheat the oven to 350 degrees.",
+      "Meanwhile in a bowl, mix the yogurt, artichokes and Parmesan cheese.",
+      "Sprinkle grill seasoning on both sides of the chicken and bake for 10 minutes.",
+      "Take the chicken out of the oven, add the artichoke mixture and bake for another 10 minutes."
+     ]
+    }
+   ]
+  },
+  "54": {
+   "components": [
+    {
+     "title": "Creamy Cauliflower Rice",
+     "servings": "4-6",
+     "ingredients": [
+      "1 head cauliflower, florets chopped",
+      "½ cup plain Greek yogurt",
+      "1½ cups jasmine or brown rice",
+      "3-4 garlic cloves, minced",
+      "S&P to taste",
+      "Optional: shredded mozzarella (a few tablespoons)"
+     ],
+     "instructions": [
+      "In a saucepan with a little stock, cook the garlic, and toast the rice.",
+      "Add the water and cook until done.",
+      "In another large saucepan, boil the cauliflower until softened.",
+      "In a food processor, add the cauliflower, yogurt, s&p to taste, and stock if needed to thin out.",
+      "When the rice is cooked, take off the heat, add the cauliflower mixture, fold in well, add mozzarella if using, and fold again."
+     ]
+    }
+   ]
+  },
+  "55": {
+   "name": "Tex-Mex Turkey Meatloaf",
+   "components": [
+    {
+     "title": "Tex-Mex Turkey Meatloaf",
+     "servings": "6",
+     "ingredients": [
+      "1-2 lbs extra lean ground turkey",
+      "¼ cup red peppers, chopped",
+      "½ cup frozen corn, thawed",
+      "½ cup fresh salsa, plus more for the top",
+      "¼ cup shredded cheddar cheese (optional)",
+      "1 tbsp each of oregano, cumin and chili powder",
+      "2 egg whites",
+      "½ cup or more Greek yogurt",
+      "½ cup cilantro"
+     ],
+     "instructions": [
+      "Preheat the oven to 350 degrees.",
+      "Meanwhile, in a large bowl, combine all the ingredients and mix well.",
+      "Mold into a meatloaf on a lined baking sheet.",
+      "Top with salsa and bake for 20-25 minutes."
+     ]
+    }
+   ]
+  }
+ },
+ "snacks": {
+  "Chewy Chocolate Chip Cookies": {
+   "ingredients": [
+    "3 bananas, mashed",
+    "1 tsp vanilla extract",
+    "¼ cup coconut oil, melted and cooled",
+    "2 cups quick cooking oats",
+    "⅔ cup almond meal",
+    "½ cup flax meal",
+    "¾ tsp cinnamon",
+    "1 tsp baking powder",
+    "3 tbsp chocolate chips",
+    "2 scoops vanilla protein powder"
+   ]
+  },
+  "The Best Protein Chocolate Chip Cookies Ever": {
+   "ingredients": [
+    "1 cup oats",
+    "½ cup unsweetened applesauce",
+    "1 banana, mashed",
+    "½ cup almond butter",
+    "1 tsp vanilla extract",
+    "Sweetener to taste (brown sugar, agave, etc)",
+    "2 scoops vanilla protein powder",
+    "3-4 tbsp dairy & gluten free chocolate chips"
+   ]
+  },
+  "Gluten-Free Brownies": {
+   "servings": "9-12 brownies",
+   "ingredients": [
+    "1 can black beans, rinsed and drained",
+    "2 tbsp cocoa powder",
+    "½ cup quick oats",
+    "¼ tsp salt",
+    "¼ to ⅓ cup honey or agave",
+    "¼ cup coconut oil, melted",
+    "2 tsp pure vanilla extract",
+    "½ tsp baking powder",
+    "½ cup chocolate chips",
+    "1 scoop vanilla protein powder"
+   ]
+  },
+  "Apple Cinnamon Bites": {
+   "ingredients": [
+    "1 cup almond meal",
+    "1 cup gluten-free oats",
+    "1 tsp cinnamon",
+    "½ tsp nutmeg",
+    "3 tbsp coconut sugar or brown sugar",
+    "1 tsp vanilla extract",
+    "1 cup apple, chopped",
+    "2 eggs, beaten",
+    "1 scoop vanilla protein powder"
+   ]
+  },
+  "Avocado Egg Salad": {
+   "instructions": [
+    "In a bowl, combine eggs, onions, celery, avocado and mustard.",
+    "Stir well and add paprika and s&p to taste."
+   ]
+  },
+  "Oatmeal Muffins": {
+   "ingredients": [
+    "2¼ cups oats",
+    "1 tsp cinnamon",
+    "2 tbsp chia seeds",
+    "1 tsp baking powder",
+    "1 very ripe banana, mashed",
+    "1 tsp vanilla, coconut, maple or almond extract",
+    "1 cup non-dairy milk",
+    "2 egg whites",
+    "⅓ cup unsweetened applesauce",
+    "Toppings or fillings, pick any: ¼ cup freeze dried berries, ¼ cup chopped walnuts, ¼ cup sliced almonds, ¼ cup shredded coconut, ¼ cup dairy and gluten-free chocolate chips, ¼ cup fresh berries or banana"
+   ]
+  },
+  "Strawberry Protein Muffins": {
+   "ingredients": [
+    "2½ cups oats",
+    "1 cup plain low fat Greek yogurt",
+    "2 eggs",
+    "Sweetener to taste (honey, agave, brown sugar, coconut sugar)",
+    "1½ tsp baking powder",
+    "½ tsp baking soda",
+    "1 cup strawberries, half inside the batter and half for the top",
+    "Almond milk (¼ cup plus), added to the blender as needed to get the right consistency",
+    "½ cup almonds or walnuts (optional), for crunch and healthy fats"
+   ],
+   "instructions": [
+    "Preheat the oven to 400 degrees and spray a muffin pan (silicone if you have one) with coconut oil spray and wipe down.",
+    "Place all of the ingredients except the strawberries in a blender or food processor, and blend until the oats are smooth.",
+    "Fold in half the strawberries.",
+    "Pour into the muffin pan and top off with a few strawberries.",
+    "Bake for about 20 minutes or until golden brown and done."
+   ]
+  }
+ },
+ "weeks": {
+  "6": {
+   "Sat": {
+    "breakfast": [
+     "Any breakfast from the list (the PDF leaves this one blank)"
+    ]
+   },
+   "Mon": {
+    "dinnerIds": [
+     33,
+     34
+    ]
+   },
+   "Tue": {
+    "lunchIds": [
+     33,
+     34
+    ]
+   },
+   "Thu": {
+    "dinnerIds": [
+     37,
+     34
+    ]
+   },
+   "Fri": {
+    "lunchIds": [
+     37,
+     34
+    ]
+   }
+  },
+  "5": {
+   "Mon": {
+    "dinnerIds": [
+     25,
+     26
+    ]
+   },
+   "Tue": {
+    "lunchIds": [
+     25,
+     26
+    ],
+    "dinnerIds": [
+     27,
+     28
+    ]
+   },
+   "Wed": {
+    "lunchIds": [
+     27,
+     28
+    ]
+   },
+   "Fri": {
+    "dinnerIds": [
+     30,
+     31
+    ]
+   },
+   "Sat": {
+    "lunchIds": [
+     30,
+     31
+    ]
+   }
+  },
+  "8": {
+   "Mon": {
+    "lunchIds": [
+     49
+    ]
+   }
+  },
+  "7": {
+   "Sun": {
+    "dinnerIds": [
+     47,
+     48
+    ]
+   },
+   "Mon": {
+    "lunchIds": [
+     47,
+     48
+    ]
+   }
+  }
+ },
+ "easySnacks": [
+  "Raw veggies + hummus",
+  "Fruit + ¼ cup almond, cashew or sun butter",
+  "Fruit + ¼ cup almonds, cashews or pumpkin seeds",
+  "Hard boiled egg whites + avocado or guacamole",
+  "Leftovers from any meal",
+  "A protein shake or smoothie"
+ ]
+}

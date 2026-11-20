@@ -3,3 +3,4 @@ tools/cache/
 __pycache__/
 *.part
 node_modules/
+tools/diet-src/
