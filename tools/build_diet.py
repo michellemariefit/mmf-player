@@ -533,6 +533,7 @@ def main():
         # recipes the PDF calendar names but never prints; found in Michelle's other docs
         data["recipes"] += fixes.get("extraRecipes", [])
         data["recipes"].sort(key=lambda r: (r["week"], r["number"]))
+        data["breakfasts"] += fixes.get("extraBreakfasts", [])
         # her intro says "4 weeks": the 2nd edition has 8
         for a, b in fixes.get("rulesText", {}).items():
             for k in ("intro", "how"):

@@ -50,7 +50,7 @@ Content gaps (the app shows these days correctly but with no recipe button):
 
 - ~~Week 1 Sunday lunch "Chicken with Nectarine Salad"~~ found in Eat to be Fit › Cooking Class #7.docx, now recipe 56.
 - ~~Week 5 Wednesday dinner "Veggie Supreme Rice"~~ found in BeFit Moms Program › RECIPES.docx ("Veggie Rice Supreme"), now recipe 57.
-- **Week 6 Saturday breakfast** is blank in the PDF. Saturday lunch there also doesn't match Friday's dinner.
+- ~~Week 6 Saturday~~ fixed: breakfast is now Zucchini & Spinach Frittata (from Eat to be Fit cooking class #7, added as breakfast recipe 8), lunch is Friday's Fruity Rice Salad leftovers, dinner stays the Turkey Veg Skillet so Sunday's lunch still works.
 - Several weeks list a dinner on the calendar with a different name than the recipe page (e.g. "Sun-dried Tomato Feta Turkey Meatloaf"). I matched them by hand in `tools/diet-fixes.json`; worth a skim.
 
 Stale text in her own intro (pp 2–4, copied verbatim into the Plan tab):

@@ -884,21 +884,23 @@
     },
     "Sat": {
      "breakfast": [
-      "Any breakfast from the list (the PDF leaves this one blank)"
+      "Zucchini & Spinach Frittata"
      ],
      "lunch": [
-      "Fresh Turkey Veg Skillet Brown Rice Greens Salad"
+      "Baked or grilled chicken or steak and Fruity Rice Salad"
      ],
      "dinner": [
       "Turkey Veg Skillet Brown Rice Greens Salad"
      ],
      "lunchIds": [
-      39
+      38
      ],
      "dinnerIds": [
       39
      ],
-     "breakfastIds": []
+     "breakfastIds": [
+      "Zucchini & Spinach Frittata"
+     ]
     }
    }
   },
@@ -3808,6 +3810,25 @@
     "On stove, melt the chocolate chips in the almond milk and let cool, then place that and the rest of the ingredients in the blender and blend until smooth."
    ],
    "source": "guide1 p45"
+  },
+  {
+   "title": "Zucchini & Spinach Frittata",
+   "servings": "6-8",
+   "note": "From Michelle's Eat to be Fit cooking class #7. Make it Saturday and the leftovers cover a couple more mornings.",
+   "ingredients": [
+    "4 eggs",
+    "8 egg whites",
+    "1 cup cottage cheese",
+    "1 tsp thyme, chopped",
+    "2 zucchini, shredded",
+    "1 package chopped frozen spinach, thawed",
+    "S&P to taste"
+   ],
+   "instructions": [
+    "In a skillet with a little stock, cook the zucchini, spinach and thyme with a little S&P until the spinach is wilted and the zucchini is cooked. Let cool.",
+    "Meanwhile, whisk the eggs and cottage cheese and add the veggie mixture in.",
+    "Pour into a 9-inch pie plate and bake at 350 degrees for 25 minutes or until done."
+   ]
   }
  ],
  "shopping": {
