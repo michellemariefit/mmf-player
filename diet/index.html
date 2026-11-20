@@ -197,7 +197,7 @@ function renderToday(){
 }
 function renderWeek(){
   const pos=view||posOf(today()); const w=pos.week; const wd=weekData(w).days; const tp=posOf(today());
-  return `<div class="daybar"><select id="wkPick2">${[1,2,3,4,5,6,7,8].map(i=>`<option value="${i}" ${i===w?'selected':''}>Week ${i}</option>`).join('')}</select><button class="rlink quiet" data-print="1">🖨 Print week</button></div>
+  return `<div class="daybar"><select id="wkPick2">${[1,2,3,4,5,6,7,8].map(i=>`<option value="${i}" ${i===w?'selected':''}>Week ${i}</option>`).join('')}</select><button class="rlink quiet" data-print="1">🖨 Print this view</button><a class="rlink quiet" href="print.html#week-${w}">🖨 Week ${w} recipes + list</a></div>
   <p class="note">Dinner is the one you cook. Lunch the next day is that dinner's leftovers. Snacks: pick from your batches.</p>
   <div class="wk">${DAYS.map(d=>{const ids=dinnerIds(w,d);const txt=dinnerText(w,d);const warn=ids.flatMap(n=>bad(recipe(n)));const cheat=/cheat/i.test(txt.join(' '));
     return `<div class="wd ${tp.week===w&&tp.day===d?'now':''}"><div class="d"><b>${d}</b><small>${fmt(dateFor(w,d)).split(',')[1]||''}</small></div>
@@ -223,7 +223,7 @@ function renderRecipes(){
     return true};
   const hide=r=>store.get('pdp:hideav',false)&&bad(r).length;
   const rs=D.recipes.filter(r=>match(r,'r')&&!hide(r)), ss=D.snacks.filter(r=>match(r,'s')&&!hide(r)), bs=D.breakfasts.filter(r=>match(r,'b'));
-  return `<div class="search"><input id="q" placeholder="Search a recipe or an ingredient" value="${esc(q)}"></div>
+  return `<div class="search"><input id="q" placeholder="Search a recipe or an ingredient" value="${esc(q)}"><a class="rlink quiet" href="print.html" style="margin:0">🖨</a></div>
   <div class="chips">${[['all','All'],['chicken','Chicken'],['turkey','Turkey'],['fish','Fish'],['meatless','Meatless & sides'],['snacks','Snacks'],['breakfast','Breakfast'],['fav','♥ Mine']].map(([k,l])=>`<button data-filter="${k}" aria-pressed="${recipeFilter===k}">${l}</button>`).join('')}</div>
   <div class="chips"><span class="note" style="align-self:center">Can't face:</span>${['fish','eggs','dairy','nuts'].map(a=>`<button class="av" data-av="${a}" aria-pressed="${!!av[a]}">no ${a}</button>`).join('')}<button class="av" data-hideav="1" aria-pressed="${store.get('pdp:hideav',false)}">hide those</button></div>
   ${recipeFilter==='all'||recipeFilter==='breakfast'?`${bs.length?'<h2 style="margin-top:6px">Breakfasts</h2>':''}${bs.map(r=>recipeCard(r,'b')).join('')}`:''}
@@ -235,7 +235,7 @@ function renderShopping(){
   const pos=view||posOf(today()); const w=store.get('pdp:shopweek',pos.week); const key='week'+w; const lst=D.shopping[key]; const have=store.get('pdp:have:'+key,{}); const hide=store.get('pdp:hidehave',false); const own=store.get('pdp:own:'+key,[]);
   const aisles=Object.entries(lst.aisles); const total=aisles.reduce((n,[,i])=>n+i.length,0)+own.length; const got=aisles.reduce((n,[,i])=>n+i.filter(x=>have[x]).length,0)+own.filter(x=>have[x]).length;
   const snackKey=store.get('pdp:snacklist',null);
-  return `<div class="daybar"><select id="shopWeek">${[1,2,3,4,5,6,7,8].map(i=>`<option value="${i}" ${i===w?'selected':''}>Week ${i} list</option>`).join('')}</select><button class="rlink quiet" data-hidehave="1" aria-pressed="${hide}">${hide?'Show all':'Hide what I have'}</button><button class="rlink quiet" data-copy="1">Copy</button><button class="rlink quiet" data-print="1">🖨</button></div>
+  return `<div class="daybar"><select id="shopWeek">${[1,2,3,4,5,6,7,8].map(i=>`<option value="${i}" ${i===w?'selected':''}>Week ${i} list</option>`).join('')}</select><button class="rlink quiet" data-hidehave="1" aria-pressed="${hide}">${hide?'Show all':'Hide what I have'}</button><button class="rlink quiet" data-copy="1">Copy</button><a class="rlink quiet" href="print.html#list-${w}">🖨 Print</a></div>
   <section class="prog" style="grid-template-columns:1fr 1fr"><div><b>${got}/${total}</b><small>in the cart</small></div><div><b>${aisles.length}</b><small>aisles</small></div></section>
   <p class="note">Everything for week ${w}'s dinners (and the lunches they turn into). Breakfast staples and snack ingredients are on the snack lists below. Tick as you shop; ticks stay until you clear them.</p>
   <section class="card aisle" id="list">${aisles.map(([a,items])=>{const vis=items.filter(i=>!hide||!have[i]);return vis.length?`<h3>${esc(a)}</h3>${vis.map(i=>`<label class="${have[i]?'have':''}"><input type="checkbox" data-have="${esc(i)}" ${have[i]?'checked':''}><span>${esc(i)}</span></label>`).join('')}`:''}).join('')}
@@ -265,7 +265,7 @@ function openRecipe(r,kind){
   const comps=kind==='r'?r.components:[r]; const id=kind==='r'?r.number:kind+':'+r.title; const f=favs();
   const have=store.get('pdp:ing:'+id,{});
   $('#dlg').innerHTML=`<div class="modal"><div class="top"><div><span class="eyebrow">${kind==='r'?`Week ${r.week}${r.sides&&r.sides.length?' · with '+esc(r.sides.join(', ')):''}`:kind==='s'?'Snack':'Breakfast'}</span><h2>${esc(kind==='r'?r.name:r.title)}</h2>${r.note?`<p class="note">${esc(r.note)}</p>`:''}</div><button class="x" data-close="1">✕</button></div>
-    <div class="scale"><span>Cook</span>${[[1,'as written'],[1.5,'1.5×'],[2,'2× (eat twice)']].map(([k,l])=>`<button data-scale="${k}" aria-pressed="${scale===k}">${l}</button>`).join('')}<button class="fav ${f[id]?'on':''}" data-fav="${esc(id)}" style="border:0;background:none;font-size:24px;color:${f[id]?'var(--accent)':'var(--line)'};margin-left:auto">♥</button></div>
+    <div class="scale"><span>Cook</span>${[[1,'as written'],[1.5,'1.5×'],[2,'2× (eat twice)']].map(([k,l])=>`<button data-scale="${k}" aria-pressed="${scale===k}">${l}</button>`).join('')}<a class="rlink quiet" style="margin:0 0 0 auto" href="print.html#${kind==='r'?'r-'+r.number:kind==='s'?'s-'+encodeURIComponent(r.title):'b-'+encodeURIComponent(r.title)}">🖨 Print</a><button class="fav ${f[id]?'on':''}" data-fav="${esc(id)}" style="border:0;background:none;font-size:24px;color:${f[id]?'var(--accent)':'var(--line)'}">♥</button></div>
     ${(bad(r).length?`<p class="note"><span class="tag warn">contains ${esc(bad(r).join(', '))}</span></p>`:'')}
     ${comps.map((c,ci)=>`<div class="comp"><h3>${esc(c.title)}</h3>${c.servings?`<div class="sv">Serves ${esc(c.servings)}${scale!==1?` as written · you are making ${scale}×`:''}</div>`:''}
       ${c.ingredients.length?`<ul>${c.ingredients.map((i,ii)=>`<li class="${have[ci+':'+ii]?'have':''}" data-ing="${ci}:${ii}">${esc(scaleLine(i,scale))}</li>`).join('')}</ul>`:''}

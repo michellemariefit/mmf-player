@@ -1,0 +1,76 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Print · Pregnancy Diet Plan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Lato:wght@400;700&display=swap">
+<link rel="stylesheet" href="../app.css">
+<style>
+/* Printable recipes. Open with a hash:
+   #all            every dinner, snack and breakfast        #week-3   week 3's dinners + its grocery list
+   #r-12           recipe 12                                #s-Title  a snack   #b-Title  a breakfast
+   #snacks  #breakfasts  #list-3 (grocery list only)        no hash   a picker */
+body{background:#fff;color:#111;padding:0}
+.wrap{max-width:820px;gap:0}
+.bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding:14px 0;border-bottom:1px solid #ddd;margin-bottom:14px}
+.bar a,.bar button{font:700 14px/1 var(--display);text-transform:uppercase;letter-spacing:.04em;padding:8px 12px;border-radius:999px;border:1px solid #ccc;background:#fff;color:var(--brand);text-decoration:none;cursor:pointer}
+.bar .go{background:var(--accent);color:#fff;border-color:var(--accent)}
+.r{break-inside:avoid;page-break-inside:avoid;border-top:3px solid var(--accent);padding:12px 0 18px;margin-bottom:10px}
+.r h2{font:700 26px/1.05 var(--display);text-transform:uppercase;color:var(--brand);margin:0}
+.r .sub{font-size:13px;color:#555;margin:3px 0 8px}
+.c{display:grid;grid-template-columns:1fr 1.5fr;gap:14px;margin-top:8px}
+.c h3{font:700 16px/1.1 var(--display);text-transform:uppercase;margin:0 0 4px;color:var(--accent)}
+.c .sv{font-size:12px;color:#555;margin-bottom:4px}
+.c ul,.c ol{margin:0;padding-left:18px;font-size:13.5px;line-height:1.4}
+.c li{margin:2px 0}
+.c ul li{list-style:none;position:relative;padding-left:16px}
+.c ul li:before{content:"";position:absolute;left:0;top:4px;width:9px;height:9px;border:1px solid #999;border-radius:2px}
+.note{font-size:12px;color:#555}
+h1.t{font:700 34px/1 var(--display);text-transform:uppercase;color:var(--brand);margin:0 0 4px}
+.list{columns:2;column-gap:24px;break-inside:avoid}
+.list h3{font:700 14px/1 var(--display);text-transform:uppercase;color:var(--accent);margin:10px 0 4px;break-after:avoid}
+.list div{font-size:13.5px;padding:2px 0 2px 18px;position:relative;break-inside:avoid}
+.list div:before{content:"";position:absolute;left:0;top:5px;width:10px;height:10px;border:1px solid #999;border-radius:2px}
+.pick{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px}
+.pick a{display:block;padding:12px;border:1px solid #ddd;border-radius:12px;color:var(--brand);text-decoration:none;font:700 15px/1.1 var(--display);text-transform:uppercase}
+footer{font-size:11px;color:#777;margin:24px 0;border-top:1px solid #ddd;padding-top:8px}
+@media print{.bar{display:none}.wrap{max-width:none}@page{margin:14mm}}
+@media (max-width:560px){.c{grid-template-columns:1fr}.list{columns:1}}
+</style>
+<div class="wrap">
+  <div class="bar"><button class="go" onclick="print()">🖨 Print</button><a href="index.html">← Back to the app</a><a href="#all" onclick="setTimeout(render)">All recipes</a><a href="#snacks" onclick="setTimeout(render)">Snacks</a><a href="#breakfasts" onclick="setTimeout(render)">Breakfasts</a></div>
+  <div id="out"></div>
+  <footer>MMF Pregnancy Diet Plan · © Michelle Marie Fit · not medical advice; check your plan with your doctor.</footer>
+</div>
+<script>
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let D;
+function card(r,kind){
+  const comps=kind==='r'?r.components:[r];const name=kind==='r'?r.name:r.title;
+  const sub=kind==='r'?`Week ${r.week}${r.sides&&r.sides.length?' · serve with '+esc(r.sides.join(', ')):''}`:kind==='s'?'Snack':'Breakfast';
+  return `<section class="r"><h2>${esc(name)}</h2><div class="sub">${sub}${r.note?' · '+esc(r.note):''}</div>
+  ${comps.map(c=>`<div class="c"><div>${comps.length>1||c.title!==name?`<h3>${esc(c.title)}</h3>`:''}${c.servings?`<div class="sv">Serves ${esc(c.servings)}</div>`:''}<ul>${c.ingredients.map(i=>`<li>${esc(i)}</li>`).join('')}</ul></div>
+  <div>${comps.length>1||c.title!==name?'<h3>&nbsp;</h3>':''}<ol>${c.instructions.map(s=>`<li>${esc(s)}</li>`).join('')}</ol></div></div>`).join('')}</section>`;
+}
+function list(w){const l=D.shopping['week'+w];if(!l)return '';return `<section class="r"><h2>Week ${w} grocery list</h2><div class="list">${Object.entries(l.aisles).map(([a,items])=>`<h3>${esc(a)}</h3>${items.map(i=>`<div>${esc(i)}</div>`).join('')}`).join('')}</div></section>`}
+function weekDinners(w){const wk=D.weeks.find(x=>x.week===w);const ids=[];['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].forEach(d=>(wk.days[d].dinnerIds||[]).concat(wk.days[d].lunchIds||[]).forEach(n=>{if(!ids.includes(n))ids.push(n)}));return ids.map(n=>D.recipes.find(r=>r.number===n)).filter(Boolean)}
+function render(){
+  const h=decodeURIComponent(location.hash.slice(1));let out='',title='';
+  let m;
+  if(h==='all'){title='All the recipes';out=`<h1 class="t">Dinners</h1>`+D.recipes.map(r=>card(r,'r')).join('')+`<h1 class="t">Snacks</h1>`+D.snacks.map(r=>card(r,'s')).join('')+`<h1 class="t">Breakfasts</h1>`+D.breakfasts.map(r=>card(r,'b')).join('')}
+  else if(h==='snacks'){title='Snacks';out=`<h1 class="t">Snacks</h1>`+D.snacks.map(r=>card(r,'s')).join('')}
+  else if(h==='breakfasts'){title='Breakfasts';out=`<h1 class="t">Breakfasts</h1>`+D.breakfasts.map(r=>card(r,'b')).join('')}
+  else if((m=h.match(/^week-(\d)$/))){const w=+m[1];title='Week '+w;out=`<h1 class="t">Week ${w} recipes</h1><p class="note">Every dinner on the week ${w} calendar. Cook double: lunch the next day is the leftovers.</p>`+weekDinners(w).map(r=>card(r,'r')).join('')+list(w)}
+  else if((m=h.match(/^list-(\d)$/))){title='Week '+m[1]+' list';out=list(+m[1])}
+  else if((m=h.match(/^r-(\d+)$/))){const r=D.recipes.find(x=>x.number===+m[1]);title=r?r.name:'';out=r?card(r,'r'):'<p>No such recipe.</p>'}
+  else if((m=h.match(/^s-(.+)$/))){const r=D.snacks.find(x=>x.title===m[1]);title=m[1];out=r?card(r,'s'):'<p>No such snack.</p>'}
+  else if((m=h.match(/^b-(.+)$/))){const r=D.breakfasts.find(x=>x.title===m[1]);title=m[1];out=r?card(r,'b'):'<p>No such breakfast.</p>'}
+  else{title='Print';out=`<h1 class="t">What do you want to print?</h1><p class="note">Pick one. Then use the Print button, or share it as a PDF from your phone's print screen.</p><div class="pick">
+    ${[1,2,3,4,5,6,7,8].map(w=>`<a href="#week-${w}">Week ${w} recipes + list</a>`).join('')}<a href="#all">Every recipe</a><a href="#snacks">Snacks</a><a href="#breakfasts">Breakfasts</a>${[1,2,3,4,5,6,7,8].map(w=>`<a href="#list-${w}">Week ${w} list only</a>`).join('')}</div>
+    <h1 class="t" style="margin-top:18px">One recipe</h1><div class="pick">${D.recipes.map(r=>`<a href="#r-${r.number}">${esc(r.name)}</a>`).join('')}</div>`}
+  document.title=(title?title+' · ':'')+'Pregnancy Diet Plan';document.getElementById('out').innerHTML=out;window.scrollTo(0,0);
+  if(h&&new URLSearchParams(location.search).get('go')==='1')setTimeout(()=>print(),400);
+}
+addEventListener('hashchange',render);
+fetch('../data/diet.json').then(r=>r.json()).then(d=>{D=d;render()});
+</script>

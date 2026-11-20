@@ -16,7 +16,9 @@
       "Mashed Sweet Potato",
       "Roasted Broccoli"
      ],
-     "lunchIds": [],
+     "lunchIds": [
+      56
+     ],
      "dinnerIds": [
       1
      ],
@@ -702,7 +704,9 @@
       27,
       28
      ],
-     "dinnerIds": [],
+     "dinnerIds": [
+      57
+     ],
      "breakfastIds": []
     },
     "Thu": {
@@ -715,7 +719,9 @@
      "dinner": [
       "Chicken Apple Chili Jasmine Rice topped with Cilantro and Roasted Broccoli or Asparagus"
      ],
-     "lunchIds": [],
+     "lunchIds": [
+      57
+     ],
      "dinnerIds": [
       29
      ],
@@ -1471,6 +1477,43 @@
    "tags": [
     "chicken",
     "nuts"
+   ]
+  },
+  {
+   "number": 56,
+   "name": "Chicken with Nectarine Salad",
+   "sides": [],
+   "week": 1,
+   "note": "From Michelle's Eat to be Fit cooking class #7. The 2nd-edition PDF lists it on week 1 but left the recipe out.",
+   "components": [
+    {
+     "title": "Chicken with Nectarine Salad",
+     "servings": "4",
+     "ingredients": [
+      "½ tbsp coconut sugar or brown sugar",
+      "Juice of 1 lime",
+      "2 tsp chili powder",
+      "1 tsp cumin",
+      "S&P to taste",
+      "2 garlic cloves, minced",
+      "4 chicken breasts",
+      "½ red onion, diced",
+      "3 nectarines, diced",
+      "½ red pepper, diced",
+      "¼ cup cilantro, chopped",
+      "Juice of 1 lime",
+      "1-2 avocado, diced"
+     ],
+     "instructions": [
+      "In a small bowl, mix the first 6 ingredients and rub onto both sides of the chicken breasts.",
+      "Bake in a 350 degree oven for 20 minutes or until done.",
+      "In a separate bowl, combine the remaining ingredients, except the avocado, and fold it in at the end.",
+      "To serve, plate the chicken and top with the salsa."
+     ]
+    }
+   ],
+   "tags": [
+    "chicken"
    ]
   },
   {
@@ -2438,6 +2481,39 @@
    "tags": [
     "turkey",
     "eggs"
+   ]
+  },
+  {
+   "number": 57,
+   "name": "Veggie Rice Supreme",
+   "sides": [],
+   "week": 5,
+   "note": "From Michelle's BeFit Moms recipes. Serve with grilled chicken, steak or fish, as the week 5 calendar says.",
+   "components": [
+    {
+     "title": "Veggie Rice Supreme",
+     "servings": "4",
+     "ingredients": [
+      "1 cup brown rice",
+      "2 cups water",
+      "1 zucchini, cut in chunks",
+      "1 squash, cut in chunks",
+      "2 garlic cloves, minced",
+      "½ tsp dried basil",
+      "S&P to taste",
+      "½ cup part skim shredded mozzarella"
+     ],
+     "instructions": [
+      "Cook brown rice until done.",
+      "When the rice is almost done, heat a nonstick skillet with stock, add the veggies and garlic to the pan.",
+      "Sprinkle with basil and S&P and sauté for about 5 minutes.",
+      "Stir veggies, rice and cheese together and serve."
+     ]
+    }
+   ],
+   "tags": [
+    "dairy",
+    "meatless"
    ]
   },
   {
@@ -4431,11 +4507,11 @@
    "I want you to cook double or even triple the recipe’s servings so that you can have extra food left over because you will be eating left over’s from dinner for the next day’s lunch and maybe even snacks if you are in the mood for them.",
    "This will save you tons of time and will ensure you have a healthy lunch ready for you the next day so this will prevent you from eating out, picking at “Bad Food”, and making poor choices, or end up feeling sick because you have no food available.",
    "This will ensure that you are always prepared and being prepared is key!",
-   "For the 4 weeks, you have a total of 8 recipes for snacks.",
+   "For the 8 weeks, you have a total of 14 recipes for snacks.",
    "I also gave you a bunch of other options that you can have that are just easy on-the -go snacks that you can just have in your fridge or pantry at all times.",
    "You have a few different breakfast meals every day, but if you are one of those creatures of habit and you like having the same thing every day, that is ok, but just for breakfast. I want you to vary all your other meals so that you get enough of all the nutrients you and your baby need. Remember that everything you do now is affecting your baby too.",
-   "I am giving you 4 weeks of meal plans and recipes.",
-   "You can repeat these 4 weeks for the duration of your pregnancy.",
+   "I am giving you 8 weeks of meal plans and recipes.",
+   "You can repeat these 8 weeks for the duration of your pregnancy.",
    "I am sure that you will find your favorite meals and recipes and please, feel free after you try them all to swap one day for another or to make your favorites weekly.",
    "So if I you are on week 3 but there is a recipe from week 1 that you love, feel free to make and eat that one instead. But try them all  I just want you to enjoy yourself, eat enough of the right nutrients, prevent morning sickness and have tons of energy so that you are in a good mood and can enjoy your pregnancy.",
    "Sticking to your plan will help you only gain the weigh that is necessary. And if you do this, you will be able to lose your baby weight super fast."

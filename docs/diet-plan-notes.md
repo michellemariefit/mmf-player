@@ -26,6 +26,7 @@ The app: **`diet/index.html`** (open `/diet/` on the site). Data: `data/diet.jso
 - **Grocery list by aisle** for each week with ticks that persist, hide-what-I-have, add-your-own items, copy to clipboard, print. The two snack lists are there too.
 - **Water** (8 glasses), a done-today count and a streak.
 - **Favourites**, search by recipe or ingredient, cross-off-as-you-cook ingredient lists.
+- **Print.** `diet/print.html` prints one recipe, a week's dinners with its grocery list, a list on its own, all snacks, all breakfasts, or everything. Print buttons sit in every recipe, on the Week tab and on the Shop tab. On a phone the print screen also saves a PDF.
 - Installs to the home screen and works offline (own `manifest.json` and `sw.js`).
 
 Everything is saved on her phone only (no login, no server). Same stack as the 21-day player, so it can sit inside the same site and share the look.
@@ -47,14 +48,14 @@ Possible add-ons if she wants more to say: a 7-day "taster" version for leads, o
 
 Content gaps (the app shows these days correctly but with no recipe button):
 
-- **Week 1 Sunday lunch** is "Chicken with Nectarine Salad". There is no such recipe anywhere in the book.
-- **Week 5 Wednesday dinner** is "Veggie Supreme Rice". No recipe in the book.
+- ~~Week 1 Sunday lunch "Chicken with Nectarine Salad"~~ found in Eat to be Fit › Cooking Class #7.docx, now recipe 56.
+- ~~Week 5 Wednesday dinner "Veggie Supreme Rice"~~ found in BeFit Moms Program › RECIPES.docx ("Veggie Rice Supreme"), now recipe 57.
 - **Week 6 Saturday breakfast** is blank in the PDF. Saturday lunch there also doesn't match Friday's dinner.
 - Several weeks list a dinner on the calendar with a different name than the recipe page (e.g. "Sun-dried Tomato Feta Turkey Meatloaf"). I matched them by hand in `tools/diet-fixes.json`; worth a skim.
 
 Stale text in her own intro (pp 2–4, copied verbatim into the Plan tab):
 
-- Says "I am giving you 4 weeks of meal plans" and "For the 4 weeks, you have a total of 8 recipes for snacks". The 2nd edition has 8 weeks and 14 snacks. I did not edit her words; tell me and I will.
+- Said "4 weeks" three times and "8 recipes for snacks". Changed to 8 weeks and 14 snacks on Michelle's say-so (Nov 20). The replacement is in `tools/diet-fixes.json` under `rulesText`, so a rebuild keeps it.
 - Step 9 links to Dale's Raw Protein Bars at a dead URL. I kept the recommendation and dropped the link.
 - Two typos she may want fixed: "left over's", "weigh that is necessary", "So if I you are on week 3".
 
@@ -62,7 +63,7 @@ OCR check: weeks 5–8 and recipes 25–55 were read by OCR. Fractions (¼ ½ ¾
 
 ## Questions for Michelle
 
-1. Is this a replacement for the PDF buyers get, or an add-on? That decides whether the PDF download stays in the app.
+1. ~~Replacement or add-on?~~ Replacement (Michelle, Nov 20). So no PDF download in the app; the print page covers anyone who wants paper.
 2. Price and delivery for Black Friday: same FG Funnels product with a new link in the thank-you page, or a new product?
 3. Do the recipes need macros or calories? The PDF has none. Adding them is a day of work with a nutrition database and should be labelled "approximate".
 4. Is she OK with me rewriting the intro for 8 weeks, or does she want to re-record it as a 60-second welcome video instead (the app can embed it)?
@@ -71,7 +72,7 @@ OCR check: weeks 5–8 and recipes 25–55 were read by OCR. Fractions (¼ ½ ¾
 
 ## Files
 
-- `diet/index.html`, `diet/manifest.json`, `diet/sw.js` — the app
+- `diet/index.html`, `diet/print.html`, `diet/manifest.json`, `diet/sw.js` — the app
 - `data/diet.json` — all content
 - `tools/build_diet.py`, `tools/diet-fixes.json` — builder and hand fixes
 - `tools/diet-review.html`, `tools/diet-pages/` — side-by-side review of every recipe against the PDF page
